@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cloud_add_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/buttonClose"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp"
+            android:background="@null"
+            android:src="@drawable/recordview_close" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/image_film_edit_fail" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="@string/clip_fail"
+            android:textColor="#ff888888"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/textViewCommonContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginRight="26dp"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:lineSpacingExtra="5dp"
+            android:text="@string/clip_find_server"
+            android:textColor="#ff333333"
+            android:textSize="16dp"
+            android:visibility="visible" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#ffdcdcdc" />
+
+        <LinearLayout
+            android:id="@+id/viewTwoButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/buttonCancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/alarm_setting_btn_bg_left"
+                android:gravity="center"
+                android:text="@string/cancle_txt"
+                android:textColor="#ff666666"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="#ffdcdcdc" />
+
+            <TextView
+                android:id="@+id/buttonTryAgain"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/alarm_setting_btn_bg_right"
+                android:gravity="center"
+                android:text="@string/try_again"
+                android:textColor="#ff00acef"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

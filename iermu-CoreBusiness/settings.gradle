@@ -1,0 +1,4 @@
+include ':app', ':EventObject', ':LYPlatform', 'lib_ApiService', 'DaoGenerator', 'lib_LanDevPlatform'
+project(':lib_ApiService').projectDir = new File('../iermu-ApiService/app')
+project(':lib_LanDevPlatform').projectDir   = new File('../iermu-LanDevPlatform/app')
+

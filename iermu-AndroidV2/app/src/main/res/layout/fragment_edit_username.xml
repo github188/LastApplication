@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_height"
+        android:background="@drawable/check_bg_color_pressed"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/edit_user_name"
+            android:layout_toLeftOf="@+id/name_close"
+            android:paddingLeft="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@null"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:maxLength="20"
+            android:gravity="center_vertical"
+            android:textColor="#333333"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:text="附近的萨福建师大附近丢失了附近的萨卡放假开始就发生纠纷附近的萨卡放假啊附近的空间"
+            android:textSize="@dimen/activity_text_size_one"/>
+
+        <RelativeLayout
+            android:id="@+id/name_close"
+            android:layout_width="@dimen/activity_height"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/login_close" />
+            </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

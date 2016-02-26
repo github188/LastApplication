@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/main_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/person_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/pub_live_shape"
+                android:orientation="vertical">
+                <EditText
+                    android:id="@+id/feed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:singleLine="false"
+                    android:background="@null"
+                    android:textColorHint="#b2b2b2"
+                    android:gravity="top"
+                    android:hint="@string/introduce_feedback"
+                    android:lineSpacingExtra="2dp"
+                    android:maxLength="140"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textViewNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="right"
+                    android:text="0/140"
+                    android:textColor="#888888"
+                    android:textSize="14dp" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/connect_way"
+                android:layout_below="@+id/person_feedback"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_width="match_parent"
+                android:textColorHint="#b2b2b2"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:gravity="top"
+                android:inputType="textUri"
+                android:hint="@string/connect_way"
+                android:background="@drawable/pub_live_shape"
+                android:maxLines="4"
+                android:lineSpacingExtra="2dp"
+                android:maxLength="140"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_below="@+id/connect_way"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:textSize="13dp"
+                android:textColor="#888888"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="@string/person_connect_visable"/>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+</RelativeLayout>

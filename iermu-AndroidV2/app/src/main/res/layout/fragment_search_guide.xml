@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#177be1"
+    android:fitsSystemWindows="false"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#1362b3"/>
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/check_cam"
+        android:layout_marginTop="26dp"
+        android:textSize="18dp"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_below="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/red_blue"
+        android:textSize="18dp"
+        android:lineSpacingExtra="2dp"
+        android:gravity="center"
+        android:textColor="#ffffff" />
+    <ImageView
+        android:id="@+id/blue_light_img"
+        android:layout_marginTop="106dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/search_dev"
+        android:layout_centerHorizontal="true"
+        />
+    <ImageView
+        android:id="@+id/blue_light_img_"
+        android:layout_marginTop="106dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:src="@drawable/blue_light_dev"
+        android:layout_centerHorizontal="true"
+        />
+    <Button
+        android:id="@+id/start_configurtion"
+        android:background="@drawable/iermu_click_selector"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_above="@+id/no_blue_or_red"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/have_red_blue"
+        android:textColor="@drawable/add_dev_buuton_text_selector"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/no_blue_or_red"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/no_red_blue"/>
+    <!--<View-->
+        <!--android:layout_width="140dp"-->
+        <!--android:background="#ffffff"-->
+        <!--android:layout_below="@+id/text3"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_height="1dp"/>-->
+
+</RelativeLayout>

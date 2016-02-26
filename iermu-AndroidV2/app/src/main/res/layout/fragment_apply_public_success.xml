@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="46dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/applypub_success_top" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="26dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1px"
+            android:layout_weight="1"
+            android:background="#ff333333" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/share_way"
+            android:textColor="#ff333333"
+            android:textSize="16dp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1px"
+            android:layout_weight="1"
+            android:background="#ff333333" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/share_wx"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/bg_weixin_selector"
+            android:gravity="center_horizontal"
+            android:text="@string/wechat_txt"
+            android:textColor="#ff333333"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/share_qq"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/applypub_share_qq"
+            android:gravity="center_horizontal"
+            android:text="QQ"
+            android:visibility="gone"
+            android:textColor="#ff333333"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/share_peng"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/bg_friends_selector"
+            android:gravity="center_horizontal"
+            android:text="@string/moments"
+            android:textColor="#ff333333"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/share_link"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/bg_lianjie_selector"
+            android:gravity="center_horizontal"
+            android:text="@string/copy_link_txt"
+            android:textColor="#ff333333"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/cancle_share"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/iermu_selector"
+        android:text="@string/stop_live"
+        android:textColor="@drawable/add_dev_buuton_text_selector"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/cam_live"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/check_light_bg_selector"
+        android:text="@string/check_my_live"
+        android:textColor="@drawable/add_dev_buuton_text_selector"
+        android:textSize="16dp" />
+</LinearLayout>

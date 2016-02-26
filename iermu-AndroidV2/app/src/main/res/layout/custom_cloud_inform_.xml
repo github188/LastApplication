@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:background="@drawable/conn_wifi"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+    <ImageView
+        android:id="@+id/recordview_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="15dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/recordview_recording" />
+
+    <TextView
+        android:id="@+id/text_1"
+        android:layout_below="@+id/recordview_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp"
+        android:text="@string/cloud_inform"
+        android:textColor="#333333"
+        android:textSize="16dp" />
+
+
+    <TextView
+        android:id="@+id/dev_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_1"
+        android:layout_marginLeft="14dp"
+        android:text="@string/my_live"
+        android:textColor="#666666"
+        android:textSize="16dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="bottom">
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/cloud_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dev_name"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="#666666"
+        android:textSize="12dp" />
+    <TextView
+        android:layout_toRightOf="@+id/cloud_time"
+        android:layout_alignBottom="@+id/cloud_time"
+        android:id="@+id/cloud_timer"
+        android:textColor="#666666"
+        android:textSize="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_toRightOf="@+id/cloud_timer"
+        android:layout_alignBottom="@+id/cloud_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#666666"
+        android:textSize="12dp"/>
+
+
+    <View
+        android:id="@+id/view_1"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/cloud_time"
+        android:background="#dedede" />
+
+    <View
+        android:id="@+id/view_2"
+        android:layout_width="1dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/view_1"
+        android:layout_centerHorizontal="true"
+        android:background="#dedede" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:background="@drawable/blue_button_background"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_1">
+
+        <Button
+            android:id="@+id/no_inform"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/check_bg_selector"
+            android:text="@string/no_warn" />
+
+        <Button
+            android:id="@+id/btn_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:textColor="#00acef"
+            android:gravity="center"
+            android:background="@drawable/check_bg_selector"
+            android:text="@string/continue_buy" />
+    </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

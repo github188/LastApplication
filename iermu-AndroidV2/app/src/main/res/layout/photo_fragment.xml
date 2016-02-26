@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <include layout="@layout/photo_title_view_fragment"/>
+
+        <RelativeLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/photo_info"
+            android:layout_height="40dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:id="@+id/all_txt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="@string/all"
+                    android:textColor="#333333"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/print_screen_txt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="@string/photo"
+                    android:textColor="#333333"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/film_edit_txt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="@string/film_edit"
+                    android:textColor="#333333"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:id="@+id/imgview"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/public_channel" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <com.iermu.ui.view.ViewPagerScroll
+            android:id="@+id/view_pager"
+            android:layout_below="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants"
+            android:layout_weight="1"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

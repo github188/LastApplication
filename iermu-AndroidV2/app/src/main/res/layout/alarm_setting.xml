@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginLeft="12dp"
+        android:gravity="center_vertical"
+        android:text="@string/report_exception"
+        android:textColor="#333333"
+        android:textSize="14dp" />
+
+    <com.lib.pulltorefreshview.PullToRefreshLayout
+        android:id="@+id/lvPullLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/refresh_head" />
+
+        <com.lib.pulltorefreshview.pullableview.PullableListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="#00000000"
+            android:listSelector="#00000000"
+            android:overScrollMode="never"
+            android:scrollbars="none" />
+
+        <include layout="@layout/load_more" />
+
+    </com.lib.pulltorefreshview.PullToRefreshLayout>
+
+</LinearLayout>

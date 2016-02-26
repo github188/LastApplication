@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/choose_time"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical" >
+
+
+        <RelativeLayout
+            android:id="@+id/set_all_day"
+            android:layout_width="match_parent"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginBottom="8dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_top_margin"
+            android:background="@drawable/fragment_open_all_day">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="40dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/all_day_open"
+                    android:textColor="@color/cms_center"
+                    android:textSize="@dimen/activity_text_size_one"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#BABABA"
+                    android:textSize="@dimen/activity_text_size_two"
+                    android:text="@string/all_hours"
+                    android:layout_below="@+id/tv_5"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/all_day_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/setting_icon_finish"
+                android:layout_marginRight="12dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/set_only_day"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="14dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/fragment_open_only_day">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="40dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/only_day"
+                    android:textColor="@color/cms_center"
+                    android:textSize="@dimen/activity_text_size_one"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#BABABA"
+                    android:textSize="@dimen/activity_text_size_two"
+                    android:text="@string/day_hours"
+                    android:layout_below="@+id/tv_6"/>
+                </LinearLayout>
+
+            <ImageView
+                android:id="@+id/day_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:visibility="gone"
+                android:src="@drawable/setting_icon_finish"
+                android:layout_marginRight="12dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/set_only_night"
+            android:layout_width="fill_parent"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginBottom="8dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fragment_open_only_night">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="40dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/only_night"
+                    android:textColor="@color/cms_center"
+                    android:textSize="@dimen/activity_text_size_one"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#BABABA"
+                    android:textSize="@dimen/activity_text_size_two"
+                    android:text="@string/night_hours"
+                    android:layout_below="@+id/tv_7"/>
+                </LinearLayout>
+
+            <ImageView
+                android:id="@+id/night_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:visibility="gone"
+                android:src="@drawable/setting_icon_finish"
+                android:layout_marginRight="12dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/set_custom_time"
+            android:layout_width="fill_parent"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginBottom="8dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fragment_custom_time">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="40dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/custom_times"
+                    android:textColor="@color/cms_center"
+                    android:textSize="@dimen/activity_text_size_one"/>
+
+                <TextView
+                    android:id="@+id/cos_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#BABABA"
+                    android:textSize="@dimen/activity_text_size_two"
+                    android:text=""
+                    android:layout_below="@+id/tv_8"/>
+                </LinearLayout>
+
+            <ImageView
+                android:id="@+id/custom_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:visibility="gone"
+                android:src="@drawable/setting_icon_finish"
+                android:layout_marginRight="12dp" />
+        </RelativeLayout>
+
+    </LinearLayout>

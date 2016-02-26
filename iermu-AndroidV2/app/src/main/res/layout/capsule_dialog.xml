@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="@drawable/white_back" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/devices_help_btn_bg"
+            android:textSize="18sp"
+            android:layout_marginTop="18dp"
+            android:text="@string/conn_success"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/capsule_tip"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:textSize="14sp"
+            android:lineSpacingExtra="3dp"
+            android:textColor="@color/conn_txt"
+            android:text="@string/check_capsule_success"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="25dp"
+            android:background="@color/layout_bg"/>
+
+        <Button
+            android:id="@+id/check_now"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/check_now"
+            android:background="@null"
+            android:textSize="16sp"
+            android:textColor="@color/devices_help_btn_bg"/>
+        </LinearLayout>
+
+</RelativeLayout>

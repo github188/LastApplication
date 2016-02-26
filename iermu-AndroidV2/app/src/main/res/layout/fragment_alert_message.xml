@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <se.emilsjolander.stickylistheaders.StickyListHeadersListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@null"
+        android:overScrollMode="never" />
+
+    <LinearLayout
+        android:id="@+id/empty_alarm_photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/empty_alarm_photo"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/alarm_pic"
+            android:textColor="#333333"
+            android:textSize="@dimen/text_16_dm" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/img_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:text="共0张"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/delete_layout"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/select_all"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:drawableLeft="@drawable/alarm_select_all_selector"
+            android:drawablePadding="11dp"
+            android:gravity="center_vertical"
+            android:text="@string/select_all"
+            android:textColor="#ff00acef"
+            android:textSize="14dp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/textViewSelectNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:text="@string/select_alarm_pic"
+            android:textColor="#666666"
+            android:textSize="14dp" />
+
+        <Button
+            android:id="@+id/select_delete"
+            android:layout_width="60dp"
+            android:layout_height="33dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/iermu_click_selector"
+            android:gravity="center"
+            android:text="@string/delete"
+            android:textColor="#ffffffff"
+            android:textSize="14dp" />
+    </LinearLayout>
+</LinearLayout>

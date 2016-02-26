@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_bg"
+    android:scrollbars="none"
+    android:overScrollMode="never">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:text="@string/wifi_disagree"
+            android:textSize="18sp"
+            android:textColor="@color/conn_txt"
+            android:gravity="center"/>
+        <Button
+            android:id="@+id/knowledge_btn"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:gravity="center"
+            android:layout_marginTop="26dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="13dp"
+            android:background="@drawable/devices_help_btn_bg"
+            android:textColor="@color/devices_help_btn_bg"
+            android:text="@string/i_know"/>
+    </LinearLayout>
+
+</ScrollView>

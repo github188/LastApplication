@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cloud_add_bg"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/upgrade_imageView"
+            android:layout_width="280dp"
+            android:layout_height="210dp"
+            android:src="@drawable/cam_upgrade_img"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            android:text="@string/update_system"/>
+        <ImageButton
+            android:id="@+id/buttonClose"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="3dp"
+            android:background="@null"
+            android:src="@drawable/cam_upgrade_close" />
+        <TextView
+            android:id="@+id/cam_upgrade_message_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:layout_below="@+id/upgrade_imageView"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="18dp"
+            android:textColor="@color/conn_txt"
+            android:text="摄像机系统V6.0.1更新内容"/>
+
+        <ScrollView
+            android:id="@+id/cam_upgrade_message_scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cam_upgrade_message_top"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+        <LinearLayout
+            android:id="@+id/cam_upgrade_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/cam_upgrade_message1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingRight="20dp"
+                android:paddingLeft="12dp"
+                android:drawableLeft="@drawable/cam_upgrade_shap"
+                android:drawablePadding="4dp"
+                android:textSize="12dp"
+                android:textColor="@color/cam_upgrade_new"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/cam_upgrade_message2"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_below="@id/cam_upgrade_message1"
+                android:drawableLeft="@drawable/cam_upgrade_shap"
+                android:drawablePadding="8dp"
+                android:textSize="12dp"
+                android:textColor="@color/cam_upgrade_new"
+                android:visibility="gone"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+        
+        <TextView
+            android:id="@+id/upgrade_line_p"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/cam_upgrade_message_scrollView"
+            android:layout_marginTop="20dp"
+            android:background="#ffdcdcdc"/>
+        <LinearLayout
+            android:id="@+id/viewTwoButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@id/upgrade_line_p"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/cam_upgrade_cancle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/alarm_setting_btn_bg_left"
+                android:gravity="center"
+                android:text="@string/cancle_txt"
+                android:textColor="#ff666666"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="#ffdcdcdc" />
+
+            <TextView
+                android:id="@+id/cam_upgrade_sure"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/alarm_setting_btn_bg_right"
+                android:gravity="center"
+                android:text="@string/sure"
+                android:textColor="#ff00acef"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

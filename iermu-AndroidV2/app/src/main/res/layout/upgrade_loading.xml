@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cc000000">
+
+    <ImageView
+        android:id="@+id/upgrade_lodding_img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/upgrade_loading"
+        android:visibility="visible" />
+    <LinearLayout
+        android:id="@+id/linearLayout_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/upgrade_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#ffffff"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/upgrade_bfh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="％"
+            android:textColor="#ffffff"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/upgrade_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/upgrade_lodding_img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="@string/upgrade_tip"
+        android:textColor="#ffffff"
+        android:textSize="14dp" />
+
+
+</RelativeLayout>

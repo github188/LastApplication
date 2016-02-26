@@ -1,0 +1,20 @@
+include ':app'
+include ':EventObject'
+include ':LYPlatform'
+include ':DaoGenerator'
+include ':lib_CmsPlayer'
+include ':lib_CoreBusiness'
+include ':lib_ApiService'
+include ':lib_LanDevPlatform'
+include ':lib_PullToRefreshView'
+include ':lib_Emptylayout'
+include ':lib_PullToZoomView'
+include ':lib_SweetAlertDialog'
+include ':lib_Viewpagerindicator'
+project(':EventObject').projectDir          = new File('../iermu-CoreBusiness/EventObject')
+project(':LYPlatform').projectDir           = new File('../iermu-CoreBusiness/LYPlatform')
+project(':DaoGenerator').projectDir         = new File('../iermu-CoreBusiness/DaoGenerator')
+project(':lib_CoreBusiness').projectDir     = new File('../iermu-CoreBusiness/app')
+project(':lib_ApiService').projectDir       = new File('../iermu-ApiService/app')
+project(':lib_LanDevPlatform').projectDir   = new File('../iermu-LanDevPlatform/app')
+

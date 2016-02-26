@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/activity_height">
+
+                <TextView
+                    android:id="@+id/setCameraName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/dev_num"
+                    android:textColor="#b0b0b0"
+                    android:textSize="@dimen/activity_text_size_two" />
+
+                <TextView
+                    android:id="@+id/set_devId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/setCameraName"
+                    android:hint="@string/in_loading"
+                    android:text=""
+                    android:textColor="#b0b0b0" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/cms_stroke" />
+
+            <RelativeLayout
+                android:id="@+id/set_home"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/activity_height"
+                android:background="@drawable/check_bg_selector"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/setting_location" />
+
+                <TextView
+                    android:id="@+id/set_camera_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="47dp"
+                    android:layout_toLeftOf="@+id/set_img_back"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/cms_center"
+                    android:textSize="@dimen/activity_text_size_one" />
+
+
+                <ImageView
+                    android:id="@+id/set_img_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/setting_back_img" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="@dimen/activity_bottom_margin"
+                android:background="@color/cms_stroke" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/cms_stroke" />
+
+            <RelativeLayout
+                android:id="@+id/menu_cvr_buy"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/activity_height"
+                android:layout_marginBottom="-1dp"
+                android:background="@drawable/check_bg_color_pressed"
+                android:focusable="true"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/setting_image_power"
+                    android:drawablePadding="14dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/iermu_camera_control"
+                    android:textColor="@color/cms_center"
+                    android:textSize="@dimen/activity_text_size_one" />
+                <!--<com.iermu.ui.view.CustomFontStyle-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:drawableLeft="@drawable/setting_image_power"-->
+                <!--android:drawablePadding="14dp"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:text="@string/iermu_camera_control"-->
+                <!--android:textColor="@color/cms_center"-->
+                <!--android:textSize="@dimen/activity_text_size_one" />-->
+                <com.iermu.ui.view.SwitchButtonNew
+                    android:id="@+id/campower_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="16dp"
+                android:background="@color/cms_stroke" />
+
+            <RelativeLayout
+                android:id="@+id/set_time"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/activity_height"
+                android:layout_marginBottom="-1dp"
+                android:background="@drawable/check_bg_selector"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/setting_time"
+                    android:drawablePadding="14dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/iermu_time_control"
+                    android:textColor="@color/cms_center"
+                    android:textSize="@dimen/activity_text_size_one" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:src="@drawable/setting_back_img" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="16dp"
+                android:background="@color/cms_stroke" />
+
+            <RelativeLayout
+                android:id="@+id/set_more"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/activity_height"
+                android:background="@drawable/check_bg_selector"
+                android:focusable="true"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:drawableLeft="@drawable/setting_more"
+                    android:drawablePadding="14dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/iermu_more_setting"
+                    android:textColor="@color/cms_center"
+                    android:textSize="@dimen/activity_text_size_one" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:src="@drawable/setting_back_img" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+
+                android:layout_height="1px"
+                android:layout_marginBottom="@dimen/activity_bottom_margin"
+                android:background="@color/cms_stroke" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/cms_stroke" />
+
+            <RelativeLayout
+                android:id="@+id/set_cloud"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/activity_height"
+                android:layout_marginBottom="-1dp"
+                android:background="@drawable/check_bg_selector"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/cloud_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="-1dp"
+                    android:drawableLeft="@drawable/setting_record"
+                    android:drawablePadding="14dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/iermu_cloud_camera"
+                    android:textColor="@color/cms_center"
+                    android:textSize="@dimen/activity_text_size_one" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:src="@drawable/setting_back_img" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="16dp"
+                android:background="@color/cms_stroke" />
+
+            <RelativeLayout
+                android:id="@+id/set_camera_message"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/activity_height"
+                android:background="@drawable/check_bg_selector"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/setting_info"
+                    android:drawablePadding="14dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/iermu_camera_message"
+                    android:textColor="@color/cms_center"
+                    android:textSize="@dimen/activity_text_size_one" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/setting_info"
+                    android:drawablePadding="14dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/iermu_camera_message"
+                    android:textColor="@color/cms_center"
+                    android:textSize="@dimen/activity_text_size_one" />
+
+                <TextView
+                    android:id="@+id/camera_upGrade_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30dp"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/cam_update_new"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/cam_upgrade_new"
+                    android:textColor="@color/cam_upgrade_new"
+                    android:textSize="@dimen/activity_text_size_one"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:src="@drawable/setting_back_img" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="16dp"
+                android:background="@color/cms_stroke" />
+
+            <RelativeLayout
+                android:id="@+id/nas_setting"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/activity_height"
+                android:background="@drawable/check_bg_selector"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/setting_nas"
+                    android:layout_marginLeft="11dp"
+                    android:drawablePadding="14dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/nas_setting"
+                    android:textColor="@color/cms_center"
+                    android:textSize="@dimen/activity_text_size_one" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:src="@drawable/setting_back_img" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/upgrade_setting"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/activity_height"
+                android:background="@drawable/check_bg_selector"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/setting_info"
+                    android:drawablePadding="14dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/upgrade_setting"
+                    android:textColor="@color/cms_center"
+                    android:textSize="@dimen/activity_text_size_one" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:src="@drawable/setting_back_img" />
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="@dimen/activity_bottom_two_margin"
+                android:background="@color/cms_stroke" />
+
+            <TextView
+                android:id="@+id/set_restart_camera"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/check_bg_selector"
+                android:gravity="center"
+                android:text="@string/iermu_restart_camera"
+                android:textColor="@color/cms_center"
+                android:textSize="@dimen/activity_text_size_one" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/cms_stroke" />
+
+            <TextView
+                android:id="@+id/set_cancel_camera"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/check_bg_selector"
+                android:gravity="center"
+                android:text="@string/iermu_cancel_camera"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="@dimen/activity_text_size_one" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="20dp"
+                android:background="@color/cms_stroke" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

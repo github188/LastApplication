@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="330dp"
+    android:layout_height="174dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/cloud_add_title_bg">
+
+        <TextView
+            android:id="@+id/textViewAddCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:text="@string/cancle_txt"
+            android:textColor="#ffffffff"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/save_direction"
+            android:textColor="#ffffffff"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/textViewAddSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="3dp"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:text="@string/save"
+            android:textColor="@color/cloud_add_view_submit_text_color"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="126dp"
+        android:paddingBottom="18dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="18dp">
+
+        <RelativeLayout
+            android:id="@+id/viewImageAdd"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:background="#ffdedede"
+            android:padding="2dp">
+
+            <ImageView
+                android:id="@+id/imageViewAdd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/alarm_grid_default" />
+        </RelativeLayout>
+
+
+        <EditText
+            android:id="@+id/editTextAdd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/viewAddRadioGroup"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/viewImageAdd"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="@string/location"
+            android:maxLength="10"
+            android:textColorHint="#ffb2b2b2"
+            android:textSize="15dp" />
+
+        <RadioGroup
+            android:id="@+id/viewAddRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/viewImageAdd"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/cloud_add_preposition_btn_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/door"
+                android:textColor="@color/cloud_add_radiobutton_text_color"
+                android:textSize="15dp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:background="@drawable/cloud_add_preposition_btn_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/window"
+                android:textColor="@color/cloud_add_radiobutton_text_color"
+                android:textSize="15dp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/cloud_add_preposition_btn_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/parlour"
+                android:textColor="@color/cloud_add_radiobutton_text_color"
+                android:textSize="15dp" />
+        </RadioGroup>
+    </RelativeLayout>
+</LinearLayout>

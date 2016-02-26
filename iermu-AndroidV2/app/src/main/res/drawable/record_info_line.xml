@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/record_info_line_1"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/record_info_line_2"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/record_info_line_3"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/record_info_line_4"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/record_info_line_5"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/record_info_line_6"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/record_info_line_7"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/record_info_line_8"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/record_info_line_9"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/record_info_line_10"
+        android:duration="200" />
+
+</animation-list>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/refresh_lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#70000000"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/cache_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:id="@+id/refresh_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="83dp"
+        android:background="@drawable/live_refresh" />
+
+    <TextView
+        android:id="@+id/player_state"
+        android:layout_below="@id/refresh_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/wait_load"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/set_setting"
+        android:layout_below="@id/player_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:layout_marginTop="10dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:gravity="center_horizontal"/>
+
+</RelativeLayout>
+
+
+

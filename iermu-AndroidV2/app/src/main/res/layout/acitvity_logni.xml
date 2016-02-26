@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cms_start_login"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/cms_start_login"
+        android:visibility="gone"
+        android:scaleType="center" />
+
+    <RelativeLayout
+        android:id="@+id/login_first"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iermu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="75dp"
+            android:src="@drawable/iermu_login_bg" />
+
+        <RelativeLayout
+            android:id="@+id/login_baidu"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_above="@+id/mail_login"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="33dp"
+            android:background="@drawable/baidu_login_bg_selector"
+            android:visibility="gone"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/budi_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="13dp"
+                android:layout_toLeftOf="@+id/use_baidu"
+                android:src="@drawable/baidu_logo_img"/>
+            <TextView
+                android:id="@+id/use_baidu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/login_baidu"
+                android:textColor="@drawable/baidu_login_text"
+                android:textSize="16dp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/mail_login"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_above="@+id/fast_register"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/iermu_click_selector"
+            android:gravity="center"
+            android:maxLines="4"
+            android:text="@string/login_mail"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/fast_register"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_above="@+id/have_look"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/login_check_bg_selector"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/fast_registration"
+            android:textColor="#00acef"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/have_look"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="43dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@+id/have_look_img"
+                android:background="@null"
+                android:text="@string/have_look"
+                android:textColor="@drawable/text_selector"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/have_look_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/have_look_img"
+                 />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/activity_login_mail" />
+
+    <include layout="@layout/activity_register_login" />
+</RelativeLayout>

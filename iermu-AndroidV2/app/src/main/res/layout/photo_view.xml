@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:layout_alignParentBottom="true"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/photo_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/iermu_share_bg_selector"
+        android:layout_weight="1"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/all_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginBottom="2dp"
+            android:textColor="@color/conn_txt"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/num_photo"
+            android:textColor="@color/software_textColor_unselected"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/film_edit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/iermu_share_bg_selector"
+        android:layout_weight="1"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/film_edit_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginBottom="2dp"
+            android:textColor="@color/conn_txt"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/num_film"
+            android:textColor="@color/software_textColor_unselected"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cam_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/iermu_share_bg_selector"
+        android:layout_weight="1"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/cam_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginBottom="2dp"
+            android:text="0"
+            android:textColor="@color/conn_txt"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/software_textColor_unselected"
+            android:text="@string/cam_dev"/>
+    </LinearLayout>
+
+</LinearLayout>

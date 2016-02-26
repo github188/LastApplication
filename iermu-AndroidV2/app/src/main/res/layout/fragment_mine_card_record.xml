@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/viewTop"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:clickable="true"
+        android:descendantFocusability="blocksDescendants">
+
+        <com.cms.media.widget.VideoView
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" />
+
+        <!-- 控制器 -->
+        <com.iermu.ui.view.CardRecordLiveControllerView
+            android:id="@+id/viewController"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <!--横向按钮列表-->
+    <LinearLayout
+        android:id="@+id/linearLayoutButtons"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/viewTop"
+        android:background="#ffffffff"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/buttonPlay"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/public_live_btn_bg"
+            android:src="@drawable/record_live_btn_play" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="28dp"
+            android:background="#ffdddddd" />
+
+        <ImageButton
+            android:id="@+id/buttonCamera"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/public_live_btn_bg"
+            android:src="@drawable/record_live_btn_camera" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="28dp"
+            android:background="#ffdddddd" />
+
+        <ImageButton
+            android:id="@+id/buttonSound"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/public_live_btn_bg"
+            android:src="@drawable/public_live_btn_sound" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="28dp"
+            android:background="#ffdddddd" />
+
+        <ImageButton
+            android:id="@+id/buttonFullScreen"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/public_live_btn_bg"
+            android:src="@drawable/main_live_fullscreen_normal" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/linearLayoutButtons"
+        android:background="#ffdcdcdc" />
+
+    <!--黑色区域-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/linearLayoutButtons"
+        android:background="#ff000000">
+
+        <!--黑色控件-->
+        <LinearLayout
+            android:id="@+id/viewBottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="#ff222222"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/textViewSelectDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="12dp"
+                    android:drawableLeft="@drawable/record_select_date"
+                    android:drawablePadding="3dp"
+                    android:gravity="center"
+                    android:text="@string/choice_data"
+                    android:textColor="#ffcccccc"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/textViewTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/today"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/textViewCardMsg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="12dp"
+                    android:drawableLeft="@drawable/record_info"
+                    android:drawablePadding="3dp"
+                    android:gravity="center"
+                    android:text="@string/card_record_info"
+                    android:textColor="#ffcccccc"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ff222222"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/viewHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="123dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/viewTimeLineParent"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.iermu.ui.view.timeline.HorizontalListView
+                            android:id="@+id/listViewTime"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:visibility="invisible" />
+
+                        <com.iermu.ui.view.ExpandTimeLineView
+                            android:id="@+id/timeLineView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:background="#ff222222">
+
+                <TextView
+                    android:id="@+id/textViewBroken"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="12dp"
+                    android:drawablePadding="3dp"
+                    android:gravity="center"
+                    android:text="@string/card_record_bad_info"
+                    android:textColor="#ffcccccc"
+                    android:textSize="14dp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/viewDateSelectBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#88000000"
+        android:visibility="gone" />
+
+    <!--白色日期选择-->
+    <LinearLayout
+        android:id="@+id/viewTimelist"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffffff"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="12dp"
+                android:text="@string/choice_data"
+                android:textColor="#ff333333"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/textViewCloseTimeList"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:gravity="right|center_vertical"
+                android:paddingRight="12dp"
+                android:text="@string/app_set_off"
+                android:textColor="#ff333333"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/gridViewDates"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="-1dp"
+            android:layout_marginRight="-1dp"
+            android:layout_weight="1"
+            android:fadeScrollbars="true"
+            android:horizontalSpacing="-1px"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:verticalSpacing="-1px" />
+    </LinearLayout>
+
+    <!--没有存储卡提示-->
+    <RelativeLayout
+        android:id="@+id/viewNoCard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff2f2f2"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/record_image_no_card" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/card_no_memory_card"
+                android:textColor="#ff333333"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/mine_card_rec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:drawablePadding="5dp"
+                android:text="@string/card_have_frame"
+                android:textColor="#ff888888"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/mine_card_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:drawablePadding="5dp"
+                android:text="@string/card_support"
+                android:textColor="#ff888888"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/mine_card_format"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:drawablePadding="5dp"
+                android:text="@string/card_support_format"
+                android:textColor="#ff888888"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonIKnow"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/check_light_bg_selector"
+            android:text="@string/i_know"
+            android:textColor="#ffffff"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textViewBrokenContent"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="100dp"
+        android:background="#ffffffff"
+        android:text="@string/card_record_bad_info"
+        android:visibility="gone" />
+</RelativeLayout>

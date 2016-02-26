@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cloud_add_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/cloud_add_title_bg">
+
+            <TextView
+                android:id="@+id/textViewDateCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dp"
+                android:gravity="center"
+                android:paddingLeft="16dp"
+                android:paddingRight="20dp"
+                android:text="@string/cancle_txt"
+                android:textColor="#ffffffff"
+                android:textSize="16dp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/textViewDateCut"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="3dp"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingRight="16dp"
+                android:text="@string/record_cut"
+                android:textColor="@color/cloud_add_view_submit_text_color"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="18dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="@string/record_cut_starttime"
+            android:textColor="#ff333333"
+            android:textSize="15dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginBottom="18dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.iermu.ui.view.kankan.wheel.widget.WheelView
+                    android:id="@+id/datePicker"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="3" />
+
+                <com.iermu.ui.view.kankan.wheel.widget.WheelView
+                    android:id="@+id/hourPicker"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textColor="#ff666666"
+                    android:textSize="14dp" />
+
+                <com.iermu.ui.view.kankan.wheel.widget.WheelView
+                    android:id="@+id/minutePicker"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:src="@drawable/film_edit_date_mask" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#ffdcdcdc" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="#fff2f2f2" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#ffdcdcdc" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:layout_marginTop="18dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="@string/record_cut_time_long"
+            android:textColor="#ff333333"
+            android:textSize="15dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupRecordCut"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/cloud_add_preposition_btn_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/one_minute"
+                android:textColor="@color/cloud_add_radiobutton_text_color"
+                android:textSize="15dp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:background="@drawable/cloud_add_preposition_btn_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/ten_minute"
+                android:textColor="@color/cloud_add_radiobutton_text_color"
+                android:textSize="15dp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/cloud_add_preposition_btn_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/thirty_minute"
+                android:textColor="@color/cloud_add_radiobutton_text_color"
+                android:textSize="15dp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <!--自定义toast-->
+    <TextView
+        android:id="@+id/textViewToast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/live_bg_toast"
+        android:paddingBottom="7dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="7dp"
+        android:text="@string/the_time_no_cvr"
+        android:textColor="#ffffffff"
+        android:textSize="14dp"
+        android:visibility="gone" />
+</RelativeLayout>

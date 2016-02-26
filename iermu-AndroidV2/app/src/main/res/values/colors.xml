@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue_title">#00acef</color>
+    <color name="white">#ffffff</color>
+
+    <color name="black">#FF000000</color>
+    <color name="black_trans">#80000000</color>
+    <color name="layout_bg">#dcdcdc</color>
+    <color name="conn_txt">#333333</color>
+    <color name="wifi_bg">#b2b2b2</color>
+    <color name="line_bg">#1362b3</color>
+    <color name="auth_color">#e7e7e7</color>
+    <color name="devices_help_btn_bg">#00acef</color>
+    <color name="devices_help_btn">#333333</color>
+    <color name="main_bg">#f2f2f2</color>
+    <color name="share_color">#177be1</color>
+    <color name="auth_title_bg">#00a2ff</color>
+    <color name="mycam_talk">#00acef</color>
+    <color name="cms_stroke">#dcdcdc</color>
+    <color name="cms_center">#333333</color>
+    <color name="public_title_color">#0f3055</color>
+    <color name="empower_home">#313B4B</color>
+    <color name="cancle_empower_home">#EE654E</color>
+    <color name="text_disabled">#ff949494</color>
+    <color name="text_pressed">#99ffffff</color>
+    <color name="common_white">#ffffff</color>
+    <color name="text_enable">#4cffffff</color>
+    <color name="title_person">#28C8FD</color>
+    <color name="login_bg">#ae000000</color>
+    <color name="text_button">#74c1ff</color>
+    <color name="baidu_login_text">#7fffffff</color>
+
+    <color name="back_progess">#187be1</color>
+    <color name="schdel_progess">#00acef</color>
+    <color name="second_progess">#00000000</color>
+    <color name="custom_action">#00a2ff</color>
+    <color name="software_textColor_selected">#00acef</color>
+    <color name="software_textColor_unselected">#888888</color>
+    <drawable name="selected_color">#e4e4e4</drawable>
+    <drawable name="pressed_color">#e4e4e4</drawable>
+    <drawable name="normal_color">#ffffff</drawable>
+    <color name="setupdev_actionbar_bg">#177be1</color>
+
+    <color name="cam_upgrade_new">#888888</color>
+    <color name="cam_upgrade_sure">#00acef</color>
+
+    <drawable name="transparent">#00000000</drawable>
+
+    <color name="dev_reset_tip">#ffffa032</color>
+</resources>

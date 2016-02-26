@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@color/white">
+
+    <Button
+        android:id="@+id/move"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="转动"/>
+    <Button
+        android:id="@+id/start_rotate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开启平扫"/>
+    <Button
+        android:id="@+id/close_rotate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="关闭平扫"/>
+    <Button
+        android:id="@+id/add_preset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="添加预置点"/>
+    <Button
+        android:id="@+id/drop_preset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="删除预置点"/>
+    <Button
+        android:id="@+id/move_preset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="根据预置点转动"/>
+    <Button
+        android:id="@+id/list_preset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取预置点列表"/>
+    <Button
+        android:id="@+id/check_cloud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="是否有云台"/>
+    <Button
+        android:id="@+id/check_rotate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="是否旋转"/>
+</LinearLayout>

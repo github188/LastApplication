@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#177be1"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#1362b3"/>
+
+    <LinearLayout
+        android:id="@+id/devices_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:baselineAligned="true"
+        android:gravity="bottom|center_horizontal"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:id="@+id/dm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/find_dev"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+        <TextSwitcher
+            android:id="@+id/num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inAnimation="@anim/slide_in_devcount"
+            android:outAnimation="@anim/slide_out_devcount">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+        </TextSwitcher>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/cam_dev"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/viewpager_lay"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_marginTop="10dp"
+        android:clipChildren="false">
+        <RelativeLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <LinearLayout
+                android:id="@+id/view_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </RelativeLayout>
+        <com.viewpagerindicator.CirclePageIndicator
+            android:id="@+id/indicator"
+            app:strokeColor="#c8c8c8"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent" />
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_below="@+id/indicator"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:clipChildren="false"
+            android:layout_marginLeft="73dp"
+            android:layout_marginRight="73dp"
+            android:layout_marginTop="20dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/conn_dev"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textColor="@drawable/add_dev_buuton_text_selector"
+            android:textSize="16dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/iermu_click_selector"
+            android:text="@string/at_once_connect"/>
+        <ImageView
+            android:id="@+id/start_register"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="25dp"
+            android:visibility="invisible"
+            android:background="@drawable/add_icon_loading"
+           android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/conn_dev"
+          />
+
+        <Button
+            android:id="@+id/find_help"
+            android:layout_below="@+id/conn_dev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:background="@null"
+            android:textSize="14sp"
+            android:text="@string/find_cam" />
+        <!--<View-->
+            <!--android:layout_width="133dp"-->
+            <!--android:background="#ffffff"-->
+            <!--android:layout_below="@+id/find_help"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:id="@+id/view" />-->
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/personal_zoombg"
+    android:scaleType="centerCrop">
+    <ImageView
+        android:id="@+id/close_perfect_person"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/complete_close"/>
+    <Button
+        android:id="@+id/save_perfect_person"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_button"
+        android:background="@null"
+        android:textColor="#ffffff"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>

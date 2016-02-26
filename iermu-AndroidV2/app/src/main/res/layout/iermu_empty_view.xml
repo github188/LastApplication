@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/empty_view_"
+    android:layout_centerInParent="true"
+    android:background="@drawable/mine_bg"
+    android:gravity="center_vertical"
+    android:visibility="invisible"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/day_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="22dp"
+        android:textColor="#00acef"
+        android:text="@string/morning"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:textColor="#666673"
+        android:text="@string/have_and_add_cam"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/bg_img"
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/empty_view"/>
+        <ImageView
+            android:layout_marginTop="40dp"
+            android:id="@+id/img_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/main_iermu"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/add_cam"
+        android:background="@drawable/iermu_click_selector"
+        android:layout_width="280dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/start_add"
+        android:layout_marginTop="19dp"
+        android:textColor="@color/white"
+        android:textSize="19sp" />
+    <TextView
+        android:id="@+id/public_channel"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:textSize="17sp"
+        android:textColor="#00acef"
+        android:gravity="center"
+        android:text="@string/into_public_channel"/>
+
+
+</LinearLayout>

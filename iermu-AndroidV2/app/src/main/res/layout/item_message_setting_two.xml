@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="14dp">
+
+    <RelativeLayout
+        android:id="@+id/alarm_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/alarm_setting_bg">
+
+        <ImageView
+            android:id="@+id/imageViewCam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:src="@drawable/alarm_setting_image_cam" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@+id/imageViewCam"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/textViewName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的儿童房间"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+            <!--android:background="@drawable/my_ermu_bg"-->
+            <TextView
+                android:id="@+id/textViewTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imageViewCam"
+                android:layout_marginRight="5dp"
+                android:text="每天8:00-22:00帮我看家"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/viewClose"
+        android:layout_below="@+id/alarm_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/alarm_setting_btn_bg_left"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/alarm_close_normal"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="关闭报警"
+            android:layout_weight="1"
+            android:textColor="#888888"
+            android:textSize="13dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/alarm_setting_normal"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="重新设置报警"
+            android:layout_weight="1"
+            android:textColor="#888888"
+            android:textSize="13dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/viewGotoOpen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/alarm_setting_btn_bg_bottom">
+
+        <TextView
+            android:id="@+id/textViewGotoOpen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="8dp"
+            android:drawableRight="@drawable/alarm_goto_open_normal"
+            android:singleLine="true"
+            android:text="立即开启报警通知"
+            android:textColor="#888888"
+            android:textSize="13dp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

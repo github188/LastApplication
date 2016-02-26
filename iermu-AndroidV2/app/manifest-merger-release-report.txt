@@ -1,0 +1,241 @@
+-- Merging decision tree log ---
+manifest
+ADDED from AndroidManifest.xml:2:1
+	xmlns:android
+		ADDED from AndroidManifest.xml:2:11
+	package
+		ADDED from AndroidManifest.xml:3:5
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+	android:versionName
+		ADDED from AndroidManifest.xml:5:5
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+	android:versionCode
+		ADDED from AndroidManifest.xml:4:5
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+uses-sdk
+ADDED from AndroidManifest.xml:7:5
+MERGED from com.github.pedrovgs:draggablepanel:1.8:7:5
+MERGED from com.android.support:support-v4:21.0.3:15:5
+MERGED from com.android.support:appcompat-v7:21.0.3:15:5
+MERGED from com.android.support:support-v4:21.0.3:15:5
+MERGED from com.android.support:support-v4:21.0.3:15:5
+MERGED from cn.pedant.sweetalert:library:1.3:7:5
+MERGED from com.pnikosis:materialish-progress:1.0:7:5
+MERGED from com.android.support:appcompat-v7:21.0.3:15:5
+MERGED from com.android.support:support-v4:21.0.3:15:5
+MERGED from iermu-AndroidV2:lib_CoreBusiness:unspecified:20:5
+MERGED from com.android.support:appcompat-v7:21.0.3:15:5
+MERGED from com.android.support:support-v4:21.0.3:15:5
+MERGED from iermu-AndroidV2:http:unspecified:7:5
+MERGED from com.android.support:appcompat-v7:21.0.3:15:5
+MERGED from com.android.support:support-v4:21.0.3:15:5
+MERGED from iermu-AndroidV2:EventObject:unspecified:7:5
+MERGED from com.android.support:appcompat-v7:21.0.3:15:5
+MERGED from com.android.support:support-v4:21.0.3:15:5
+MERGED from iermu-AndroidV2:lib_ApiService:unspecified:8:5
+MERGED from com.android.support:appcompat-v7:21.0.3:15:5
+MERGED from com.android.support:support-v4:21.0.3:15:5
+MERGED from iermu-AndroidV2:lib_PullToRefreshView:unspecified:7:5
+MERGED from com.android.support:appcompat-v7:21.0.3:15:5
+MERGED from com.android.support:support-v4:21.0.3:15:5
+MERGED from iermu-AndroidV2:lib_Emptylayout:unspecified:7:5
+MERGED from com.android.support:appcompat-v7:21.0.3:15:5
+MERGED from com.android.support:support-v4:21.0.3:15:5
+MERGED from iermu-AndroidV2:lib_PullToZoomView:unspecified:7:5
+MERGED from com.android.support:appcompat-v7:21.0.3:15:5
+MERGED from com.android.support:support-v4:21.0.3:15:5
+	android:targetSdkVersion
+		ADDED from AndroidManifest.xml:9:9
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+	android:minSdkVersion
+		ADDED from AndroidManifest.xml:8:9
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+uses-permission#android.permission.INTERNET
+ADDED from AndroidManifest.xml:11:5
+MERGED from iermu-AndroidV2:lib_CoreBusiness:unspecified:24:5
+	android:name
+		ADDED from AndroidManifest.xml:11:22
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from AndroidManifest.xml:12:5
+MERGED from iermu-AndroidV2:lib_CoreBusiness:unspecified:25:5
+	android:name
+		ADDED from AndroidManifest.xml:12:22
+uses-permission#android.permission.WRITE_SETTINGS
+ADDED from AndroidManifest.xml:13:5
+MERGED from iermu-AndroidV2:lib_CoreBusiness:unspecified:26:5
+	android:name
+		ADDED from AndroidManifest.xml:13:22
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from AndroidManifest.xml:14:5
+MERGED from iermu-AndroidV2:lib_CoreBusiness:unspecified:27:5
+	android:name
+		ADDED from AndroidManifest.xml:14:22
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from AndroidManifest.xml:15:5
+MERGED from iermu-AndroidV2:lib_CoreBusiness:unspecified:28:5
+	android:name
+		ADDED from AndroidManifest.xml:15:22
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from AndroidManifest.xml:16:5
+MERGED from iermu-AndroidV2:lib_CoreBusiness:unspecified:29:5
+	android:name
+		ADDED from AndroidManifest.xml:16:22
+uses-permission#android.permission.GET_TASKS
+ADDED from AndroidManifest.xml:17:5
+	android:name
+		ADDED from AndroidManifest.xml:17:22
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from AndroidManifest.xml:20:5
+	android:name
+		ADDED from AndroidManifest.xml:20:22
+uses-permission#android.permission.MANAGE_ACCOUNTS
+ADDED from AndroidManifest.xml:21:5
+	android:name
+		ADDED from AndroidManifest.xml:21:22
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from AndroidManifest.xml:22:5
+	android:name
+		ADDED from AndroidManifest.xml:22:22
+uses-permission#android.permission.BLUETOOTH
+ADDED from AndroidManifest.xml:24:5
+	android:name
+		ADDED from AndroidManifest.xml:24:22
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from AndroidManifest.xml:25:5
+	android:name
+		ADDED from AndroidManifest.xml:25:22
+application
+ADDED from AndroidManifest.xml:27:5
+MERGED from com.android.support:support-v4:21.0.3:16:5
+MERGED from com.android.support:appcompat-v7:21.0.3:16:5
+MERGED from com.android.support:support-v4:21.0.3:16:5
+MERGED from com.android.support:support-v4:21.0.3:16:5
+MERGED from cn.pedant.sweetalert:library:1.3:11:5
+MERGED from com.pnikosis:materialish-progress:1.0:11:5
+MERGED from com.android.support:appcompat-v7:21.0.3:16:5
+MERGED from com.android.support:support-v4:21.0.3:16:5
+MERGED from com.android.support:appcompat-v7:21.0.3:16:5
+MERGED from com.android.support:support-v4:21.0.3:16:5
+MERGED from iermu-AndroidV2:http:unspecified:11:5
+MERGED from com.android.support:appcompat-v7:21.0.3:16:5
+MERGED from com.android.support:support-v4:21.0.3:16:5
+MERGED from iermu-AndroidV2:EventObject:unspecified:11:5
+MERGED from com.android.support:appcompat-v7:21.0.3:16:5
+MERGED from com.android.support:support-v4:21.0.3:16:5
+MERGED from com.android.support:appcompat-v7:21.0.3:16:5
+MERGED from com.android.support:support-v4:21.0.3:16:5
+MERGED from com.android.support:appcompat-v7:21.0.3:16:5
+MERGED from com.android.support:support-v4:21.0.3:16:5
+MERGED from iermu-AndroidV2:lib_Emptylayout:unspecified:11:5
+MERGED from com.android.support:appcompat-v7:21.0.3:16:5
+MERGED from com.android.support:support-v4:21.0.3:16:5
+MERGED from iermu-AndroidV2:lib_PullToZoomView:unspecified:11:5
+MERGED from com.android.support:appcompat-v7:21.0.3:16:5
+MERGED from com.android.support:support-v4:21.0.3:16:5
+	android:label
+		ADDED from AndroidManifest.xml:31:9
+	android:allowBackup
+		ADDED from AndroidManifest.xml:29:9
+	android:icon
+		ADDED from AndroidManifest.xml:30:9
+	android:theme
+		ADDED from AndroidManifest.xml:32:9
+	android:name
+		ADDED from AndroidManifest.xml:28:9
+activity#com.iermu.ui.activity.SplashActivity
+ADDED from AndroidManifest.xml:33:9
+	android:label
+		ADDED from AndroidManifest.xml:36:13
+	android:theme
+		ADDED from AndroidManifest.xml:35:13
+	android:name
+		ADDED from AndroidManifest.xml:34:13
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from AndroidManifest.xml:37:13
+action#android.intent.action.MAIN
+ADDED from AndroidManifest.xml:38:17
+	android:name
+		ADDED from AndroidManifest.xml:38:25
+category#android.intent.category.LAUNCHER
+ADDED from AndroidManifest.xml:39:17
+	android:name
+		ADDED from AndroidManifest.xml:39:27
+activity#com.cms.iermu.wxapi.WXEntryActivity
+ADDED from AndroidManifest.xml:45:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:50:13
+	android:configChanges
+		ADDED from AndroidManifest.xml:48:13
+	android:theme
+		ADDED from AndroidManifest.xml:47:13
+	android:exported
+		ADDED from AndroidManifest.xml:49:13
+	android:name
+		ADDED from AndroidManifest.xml:46:13
+activity#com.mob.tools.MobUIShell
+ADDED from AndroidManifest.xml:51:9
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:56:13
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:55:13
+	android:configChanges
+		ADDED from AndroidManifest.xml:54:13
+	android:theme
+		ADDED from AndroidManifest.xml:53:13
+	android:name
+		ADDED from AndroidManifest.xml:52:13
+intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
+ADDED from AndroidManifest.xml:57:13
+data
+ADDED from AndroidManifest.xml:58:17
+	android:scheme
+		ADDED from AndroidManifest.xml:58:23
+action#android.intent.action.VIEW
+ADDED from AndroidManifest.xml:59:17
+	android:name
+		ADDED from AndroidManifest.xml:59:25
+category#android.intent.category.BROWSABLE
+ADDED from AndroidManifest.xml:60:17
+	android:name
+		ADDED from AndroidManifest.xml:60:27
+category#android.intent.category.DEFAULT
+ADDED from AndroidManifest.xml:61:17
+	android:name
+		ADDED from AndroidManifest.xml:61:27
+activity#com.iermu.ui.activity.LoginActivity
+ADDED from AndroidManifest.xml:69:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:69:61
+	android:name
+		ADDED from AndroidManifest.xml:69:19
+activity#com.iermu.ui.activity.BaiDuLoginActivity
+ADDED from AndroidManifest.xml:70:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:70:66
+	android:name
+		ADDED from AndroidManifest.xml:70:19
+activity#com.iermu.ui.activity.MainActivity
+ADDED from AndroidManifest.xml:71:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:73:13
+	android:configChanges
+		ADDED from AndroidManifest.xml:72:13
+	android:name
+		ADDED from AndroidManifest.xml:71:19
+activity#com.iermu.ui.activity.AddDevicesActivity
+ADDED from AndroidManifest.xml:74:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:74:66
+	android:name
+		ADDED from AndroidManifest.xml:74:19
+activity#com.iermu.ui.activity.WebActivity
+ADDED from AndroidManifest.xml:75:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:75:65
+	android:name
+		ADDED from AndroidManifest.xml:75:19

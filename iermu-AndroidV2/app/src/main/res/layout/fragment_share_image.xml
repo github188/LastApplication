@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/share_img"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff000000">
+
+    <ImageView
+        android:id="@+id/imageViewCut"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/buttonShare"
+        android:src="@drawable/alarm_big_image_default" />
+
+    <Button
+        android:id="@+id/buttonShare"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_share_cut_image"
+        android:text="@string/share_my_friend"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+    <View
+        android:id="@+id/share_trans"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_trans"
+        android:visibility="gone"/>
+
+    <include layout="@layout/share_fragment"/>
+
+</RelativeLayout>

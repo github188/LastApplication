@@ -1,0 +1,988 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">iErmuCam</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="tip_conning_baidu">Fetching data, please wait</string>
+
+    <!--登录-->
+    <string name="login_baidu">Use Baidu to login</string>
+    <string name="login_mail">Log in</string>
+    <string name="have_look">Let\'s try</string>
+    <string name="login">Log in</string>
+
+    <!--注册-->
+    <string name="fast_registration">Sign up</string>
+    <string name="input_password">Please enter the password</string>
+    <string name="register">Sign up</string>
+    <string name="input_mail">Email cannot be empty</string>
+    <string name="mail_error">Email format is irrcorrect</string>
+    <string name="input_nick">User name cannot be empty</string>
+    <string name="mail_password">Password cannot be empty</string>
+    <string name="register_input_nickname">Please enter a nickname</string>
+    <string name="user_agreement">Continuing means you\'ve read agreed to our \n User agreement</string>
+    <string name="nickname_failed"> Invalid user name</string>
+    <string name="nickname_disable">User names are disabled</string>
+    <string name="nickname_badword">This nickname is not valid, please rewrite</string>
+    <string name="nickname_exits">This nickname is already in use, please rewrite</string>
+    <string name="mail_access_illegal">This mailbox has been disabled, please contact customer service(support@iermu.com)</string>
+    <string name="mail_exits">This email is already registered, please login</string>
+    <string name="register_faild">Registration failed, please try again later</string>
+    <string name="account_password_error">Account or password is incorrect</string>
+    <string name="login_fail_try_again">Login failed, please try again later</string>
+    <string name="find_password">Retrieve password</string>
+    <string name="user_agree">User agreement</string>
+    <string name="no_binding">Unbound</string>
+    <string name="bind_baidu">Binds the Baidu account</string>
+    <string name="or">or</string>
+    <string name="user_agreement_txt">User agreement</string>
+    <string name="token_invalid">Authorization has expired, please login Baidu account and authorization...</string>
+    <string name="nick_name_length">Please input 4-20 character</string>
+    <string name="password_update">Your password revised, please relogin</string>
+    <string name="password_lass">Password length less than 6</string>
+    <string name="experience">Experience</string>
+
+    <!-- 首页底部Tab按钮 -->
+    <string name="maintab_iermu">My Camera</string>
+    <string name="maintab_message">Message</string>
+    <string name="maintab_public">Public</string>
+    <string name="maintab_personal">Account</string>
+
+    <!-- 添加摄像机 -->
+    <string name="add_devices_txt"> Add camera wizard</string>
+    <string name="conn_wifi_txt">Camera connection WiFi</string>
+    <string name="update_wifi_txt">Change</string>
+    <string name="conn_dev_txt">Connect the camera</string>
+    <string name="cancle_txt">Cancel</string>
+    <string name="high_grade">More</string>
+    <string name="select_devices_txt">Select the camera you want to add</string>
+    <string name="looking_for_devices">Trying to find a new camera</string>
+    <string name="connect_power_txt">Make sure the power turn on</string>
+    <string name="my_devices_txt">My Camera</string>
+    <string name="hold_time">The connection process will take 1 min, \n please wait</string>
+    <string name="conn_server_txt">Trying to connect to the router</string>
+    <string name="conn_cloud_server_txt">Trying to connect to the server</string>
+    <string name="conn_vedio_server_txt">Connecting to a video server</string>
+    <string name="account_txt">Please enter user name</string>
+    <string name="register_txt">Being tested, please wait a moment</string>
+    <string name="start_config_txt">Start the configuration</string>
+    <string name="account_or_pass_empty">Account or password cannot be empty</string>
+    <string name="account_empty">Accounts cannot be empty</string>
+    <string name="conn_devices_fail">Camera connection failed</string>
+    <string name="conn_dev_wifi_ok">I have connected to the Wi-Fi of the camera</string>
+    <string name="back_iermu">Return to Home</string>
+    <string name="other_regiter">By other registered users</string>
+    <string name="quit_add_dev">Exit the Add camera</string>
+    <string name="quit_add_content">Are you sure to stop adding the camera?</string>
+    <string name="quit_add_confrim">Keep waiting</string>
+    <string name="quit_cancle">Exit</string>
+    <string name="rescancam_txt">Reconfigure</string>
+    <string name="devices_name">My Camera</string>
+    <string name="how_find_dev">How to find camera ID？</string>
+    <string name="check_cam_environment">Configuration of the camera?</string>
+    <string name="smart_wifi_nomatch">Camera and mobile configuration are connect to the same Wifi，please reconfigure your camera Wifi</string>
+    <string name="smart_timeout">The camera mode configuration has timed out, please reset the camera, and checking the camera status light is flashing red and blue, to reconfigure camera</string>
+    <string name="change_wifi">How do I change the WiFi?</string>
+    <string name="help_to_wifi_one">1. Wireless LAN connection iErmu WiFi</string>
+    <string name="help_to_wifi_two">2. Paste the password (WiFi passwords have been copied) ,password:cmsiermu2013</string>
+    <string name="help_to_wifi_three">3. After a successful connect camera WiFi hotspot, cut back to iErmu camera App</string>
+    <string name="push">Submitting</string>
+    <string name="connect_dev">Connect the camera</string>
+    <string name="connect_dev_text_one">You can see your parents, baby and lovely pet when you switch on your cell phone.
+The warmth of the family becomes so clear and close from now on.</string>
+    <string name="connect_cam">Connect the camera</string>
+    <string name="buy_dev">Buy now</string>
+    <string name="connect_dev_err">Camera connection failed</string>
+    <string name="repeat_add">Try again</string>
+    <string name="return_first">Return to Home</string>
+    <string name="find_dev">Find</string>
+    <string name="at_once_connect">Connect Now"</string>
+    <string name="cam_dev">Camera(s)</string>
+    <string name="find_cam">How to find the series number？</string>
+    <string name="cam_already_register">This camera has already been added to others’ account</string>
+    <string name="register_cloud_server_error">Cloud server registration failed</string>
+    <string name="help_me_find_dev">How to find the code?</string>
+    <string name="cam_desvid_one">1. Camera support equipment</string>
+    <string name="cam_desvid_two">2.ID code at the bottom of the Camera</string>
+    <string name="know">OK</string>
+    <string name="goto_configre">To configure the</string>
+    <string name="check_cam">Wait 20s to check if</string>
+    <string name="red_blue">red and blue indicators are \n alternatively flashing</string>
+    <string name="have_red_blue">Red or blue flashing</string>
+    <string name="no_red_blue">Red or blue indicators are not flashing</string>
+    <string name="have_and_add_cam">Add camera by cellphone</string>
+    <string name="iermu_home_cam_txt">Welcome to the iErmu camera</string>
+    <string name="leave_home_far">No matter how far away you are from home, you can see your parents, baby and lovely pet when you switch on your cell phone</string>
+    <string name="add_success">Added successfully</string>
+    <string name="change_name">Give the camera a famous name</string>
+
+    <!--连接Wi-Fi-->
+    <string name="conn_wifi">Connect to Wi-Fi</string>
+    <string name="update_wifi">Change Wi-Fi</string>
+    <string name="select_wifi_txt">Select WiFi</string>
+    <string name="hide_pass_txt">Hide</string>
+    <string name="input_pass_txt">Please enter 8-31 password</string>
+    <string name="show_pass">Show</string>
+    <string name="hide_pass">Hide</string>
+    <string name="conn_dev_wifi">Please select name in the wireless \n local network \nFor iermu Wireless WiFi</string>
+    <string name="how_update_wifi">How do I change the WiFi?</string>
+    <string name="pass_lenth">Password is at least 8 bits up to 31</string>
+    <string name="manual_configuration">Manually configured</string>
+    <string name="manual_get_ip">Static IP</string>
+    <string name="ip_address">IP：</string>
+    <string name="subnet_mask">Mask：</string>
+    <string name="default_gateway">Default gateway：</string>
+    <string name="conn_select_wifi">Selected for the camera to connect WiFi</string>
+    <string name="goto_connect">To connect the</string>
+    <string name="wifi">WiFi</string>
+
+    <!--test-->
+    <string name="share_println">Capture success</string>
+    <string name="fluency">Low</string>
+    <string name="super_clear">HD</string>
+    <string name="bitmap_save">Screenshots have been saved sd/cache</string>
+    <string name="double_touch">Double tap to change the vision</string>
+    <string name="have_end">this is the end</string>
+    <string name="wait_connecting_cam">Connecting...</string>
+    <string name="repeat_connecting_cam">Reconnect the camera, please wait</string>
+    <string name="please_check_network">Network is unavailable,please try later</string>
+    <string name="cam_off_ine">Offline</string>
+    <string name="cam_turn_off">Camera shuts</string>
+    <string name="disconnect_cam">Disconnect the camera connection</string>
+    <string name="connect_out_time">Connection timeout, try again</string>
+    <string name="use_location">Positions</string>
+    <string name="automatic_switch">Auto</string>
+    <string name="wait_load">Loading...</string>
+    <string name="check_wifi">Make sure your camera is plugged in and is connected to Wi-Fi.</string>
+    <string name="use_3G_4G">3G/4G network is being used, may generate traffic costs</string>
+    <string name="time_axis">Time</string>
+    <string name="need_switch">Picture card, switch to a smooth pattern</string>
+    <string name="switch_now">Switch now </string>
+
+    <!--我的摄像机-->
+    <string name="morning">Good morning</string>
+    <string name="noon">Good afternoon</string>
+    <string name="evening">Good evening</string>
+    <string name="delete_succeed">Deleted successfully</string>
+    <string name="dev_is_not">The device does not exist</string>
+    <string name="auth_err">Failed to delete authorized</string>
+    <string name="network_error">Network exception</string>
+    <string name="delete_error">Failed</string>
+    <string name="delete_cam">Remove the camera</string>
+    <string name="delete_sure">Are you sure to removing the camera</string>
+    <string name="sure">Sure</string>
+    <string name="deleteing_dev">Removing devices</string>
+    <string name="auth_family_use">Share with family</string>
+
+
+    <!--view-->
+    <string name="gain">Access</string>
+    <string name="shared">Share</string>
+    <string name="dev_name">Camera description</string>
+    <string name="accept_invite">Accept</string>
+    <string name="cancle">Cancel</string>
+    <string name="save_direction">Favorite directions</string>
+    <string name="location">Enter the name, for example: door, living room</string>
+    <string name="door">Door</string>
+    <string name="window">Window</string>
+    <string name="parlour">Room</string>
+    <string name="check_use_location">Check common position</string>
+    <string name="start_switch">Start rotation</string>
+    <string name="stop_switch">Stop rotation</string>
+    <string name="long_touch">Long press on “Screen” to save favorite positions</string>
+    <string name="cloud_overdue">Cloud recording expired</string>
+    <string name="cloud_one">Up to 30-day recording, save dynamic videos</string>
+    <string name="cloud_two">One-key clipping, allow sharing wonderful moment</string>
+    <string name="cloud_three">Phone, tablet PC and computer replay are supported</string>
+    <string name="at_once_buy">Add Video History</string>
+    <string name="work_time">iErmu Support team:7days a week from 9:00-12:00,13:00-21:00</string>
+    <string name="cell_number">Call 400-8988-800</string>
+    <string name="cloud_have_start">Cloud recordings has opened</string>
+    <string name="record_one">Camera picture video upload Baidu is clouds</string>
+    <string name="record_two">7-day video history</string>
+    <string name="record_three">Recent 7 days’ Video History that will be stored your video in the cloud</string>
+    <string name="surplus">The remaining</string>
+    <string name="day">Day</string>
+    <string name="validity_period">Expiration date:</string>
+    <string name="cloud_inform">Cloud recording expiration alert</string>
+    <string name="submit">Submitting</string>
+    <string name="how_to_solve">Finding  Solution</string>
+    <string name="start">Power on</string>
+    <string name="close">OFF</string>
+    <string name="last_version">Check for updates</string>
+    <string name="iermu_cam">iErmu Cam</string>
+
+    <!--我的摄像机-->
+    <string name="my_live">My Camera</string>
+    <string name="local_record">Local video</string>
+    <string name="cloud_record">Cloud video</string>
+    <string name="now_play">Open live</string>
+    <string name="secret_share">Private</string>
+    <string name="play_no_network">Network is unavailable,please try later</string>
+    <string name="no_net">Network is unavailable,please try later</string>
+
+    <!--消息-->
+    <string name="message_title">Message</string>
+    <string name="alarm_tile">Alarm setting</string>
+    <string name="start_alarm">Turn on alarm notification</string>
+    <string name="reset_alarm">Notification setting</string>
+    <string name="close_alarm">OK to close alert settings</string>
+    <string name="police_start_time">Setting boot time</string>
+    <string name="police_set_time">Setting the alarm time</string>
+    <string name="inform_police_time">Setting boot time</string>
+    <string name="set_police_time">Setting the alarm time</string>
+    <string name="open_push_fail">Failed to open the push channel</string>
+    <string name="open_push_channel_fail">Failed to open the push channel</string>
+    <string name="form_time">From </string>
+    <string name="to_time"> To </string>
+    <string name="every_day_home">Home guard everyday</string>
+    <string name="every_day">Everyday</string>
+    <string name="look_home">Home guard</string>
+    <string name="week">Weekly</string>
+    <string name="alarm_no_open">Alarm Notification off</string>
+    <string name="work_day">Weekdays</string>
+    <string name="week_end">Weekend</string>
+    <string name="set_alarm_time_txt">Set alarm period and their own camera work cycle</string>
+    <string name="set_cam_online_time_txt">Set the camera power on time and duty cycle</string>
+    <!--不用-->
+    <string name="email_open_notice">Email notification</string>
+    <string name="receive_alarm_on_time">After you turn on e-mail notification, you will be more timely, accurate received alarm pictures</string>
+    <string name="email_setting">Email setting</string>
+
+    <!--个人中心-->
+    <string name="person_login_email">Login Email</string>
+    <string name="person_baidu_account">Baidu account</string>
+    <string name="person_login_password">Login password</string>
+    <string name="person_nickname">Nickname</string>
+    <string name="person_head">Avatar</string>
+    <string name="iermu_dev_buy">Quick Buy</string>
+    <string name="iermu_cvr_buy">Buy cloud recording</string>
+    <string name="setting">Settings</string>
+    <string name="app_send_msg">FAQ</string>
+    <string name="logout_account">Log Out</string>
+    <string name="tip_iermu_logout">Cameras will unable to be watched after log off</string>
+    <string name="app_set_problem">About</string>
+    <string name="person_feedback">Feedback</string>
+    <string name="person_custom_phone">Customer service</string>
+    <string name="person_offical">iErmu Website</string>
+    <string name="dev_update">Test version upgrade</string>
+    <string name="have_num_cam">You have %1$d camera</string>
+
+    <string name="have_cam_number">You have %1$d camera</string>
+    <string name="perfect_person">Perfect profile</string>
+    <string name="person_edit_data">Edit Profile</string>
+    <string name="change_password">Modify password</string>
+    <string name="upload_avatar_loading">Upload avatar</string>
+    <string name="upload_avatar_failed">Failed to upload avatar</string>
+    <string name="upload_avatar_success">Upload avatar success</string>
+    <string name="person_please_repeat_password">Repeat new password</string>
+    <string name="person_please_current_password">Please enter your current password</string>
+    <string name="person_password_num">6-20-bit numbers or letters</string>
+    <string name="person_current_password">Current password</string>
+    <string name="person_new_password">The new password</string>
+    <string name="person_confirm_password">Confirm password</string>
+    <string name="change_user_name">Modify a user\'s name</string>
+    <string name="person_connect_visable">Your contact information visible only staff</string>
+    <string name="connect_way">Please leave QQ, phone or email etc</string>
+    <string name="edit_mail">Please enter the email</string>
+    <string name="input_verification_code">Please enter the verification code</string>
+    <string name="person_password">6-20 characters password</string>
+    <string name="person_nick_name">Please enter your 2-10 nickname</string>
+    <string name="perfect_and_login">Perfect information, then email login</string>
+    <string name="perfect_info">Perfect profile</string>
+    <string name="newpass_set_succeed">The new password set successfully</string>
+    <string name="currentpass_error">The current password is incorrect</string>
+    <string name="password_not_equal">Password does not detect</string>
+    <string name="introduce_feedback">Please describe in detail recommendations will help us solve the problem, such as: \n 1.Is camera unconnect or slow? \n 2.What feature is not available? \n 3.Where do bad?</string>
+    <string name="mail_auth">Confirm Email</string>
+    <string name="baidu_auth">Not verified</string>
+    <string name="choice_pic">Select a photo</string>
+    <string name="have_zero_device">You have 0 camera</string>
+    <string name="commit">Submit</string>
+
+    <!--设置-->
+    <string name="dev_num">Device ID:</string>
+    <string name="iermu_setting">Settings</string>
+    <string name="iermu_home">我五道口家中</string>
+    <string name="iermu_camera_control">Camera Switches</string>
+    <string name="iermu_time_control">Schedule Time</string>
+    <string name="iermu_more_setting">Camera Setting</string>
+    <string name="iermu_cloud_camera">Cloud Recording</string>
+    <string name="iermu_camera_message">Camera Info</string>
+    <string name="iermu_restart_camera">Restart Camera</string>
+    <string name="iermu_cancel_camera">Remove Camera</string>
+    <string name="title_camera_describe">Camera description</string>
+    <string name="text_button">Save</string>
+    <string name="start_police">Alarm Notification</string>
+    <string name="set_police">Notification setting</string>
+    <string name="ontime_police_inform">Alarm timer</string>
+    <string name="advance_config">Advanced</string>
+    <string name="device_id_text">ID</string>
+    <string name="advance_text">More</string>
+    <string name="conn_dev_wifi_text">Camera connection WiFi</string>
+    <string name="register_notpermission">This camera has already been added to others’ account</string>
+    <string name="register_fail">Cloud server registration failed</string>
+    <string name="conn_dev_text">Connect the camera</string>
+    <string name="current_conn_cloud">Trying to connect to the cloud server</string>
+    <string name="register_cloud_success">Registration cloud Server successfully</string>
+    <string name="registed_cloud">Camera registered a cloud Server</string>
+    <string name="register_cloud_fail">Cloud server registration failed</string>
+    <string name="registed_device">This camera has already been added to others’ account.</string>
+    <string name="current_config_parameter">Configuring device parameters</string>
+    <string name="config_parameter_success">Configure device parameters for success</string>
+    <string name="config_parameter_fail">Configure the camera time out, check the camera status lamp</string>
+    <string name="hiwifi_connect_timeout">Configure the camera time out,Restart nowplease try again.</string>
+    <string name="no_permission">Do not have the device permissions</string>
+    <string name="config_parameter_try">Failed to configure the camera parameters, try try again</string>
+    <string name="check_online">Detects if the camera on the line</string>
+    <string name="setup_success">Install camera success</string>
+    <string name="setup_fail">Connect camera time out</string>
+    <string name="connect_dev_fail">Failed to connect to camera hot, try opening manually configured</string>
+    <string name="connect_wifi_fail">Failed to connect to camera, check your Wifi network status</string>
+    <string name="get_hiwifi_ip_fail">Failed to get the camera IP, please configure the camera.</string>
+    <string name="update_description">Failed to set camera name</string>
+    <string name="add_guide">Add Camera Wizard</string>
+    <string name="current_wifi_state">Current network in the WiFi status</string>
+    <string name="update_wifi_text">Change Wi-Fi</string>
+    <string name="no_network">Network is unavailable</string>
+    <string name="prepare_conn_dev">Prepare to connect cam</string>
+    <string name="red_blue_text">No alternatively flashing in red and blue?</string>
+    <string name="no_out_of_date">Not expired</string>
+    <string name="out_of_date">Expired</string>
+    <string name="in_date">Expiration date:</string>
+    <string name="comment_txt">%1$dComments</string>
+    <string name="items">items</string>
+    <string name="drop_dev_txt">Are you sure to log out the camera?</string>
+    <string name="drop_dev_content">After you log off, the camera upload Baidu video in the cloud will be removed. If you just want to change the WiFi for the camera, we recommend that you "my camera" click +, add the camera again.</string>
+    <string name="drop_dev_content_one">After cancellation, the account will not be able to use this camera. If you just want to change the WiFi for the camera, we recommend that you "my camera" click + again add cameras.</string>
+    <string name="now_drop">Remove</string>
+    <string name="hold_on_drop">Don’t remove</string>
+    <string name="current_drop_dev">Unregistering device</string>
+    <string name="now_restart">Restart</string>
+    <string name="restart_dev_title">Determined to restart camera?</string>
+    <string name="restart_dev_content">Restart time for about 10 seconds</string>
+    <string name="restart_dev_current">Restart device</string>
+    <string name="dev_open_now">Camera power on</string>
+    <string name="dev_close_now">Camera shuts down</string>
+    <string name="conn_timeout">Connect the server timeout</string>
+    <string name="dev_off_line">OFFLINE</string>
+    <string name="dev_power_off">Camera shuts</string>
+    <string name="open_channel_fail">Push the open channel failure</string>
+    <string name="work_cycle">Work cycle</string>
+    <string name="network_error_please_check">Network is unavailable,please try later</string>
+    <string name="cam_upgrade_new">New version</string>
+
+    <!--关于-->
+    <string name="set_about">About</string>
+
+    <!--报警设置-->
+    <string name="set_alarm">Small picture changes notify me</string>
+    <string name="alarm_change">When the change</string>
+    <string name="alarm_time">Alarm time setting</string>
+    <string name="set_alarm_time">Setting alarm time</string>
+    <string name="frames_change">Found picture changes</string>
+    <string name="custom_time">Custom time period</string>
+    <string name="alarm_open_time">Alarm time</string>
+    <string name="alarm_close_time">Alarm turn off time</string>
+    <string name="open_time">Turn on</string>
+    <string name="close_time">Turn off</string>
+    <string name="dev_open_time">Boot time</string>
+    <string name="dev_close_time">Shutdown time</string>
+
+    <!--更多设置-->
+    <string name="iermu_camera_state">Status Light</string>
+    <string name="iermu_switch">Rotate image</string>
+    <string name="iermu_night_sun">Night vision and exposure</string>
+    <string name="iermu_camera_no_voice">Camera Audio</string>
+    <string name="iermu_work_state">State</string>
+    <string name="iermu_net_manager">Network speed</string>
+
+    <!--夜视与曝光-->
+    <string name="choice_scene">Scene</string>
+    <string name="iermu_in_use">Indoor</string>
+    <string name="iermu_out_use">outdoor</string>
+    <string name="iermu_automatic">auto</string>
+    <string name="iermu_start_night">Turn on night vision</string>
+    <string name="iermu_close_night">turn off night vision</string>
+    <string name="iermu_hight_light">Highlight priority</string>
+    <string name="iermu_low_light">Low priority</string>
+    <string name="iermu_photo_choose">Photo scene selection</string>
+    <string name="iermu_night_mode">Night vision mode</string>
+    <string name="iermu_sun_mode">Exposure mode</string>
+
+    <!--Email设置-->
+    <string name="iermu_receiver">Recipient</string>
+    <string name="iermu_send">CC</string>
+    <string name="iermu_send_set">Outgoing server settings</string>
+    <string name="iermu_send_service">Outgoing mail server</string>
+    <string name="iermu_duankou">Port</string>
+    <string name="iermu_sender">The sender</string>
+    <string name="iermu_username">User name</string>
+    <string name="iermu_password">Password</string>
+    <string name="receiver">Recipients cannot be empty</string>
+    <string name="mail_format_error">The recipient\'s mailbox is not in the correct format</string>
+    <string name="port_null">Port cannot be empty</string>
+    <string name="account_null">The user name cannot be empty</string>
+    <string name="password_null">Password cannot be empty</string>
+    <string name="copy_mail_format_error">Cc: mail is not in the correct format</string>
+    <string name="send_mail_format_error">Sender\'s mailbox is not in the correct format</string>
+
+    <!--定时开关机-->
+    <string name="iermu_ontime_on_off">Regular boot time</string>
+    <string name="iermu_time">Time period</string>
+    <string name="iermu_repeat">Repeat</string>
+    <string name="ontime_on_off">Regular boot time</string>
+    <string name="every_monday">Monday</string>
+    <string name="every_tuesday">Tuesday</string>
+    <string name="every_wednesday">Wednesday</string>
+    <string name="every_thursday">Thursday</string>
+    <string name="every_friday">Friday</string>
+    <string name="every_saturday">Saturday</string>
+    <string name="every_sunday">Sunday</string>
+    <string name="setting_start_dev_time">Setting boot time</string>
+
+    <!--云录制-->
+    <string name="iermu_cloud">Open cloud after recording will enable scrolling through the records in the past 7/30 days of video.</string>
+    <string name="cloud_start">Cloud recording setting</string>
+    <string name="set_on_time">Timer settings</string>
+    <string name="set_start_time">Add time</string>
+
+    <!--摄像机信息-->
+    <string name="iermu_unit_type">Model</string>
+    <string name="device_num">ID</string>
+    <string name="iermu_number">ID</string>
+    <string name="address">MAC</string>
+    <string name="iermu_wifi_name">Wi-Fi</string>
+    <string name="iermu_ip">IP</string>
+    <string name="iermu_wifi_Strong">Wi-Fi signal</string>
+    <string name="iermu_camera">Firmware version</string>
+    <string name="iermu_denote_state">Led status</string>
+    <string name="iermu_camera_state_two">Camera status</string>
+    <string name="in_loading">Loading...</string>
+    <string name="on_line">Work</string>
+    <string name="power_off">OFF</string>
+    <string name="off_line">OFFLINE</string>
+    <string name="on">ON</string>
+    <string name="p_cam">P Camera</string>
+
+
+    <!--云服务状态-->
+    <string name="iermu_E_set">Email setting</string>
+    <string name="iermu_part_start">LAN play</string>
+    <string name="cloud_server_state">Cloud service status</string>
+    <string name="click_buy_cloud">Buying cloud services</string>
+    <string name="on_time_ware">Expiration reminder</string>
+
+    <!--开关按钮-->
+    <string name="app_set_on">on</string>
+    <string name="app_set_off">Close</string>
+
+    <!--摄像机描述-->
+    <string name="text_view">Name a maximum of 16 men or 32 characters</string>
+    <string name="describe_length">Maximum name is 32-bit</string>
+    <string name="update_name_success">Modify the name success</string>
+    <string name="update_name_fail">Failed to modify name</string>
+
+    <!--网速管理-->
+    <string name="iermu_up_speed">Upload speed</string>
+    <string name="iermu_down_speed">Download speed</string>
+    <string name="iermu_up_down">Set the upload speed</string>
+    <string name="iermu_speed_limit">Speed limit 250KB/s</string>
+    <string name="set_speed_manager">Network speed</string>
+    <string name="save">Save</string>
+    <string name="save_now">Saveing</string>
+    <string name="net_no_more">Speed limit 500KB/s</string>
+    <string name="net_no_more_text">Speed limit value entered cannot exceed 250KB/s</string>
+    <string name="please_input">Please correct your input</string>
+
+    <!--定时销毁-->
+    <string name="iermu_not_user">Do not use</string>
+    <string name="iermu_stop_share">To stop sharing at the end of toady</string>
+    <string name="iermu_after_thirty">After 30 mins</string>
+    <string name="iermu_after_hour">After 1 hour</string>
+    <string name="iermu_after_day">After 1 day</string>
+
+    <!--设置密码和提示-->
+    <string name="iermu_prompt">Hint</string>
+
+    <!--公共播放-->
+    <string name="public_live_report">Report</string>
+    <string name="public_live_danmu">Barrage</string>
+    <string name="public_live_sound">Voice</string>
+    <string name="public_live_share">Share</string>
+    <string name="public_live_store">Collection</string>
+    <string name="public_live_over_store">Favorited</string>
+    <string name="public_live_send">Send</string>
+    <string name="network_error_wait">Network exception, please try again later</string>
+    <!--<string name="repeat_load_wait">重新加载中, 请稍候</string>-->
+    <string name="public_live_add_one">+1</string>
+    <string name="load_error_repeat">Failed to load, please try again</string>
+    <string name="zero_zan">Like %1$d</string>
+
+    <!--分享管理-->
+    <string name="control_txt">Is live camera nice? open and sharing with family and friends instantly.</string>
+    <string name="send_share_link">Share LINK</string>
+    <string name="send_share_txt">Share with friends to see your wonderful live</string>
+    <string name="send_share_public">Open live</string>
+    <string name="send_public_txt">Placed in the public channels, show talent and beauty to the world</string>
+    <string name="share_protocol">Click on the "send sharing links" button you agree that public cameras sharing agreement</string>
+    <string name="setting_message">Setting information</string>
+
+    <!--公开直播-->
+    <string name="public_live">Public broadcasting agreement</string>
+    <string name="live_have_fun">Watch the live broadcast, it\'s cool</string>
+    <string name="i_shared">I share“</string>
+    <string name="is_living">Live video for you to watch</string>
+    <string name="network_low">Network is unavailable,please try later</string>
+    <string name="more_people_wait">The number of people watching too much, please try again</string>
+    <string name="please_check_network_low">Not to force the network, please check your network settings</string>
+
+    <!--版本升级检测-->
+    <string name="tip_update_app_yes">upgrade</string>
+    <string name="tip_update_app_no">Do not upgrade</string>
+    <string name="tip_update_app_title">Being upgraded</string>
+    <string name="tip_update_app_wait"> Please wait...</string>
+    <string name="tip_app_last_ver">Up to date！</string>
+    <string name="tip_app_check_update">Checking for the latest version, please wait</string>
+    <string name="tip_update_app_back">Download has moved to the background, do not close the program！</string>
+    <string name="tip_update_app_running">The upgrade in the background, please wait</string>
+    <string name="tip_update_app_have_new">New version founded</string>
+    <string name="tip_update_app_yorno">Do you want to upgrade</string>
+    <string name="tip_update_app">Software upgrade</string>
+    <string name="btn_cam_ok">OK</string>
+    <string name="update_system">New versions update</string>
+    <string name="check_version_app">New versions update</string>
+    <string name="check_update_version">Update</string>
+
+    <!--完善用户资料-->
+    <string name="abort_account_title">Application log out</string>
+    <string name="abort_account_token_">Account validation has expired</string>
+    <string name="abort_account_apicosed">Server updates result in account validation errors</string>
+    <string name="abort_account_fail">Log on failure</string>
+    <string name="check_network">Please check the current network connection status</string>
+    <string name="exit_app">Press once to exit the program</string>
+    <string name="forget_password">Forgot password？</string>
+    <string name="no_chinese">Password can not input Chinese</string>
+    <string name="password_same">Two entered passwords do not match</string>
+    <string name="user_name_exist">User name already exists</string>
+    <string name="password_error">The current password is incorrect</string>
+    <string name="update_password_failed">Change password failed</string>
+    <string name="username_regular">User name cannot begin with a number or special character</string>
+    <string name="feedback_failed">Feedback fail</string>
+    <string name="feedback_content_null">Content cannot be empty</string>
+    <string name="input_contact">Please enter contact information</string>
+    <string name="update_name_failed">Failed to modify a user\'s name</string>
+    <string name="no_complete_userinfo">User information is complete, you do not need perfect information</string>
+    <string name="complete_failed">Perfect information failed</string>
+
+    <!-- 公共频道 -->
+    <string name="actionbar_title_pubcam">Public</string>
+    <string name="peoples_look">views</string>
+    <string name="recommend">Prefer</string>
+    <string name="newest">New</string>
+    <string name="hottest">Hot</string>
+    <string name="comment_word">Comment (up to 140 characters)</string>
+    <string name="no_content">No content</string>
+    <string name="look_other_channel">Go to the other channel to explore more</string>
+    <string name="into_public_channel">Go to Public to explore more</string>
+
+    <!--授权-->
+    <string name="AUTH_SUCCESS">Success</string>
+    <string name="AUTH_GRANT_INVALID">Share info is invalid</string>
+    <string name="AUTH_GRANT_USED">The authorization code has been used</string>
+    <string name="AUTH_NOT_GRANT_SELF">Not authorized to own</string>
+    <string name="DEVICE_GRANT_FAILED">Failed</string>
+    <string name="auth_users">Family</string>
+    <string name="grant_user_loading">Loading data, please wait</string>
+    <string name="auth_share_text">I am using iErmuCam and expect you to accept my invitation to enjoy it with us!</string>
+    <string name="auth_look_text">iErmu camera allows you to check your home whenever and wherever and also supports voice call</string>
+    <string name="no_wx_client">You don’t install WeChat</string>
+    <string name="get_code_fail">Failed to get the authorization code</string>
+    <string name="share_success">Sharing success</string>
+    <string name="share_fail">Sharing failed</string>
+    <string name="cancel_share">Stop sharing</string>
+    <string name="cancel_share_fail">Deauthorize fail</string>
+
+    <!--对话框-->
+    <string name="dialog_commit_text">Submitting</string>
+    <string name="dialog_commit">Submitting</string>
+    <string name="dialog_confirm">sure</string>
+    <string name="dialog_title">Title</string>
+    <string name="dialog_content">Remind of content</string>
+
+    <!--WebView-->
+    <string name="page_bug">Buy camera</string>
+    <string name="page_cloud">Buy cloud recording</string>
+    <string name="page_question">FAQ</string>
+    <string name="page_iermu">iErmu Web site</string>
+    <string name="page_report">Report</string>
+    <string name="page_agreement">Public broadcasting agreement</string>
+    <string name="page_solve">Finding  Solution</string>
+    <string name="page_poster">Jingdong Crowdfunding</string>
+    <string name="click_refresh">Tap Refresh</string>
+    <string name="try_loading">Loading</string>
+
+    <!--录像-->
+    <string name="today">Today</string>
+    <string name="yesterday">yesterday</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+    <string name="monday_zhou">Monday</string>
+    <string name="tuesday_zhou">Tuesday</string>
+    <string name="wednesday_zhou">Wednesday</string>
+    <string name="thursday_zhou">Thursday</string>
+    <string name="friday_zhou">Friday</string>
+    <string name="saturday_zhou">Saturday</string>
+    <string name="sunday_zhou">Sunday</string>
+    <string name="time_line">Time</string>
+    <string name="thumbnail">Clips</string>
+    <string name="choice_data">Date</string>
+    <string name="record_cut">Clip</string>
+    <string name="record_cut_starttime">Start time</string>
+    <string name="record_cut_time_long">Save time</string>
+    <string name="one_minute">1 min</string>
+    <string name="ten_minute">10 min</string>
+    <string name="thirty_minute">30 min</string>
+
+    <!--云录像信息-->
+    <string name="record_info">Cloud video information</string>
+    <string name="record_opened">Cloud recording is turned on</string>
+    <string name="record_closed">Cloud recording is turned off</string>
+    <string name="record_overdate">Cloud recording has expired</string>
+    <string name="record_day_num">Recorded days</string>
+    <string name="record_long_total">Total recording time</string>
+    <string name="record_save_num">Save video</string>
+    <string name="record_auto">Automatic cloud recording</string>
+    <string name="record_auto_info">After purchase,any abnormal,will upload to the cloud server automatically.</string>
+    <string name="record_set_plan">Set video plan</string>
+    <string name="record_effect_date">Validity of cloud services</string>
+    <string name="record_end_day">Valid till%1$s</string>
+    <string name="record_buy">Purchase</string>
+    <string name="record_set_time">Set time period</string>
+    <string name="record_get_set_fail">Failed to get record setup information：</string>
+    <string name="record_day">Day</string>
+    <string name="record_hour">Hour</string>
+    <string name="record_section">Section</string>
+    <string name="record_set_faild">Failed to set cloud recording：</string>
+    <string name="record_get_faild">Failed to get cloud video list：</string>
+    <string name="record_set_time_faild">Setting failed：</string>
+    <string name="record_find_exception">Finding someone at home or abnormal, uploading to the cloud Server automatically.</string>
+    <string name="record_over_day_info">%1$sday recording service，only%2$sdays overdue</string>
+    <string name="record_over_day">Cloud recording has expired in%1$s</string>
+    <string name="record_can_not_get">Camera%1$s，can not get temporarily.</string>
+    <string name="record_no_record">You haven\'t cloud video</string>
+    <string name="record_change_cloud">Camera has found someone in the home and the abnormal situation, upload video to the cloud server, you can back to watch the video</string>
+
+    <!--我的直播信息-->
+    <string name="live_info">My live information</string>
+    <string name="in_loading_please">Loading...</string>
+    <string name="dev_no_share">The device does not create share</string>
+    <string name="create_share_fail">Failed</string>
+    <string name="introduce_live">To introduce live content can attract more viewers</string>
+    <string name="live_now">Confirm, live now</string>
+    <string name="allow_voice"> Allows others to hear voice</string>
+    <string name="apply_public_location">Location</string>
+    <string name="label">Tag</string>
+    <string name="label_type">Tags for the cameras category</string>
+    <string name="terms_protocol">Terms and agreements</string>
+    <string name="iermu_live_txt">IERMU camera live</string>
+    <string name="live_public_txt">Though public channels broadcast cameras</string>
+    <string name="live_share_txt">Via QQ and micro-social way to share live</string>
+    <string name="read_terms">Please reading clause</string>
+    <string name="content_legal">1.I am sure that the content is health and legal</string>
+    <string name="show_live_every">2.I am agree that everyone can see my living content.</string>
+    <string name="read_agree">3.I have read and agreed the contract Open Broadcast protocol</string>
+    <string name="public_protocol">Open Broadcast protocol</string>
+    <string name="start_set">Start config</string>
+    <string name="agree_protocol">Click on the "start config" indicates that you have \n agreed to the public broadcast agreement</string>
+    <string name="my_live_cam">I live cameras</string>
+    <string name="copy_link">Copy the link has been cut</string>
+    <string name="mime_live_share">I share %1$s video streaming to you, come and watch！</string>
+    <string name="live_play">“%1$s”Living</string>
+    <string name="share_public_content">Recommend a wonderful live,%1$d people have to see, see！</string>
+    <string name="share_way">Through the share to a friend</string>
+    <string name="wechat_txt">WeChat</string>
+    <string name="moments">Moments</string>
+    <string name="copy_link_txt">Copy the link</string>
+    <string name="stop_live">Stop live</string>
+    <string name="check_my_live">View my live cameras</string>
+    <string name="save_screen">Save screenshots in album</string>
+    <string name="public_living">Live</string>
+
+    <!--直播-->
+    <string name="load_fail">Failed to load, please try again</string>
+    <string name="conn_dev_fail">Camera connection failed</string>
+    <string name="dev_offline">Offline</string>
+    <string name="refresh_over_times">The camera is offline？</string>
+    <string name="record_permission">No recording rights, turn on audio permissions</string>
+    <string name="preset_num">Can’t save more than 6 common positions</string>
+    <string name="rotate_everywhere">Rotate now, watch vision 360°</string>
+    <string name="double_click_rotate">Double tap to change the vision</string>
+    <string name="open_fail">Fail to boot</string>
+    <string name="power_on_live">Tap the button to watch live video</string>
+    <string name="more_watch">The number of people watching too much, please try again later</string>
+    <string name="low_definition">Low</string>
+    <string name="high_definition">Reg</string>
+    <string name="super_definition">HD</string>
+    <string name="low_definition_model">Low</string>
+    <string name="high_definition_model">Reg</string>
+    <string name="super_definition_model">HD</string>
+    <string name="set_definition_fail">Failed to set definition</string>
+    <string name="preset">Preset</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="no_video">No video</string>
+    <string name="dragging_time_line">Video out! Drag the timeline, you can \n continue to watch videos</string>
+    <string name="the_time_no_video">You selected no video</string>
+
+    <!--我要分享-->
+    <string name="my_share">Sharing</string>
+    <string name="close_share">Comfirm to close the shared？</string>
+    <string name="no_longer_look_live"> After you turn off sharing, owners cannot continue to watch cameras live，is OK to close？</string>
+    <string name="share_privacy">Your camera is publicly broadcast, after you select a private sharing, will close an open live</string>
+    <string name="goon_public_live">Continuing</string>
+    <string name="goon_privacy_live">Continuing</string>
+    <string name="need_share_privacy">Private share</string>
+    <string name="share_public">Private share your camera is, after selecting a publicly broadcast, closed-privacy</string>
+    <string name="need_public_live">I wish to live</string>
+    <string name="close_public_share">Closing open sharing</string>
+    <string name="close_share_now">Closing share</string>
+    <string name="close_privacy_share">Shutting down the private share</string>
+    <string name="open_public_share">Opening a public sharing</string>
+    <string name="open_privacy_share">Opening up private sharing</string>
+    <string name="share_my_friend">Share with my friends </string>
+    <string name="no_wechat_client">You haven’t installed Wechat</string>
+    <string name="open_share_fail">Failed to open sharing</string>
+    <string name="close_share_fail">Close sharing fail</string>
+    <string name="share_wechat">Share to wechat friend</string>
+    <string name="share_moments">Share to moments</string>
+    <string name="copy_live_link">Copy the broadcast address</string>
+    <string name="input_num">Enter 4-8 number</string>
+    <string name="select_fill">Optional</string>
+    <string name="num_change">0/20</string>
+    <string name="check_password">Set the view password</string>
+
+    <!--空气胶囊-->
+    <string name="conn_success">Connection successful</string>
+    <string name="check_capsule_success">Your camera can detect the temperature and humidity in your home.</string>
+    <string name="check_now">Check Now</string>
+    <string name="capsule_title">My camera temperature and humidity</string>
+    <string name="tip_capsule">Tips</string>
+    <string name="screen_shot_fail">Screen failure</string>
+    <string name="check_capsule_detail">View details</string>
+    <string name="temperature_one">Feeling uncomfortable, recommends open air conditioning cooling</string>
+
+    <!--剪辑-->
+    <string name="clip_tip_err_time">Clip time settings error, check！</string>
+    <string name="clip_tip_err_stime">Clip time settings error, please check！</string>
+    <string name="clip_tip_err_etime">End time of the clip settings, please check！</string>
+    <string name="clip_tip_err_setime">Clip time settings error, check！</string>
+    <string name="clip_tip_start_ok">Clipping task started successfully completed</string>
+    <string name="clip_tip_start_fail">Clipping task fails to start, please try again later！</string>
+    <string name="clip_tip_have_clip">Duplicate file names, please resubmit to modify filenames！</string>
+    <string name="clip_tip_clip_success">Clips succeed!</string>
+    <string name="clip_tip_last_task">Last clip task has not been completed</string>
+    <string name="clip_tip_start_task">Is communicating with the server, please wait…</string>
+    <string name="clip_err_tip1">Possible causes: clips video effective more than 30 minutes！</string>
+    <string name="clip_err_tip2">Possible cause: the total length of the video clip of the month more than effective quota！</string>
+
+    <!--Nas录像-->
+    <string name="nas_setting">NAS Setup</string>
+    <string name="dev_rec_nas_on">NAS video</string>
+    <string name="dev_rec_nas_ip">IP：</string>
+    <string name="cms_rec_nas_username">User name：</string>
+    <string name="cms_rec_nas_pwd">Password：</string>
+    <string name="dev_rec_nas_ip_err">IP address is incorrect, please check!</string>
+    <string name="dev_rec_nas_path">Directory：</string>
+    <string name="dev_rec_nas_folder">Folder：</string>
+    <string name="dev_rec_nas_size">Video space (GB)：</string>
+    <string name="btn_nas_scan">Scan</string>
+    <string name="btn_nas_scan_no">Nas shared directory is not found, please check!</string>
+    <string name="dev_rec_nas_err_ip">IP address is incorrect, please check！</string>
+    <string name="dev_rec_nas_err_size">Space at least 4G NAS video, check!</string>
+    <string name="btn_nas_guest">Anonymous</string>
+    <string name="cms_nas_tip_noipc">NAS video can only be played over a LAN! \nCamera is not found within the current LAN! \n\n please inspect!</string>
+    <string name="dev_rec_nas_reboot_tip">The current settings will not take effect after you restart the camera! \nDo you want to restart camera?</string>
+    <string name="tip_savemenu_ok">Parameter is set successfully, manually restart the camera!</string>
+    <string name="tip_savemenu_fail">Parameter setting failed, please try again later!!</string>
+    <string name="loading_data">Loading data, please wait</string>
+
+    <!--相册-->
+    <string name="my_phone">my albums</string>
+    <string name="all">All</string>
+    <string name="film_edit">Clip</string>
+    <string name="cam">Camera</string>
+    <string name="photo">Photo</string>
+    <string name="have_phone">My collection of %1$d photos, clips</string>
+    <string name="select_all">All</string>
+    <string name="delete_pic_btn">Delete（%1$d）</string>
+    <string name="num_photo">Photos</string>
+    <string name="num_film">Clip video</string>
+    <string name="favourate_photo">Favorite photo or video</string>
+    <string name="no_photo_txt">Camera screen or video clip will be \n saved to your photo album</string>
+    <string name="delete_photo_sure">Delete photos?</string>
+    <string name="delete_photo_content">Your photos will be deleted</string>
+    <string name="down_bdy_txt">Download Baidu cloud please</string>
+    <string name="upgrade_setting">Firmware update</string>
+    <string name="upgrade_setting_sure">Updating</string>
+    <string name="upgrade_setting_cancle">Not now</string>
+    <string name="upgrade_tip">Updating now</string>
+    <string name="need_upgrade_tip">Update request</string>
+    <string name="firmware_start_upgrade">Updating</string>
+    <string name="firmware_start_download">Download now</string>
+    <string name="firmware_download_success">Download success</string>
+    <string name="firmware_update_now">Being upgraded</string>
+    <string name="firmware_update_success_refresh">Update success, list refreshing</string>
+    <string name="firmware_down_fail_refresh">Update fail, list refreshing</string>
+    <string name="firmware_update_fail_refresh">Update fail, list freashing</string>
+
+    <!--录像-->
+    <string name="alarm_the_day_before_yesterday">The day before yesterday</string>
+    <string name="record_same_lan">Please confirm phone and camera in the same local area network</string>
+    <string name="look_back_record">History</string>
+
+    <!--消息-->
+    <string name="week_txt">Week</string>
+    <string name="week_txt_null"></string>
+    <string name="bind_baidu_push_fail">Baidu push fail</string>
+    <string name="alarm_num">Total %1$d photo</string>
+    <string name="alarm_nums">Total %1$d photos</string>
+    <string name="alarm_delete_sure">Delete alarm photo?</string>
+    <string name="alarm_delete">Alarm photo deleted</string>
+    <string name="alarm_close_sure">Close alarm?</string>
+    <string name="alarm_close_no_message">Close the warning will not receive the notice?</string>
+    <string name="report_exception">When turn on, camera can report exception at any time</string>
+    <string name="no_warn">Dismiss</string>
+    <string name="continue_buy">Add video History</string>
+    <string name="alarm_pic">No messages</string>
+    <string name="num_alarm_pic">Alarm phtoto</string>
+    <string name="select_alarm_pic">Select %1$d alarm phtoto</string>
+    <string name="select_alarm_pics">Select %1$d alarm phtotos</string>
+    <string name="alarm_modify">Alarm notification is turn off, please modified in settings. \nCamera can report exception at any time.</string>
+    <string name="open_alarm_now">Alarm Notification</string>
+    <string name="no_alarm_notice">No messages</string>
+    <string name="reset_alarm_again">Reset alarm</string>
+    <string name="sheet">sheet</string>
+    <string name="close_alarm_txt">Turn off notification</string>
+    <string name="sense_change">Sets the sensitivity of the camera to detect picture changes</string>
+    <string name="high">High</string>
+    <string name="default_">Default</string>
+    <string name="low">Low</string>
+    <string name="set_word_time">Set working hours</string>
+
+
+    <!--我的摄像机-->
+    <string name="over_auth_family">Authorized %1$d</string>
+
+
+    <!--设置-->
+    <string name="setting_choice_time">Select time period</string>
+    <string name="setting_cam_shutdown">Turn off</string>
+    <string name="setting_cam_offline">Offline</string>
+    <string name="server_or_cam_error">Server error or camera is online</string>
+    <string name="setting_height_config">Advance setting</string>
+    <string name="setting_debug_model">Debug mode</string>
+    <string name="no_find_cam">did not find new camera</string>
+    <string name="power_line">1. Please ensure that the power cable plugged in.</string>
+    <string name="reset_cam">2. Reset the camera: Please use thimbles light plug the camera back [Reset] hole, press and hold 1 second after loose. (Ejector pins in the box).</string>
+    <string name="light_blink">3. Wait for the led turns red and blue flashing, cameras can be added again.</string>
+    <string name="contact_us">4. Other questions, you can contact us by the following ways：</string>
+    <string name="service_phone">Support：</string>
+    <string name="wechat_sina_iermu">Wechat/Weibo: IERMU</string>
+    <string name="i_know">OK</string>
+    <string name="wifi_disagree">Select WiFi and mobile connected names don\'t match, please reconfigure your WiFi</string>
+    <string name="start_add">Start adding</string>
+    <string name="no_support">(Not supported)</string>
+    <string name="setting_choice_wifi">Choose and connect wifi</string>
+
+    <!--云录-->
+    <string name="card_record_bad_num">Bad blocks：%1$skb</string>
+    <string name="card_record_info">Memory card</string>
+    <string name="card_record_bad_info">Bad block information</string>
+    <string name="card_no_memory_card">No Memory Card found</string>
+    <string name="card_have_frame">Insert TF CARD,then save the living photo automatically.</string>
+    <string name="card_support">Support 8G,16G,32G SD card.</string>
+    <string name="card_support_format">Please guarantee the memory stick is the FAT32 form.</string>
+    <string name="card_record_txt">Cloud video</string>
+    <string name="card_record_past">Record cloud service has expired</string>
+    <string name="card_support_days">After purchase, save videos support last 90 days.</string>
+    <string name="card_clip">A key clip, you save and share cool videos.</string>
+    <string name="card_support_platform">Supports mobile, Tablet and PC online viewing.</string>
+    <string name="card_know_details">More details</string>
+    <string name="open_cvr">Start recording</string>
+    <string name="cvr_now">Image recording</string>
+    <string name="memory_size">Memory card size</string>
+    <string name="memory_save_long_time">First video can be saved in the memory card</string>
+    <string name="memory_save_last_time">Memory cards for the latest video time</string>
+    <string name="memory_save_cover">Storage after finish will cover automatically</string>
+    <string name="the_time_no_cvr">No video within the time period,\n please select again.</string>
+
+    <!--剪辑-->
+    <string name="clip_fail">Clip fail</string>
+    <string name="clip_fail_now">Clipping</string>
+    <string name="clip_save_video">Saving video</string>
+    <string name="clip_find_server">Error found \n please connect with \n iermu@support.com</string>
+    <string name="try_again">Try again</string>
+    <string name="save_look_on_baidu">Save successfully ,please check Baidu cloud</string>
+    <string name="clip_success_check_baidu">Clip successfully \n please check Baidu cloud</string>
+    <string name="clip_check_on_baidu">After clips，video will save in Baidu cloud forever</string>
+    <string name="clip_mon">Mon.</string>
+    <string name="clip_tue">Tues.</string>
+    <string name="clip_wed">Wed.</string>
+    <string name="clip_thu">Thur.</string>
+    <string name="clip_fri">Fri.</string>
+    <string name="clip_sat">Sat.</string>
+    <string name="clip_sun">Sun.</string>
+
+    <!--分享-->
+    <string name="develop_now">Being developed,Please pay attention to</string>
+    <string name="close_secret_share">Close Share</string>
+    <string name="share_family_try">You have not authorize your family?</string>
+    <string name="send_invitation">Send an invitation via WeChat, so that receiver \n can check the camera after an acknowledgement.</string>
+    <string name="wechat_invitation">Invite Via WeChat</string>
+    <string name="over_auth">Authorized</string>
+    <string name="num_family">family members</string>
+    <string name="move_left_cancel_share">Slide left to cancel authorization</string>
+    <string name="pass_wechat_invitation">Invite Via WeChat</string>
+    <string name="auth_to_mine_cam">Authorized Camera</string>
+    <string name="iermu_auth_homer">Authorized</string>
+    <string name="on_time_close">Timing off</string>
+
+    <!--时间段-->
+    <string name="all_day_open">All day opening</string>
+    <string name="all_hours">24 hours</string>
+    <string name="only_day">Only during the day</string>
+    <string name="day_hours">8:00-20:00 Day</string>
+    <string name="only_night">Night only</string>
+    <string name="night_hours">20:00-8:00 Night</string>
+    <string name="custom_times">Custom time period</string>
+    <string name="time_quantum">Time period</string>
+
+    <!--网络连接-->
+    <string name="connect_server_fail">Unable to connect to the server, please check network settings</string>
+    <string name="connect_server_fail_txt">Connection to the server failed, please check network settings</string>
+    <string name="network_error_txt">Network error</string>
+
+    <!--月份-->
+    <string name="SHORT_DATE_FORMAT3">MMM dd</string>
+
+    <string name="find_no_dev">Can\'t find camera</string>
+    <string name="net_exception">Your network may be a little problem</string>
+    <string name="change_another_add_type">Another way to add</string>
+    <string name="reset_dev">Reset camera</string>
+    <string name="find_void">Hear beep</string>
+    <string name="reset_cam_tip1">Please use the ejector pin plug more than  5  sec</string>
+    <string name="reset_cam_tip2">Please use fingers press Configure for more than  5  sec</string>
+    <string name="reset_cam_tip3">Until I heard Didi twice</string>
+    <string name="dev_rec_nas_param_fail">Failed to get the NAS configuration parameters！</string>
+    <string name="update_tip1">Camera system</string>
+    <string name="update_tip2">Updated</string>
+
+
+</resources>

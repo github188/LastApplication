@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cloud_add_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="40dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="3dp"
+                android:src="@drawable/image_film_edit_progress" />
+
+            <com.iermu.ui.view.filmEdit.FilmEditProgressView
+                android:id="@+id/viewProgress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/textViewProgress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="正在保存视频文件0%"
+            android:textColor="#ff888888"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/textViewCommonContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="54dp"
+            android:gravity="center"
+            android:lineSpacingExtra="5dp"
+            android:text="@string/save_look_on_baidu"
+            android:textColor="#ff666666"
+            android:textSize="16dp"
+            android:visibility="visible" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#ffdcdcdc" />
+
+        <TextView
+            android:id="@+id/buttonIKnow"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/alarm_setting_btn_bg_bottom"
+            android:gravity="center"
+            android:text="@string/i_know"
+            android:textColor="#ff00acef"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

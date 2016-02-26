@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/custom_bg"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="8dp"-->
+        <!--android:layout_marginRight="8dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_marginBottom="40dp"-->
+        <!--android:background="@drawable/cloud_add_bg"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/time_work"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="47dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:gravity="center"-->
+            <!--android:text="工作时间: 每天9:00-12:00，13:00-21:00"-->
+            <!--android:textColor="#999999"-->
+            <!--android:textSize="14dp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/offical_phone"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="47dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:gravity="center"-->
+            <!--android:text="呼叫 400-8988-800"-->
+            <!--android:textColor="#00acef"-->
+            <!--android:textSize="@dimen/activity_text_size_one" />-->
+
+        <!--&lt;!&ndash;<View&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="8dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:background="@android:color/transparent" />&ndash;&gt;-->
+
+    <!--</LinearLayout>-->
+        <!--<TextView-->
+            <!--android:id="@+id/offical_cancel"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="47dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:background="@drawable/cloud_add_bg"-->
+            <!--android:gravity="center"-->
+            <!--android:text="取消"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:textColor="#00acef"-->
+            <!--android:textSize="@dimen/activity_text_size_one" />-->
+    <LinearLayout
+        android:id="@+id/viewPopPositionEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:paddingBottom="35dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/cloud_add_bg"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/buttonPopTitle"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:text="@string/work_time"
+                android:textColor="#ff888888"
+                android:textSize="16dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#b2b2b2" />
+
+            <TextView
+                android:id="@+id/offical_phone"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:text="@string/cell_number"
+                android:textColor="#00acef"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/offical_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/cloud_add_bg"
+            android:gravity="center"
+            android:text="@string/cancle"
+            android:textColor="#ff00acef"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

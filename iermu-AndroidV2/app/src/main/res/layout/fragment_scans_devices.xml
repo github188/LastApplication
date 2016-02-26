@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#177be1">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#1362b3"/>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="53dp"
+        android:text="@string/looking_for_devices"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/add_img_scan" />
+
+
+
+        <ImageView
+            android:id="@+id/iermu_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/add_img_scan_1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:drawableLeft="@drawable/add_icon_tip"
+        android:drawablePadding="6dp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="66dp"
+        android:text="@string/connect_power_txt"/>
+</RelativeLayout>

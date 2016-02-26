@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:gravity="center"
+        android:text="@string/sense_change"
+        android:textColor="#8c8c8c" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/cms_stroke" />
+
+    <RelativeLayout
+        android:id="@+id/heigh_level"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/activity_height"
+        android:layout_marginBottom="-1dp"
+        android:background="@drawable/check_bg_selector"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:text="@string/high"
+            android:textColor="@color/cms_center"
+            android:textSize="@dimen/activity_text_size_one" />
+
+        <ImageView
+            android:id="@+id/heigh_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:src="@drawable/setting_icon_finish"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="16dp"
+        android:background="@color/cms_stroke" />
+
+    <RelativeLayout
+        android:id="@+id/level"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/activity_height"
+        android:layout_marginBottom="-1dp"
+        android:background="@drawable/check_bg_selector"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:text="@string/default_"
+            android:textColor="@color/cms_center"
+            android:textSize="@dimen/activity_text_size_one" />
+
+        <ImageView
+            android:id="@+id/level_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:src="@drawable/setting_icon_finish"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="16dp"
+        android:background="@color/cms_stroke" />
+
+    <RelativeLayout
+        android:id="@+id/low_level"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/activity_height"
+        android:background="@drawable/check_bg_selector"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:text="@string/low"
+            android:textColor="@color/cms_center"
+            android:textSize="@dimen/activity_text_size_one" />
+
+        <ImageView
+            android:id="@+id/low_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:src="@drawable/setting_icon_finish"
+            android:visibility="gone" />
+    </RelativeLayout>
+    　
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="20dp"
+        android:background="@color/cms_stroke" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="@string/set_word_time" />
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="@dimen/activity_height"-->
+    <!--android:layout_marginTop="8dp"-->
+    <!--android:layout_marginBottom="-1dp"-->
+    <!--android:background="@drawable/check_bg_color_pressed"-->
+    <!--android:focusable="true"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginLeft="16dp"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:text="设置报警时间段"-->
+    <!--android:textColor="@color/cms_center"-->
+    <!--android:textSize="@dimen/activity_text_size_one" />-->
+
+    <!--<com.iermu.ui.view.SwitchButtonNew-->
+    <!--android:id="@+id/record_switch"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:gravity="center_vertical" />-->
+    <!--</RelativeLayout>-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="8dp"
+        android:background="@color/cms_stroke" />
+    <RelativeLayout
+        android:id="@+id/set_quantum"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/activity_height"
+        android:layout_marginBottom="-1dp"
+
+        android:background="@drawable/check_bg_selector"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:text="@string/iermu_time"
+            android:textColor="@color/cms_center"
+            android:textSize="@dimen/activity_text_size_one" />
+
+        <TextView
+            android:id="@+id/time_t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/iv_1"
+            android:textColor="#b0b0b0"
+            android:text=""
+            android:textSize="14dp" />
+
+        <ImageView
+            android:id="@+id/iv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/setting_back_img" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/iv_1"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="#b0b0b0" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="16dp"
+        android:background="@color/cms_stroke" />
+    <RelativeLayout
+        android:id="@+id/set_repeat"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/activity_height"
+        android:background="@drawable/check_bg_selector"
+        android:gravity="center_vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:text="@string/iermu_repeat"
+            android:textColor="@color/cms_center"
+            android:textSize="@dimen/activity_text_size_one" />
+
+        <ImageView
+            android:id="@+id/iv_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/setting_back_img" />
+
+        <TextView
+            android:id="@+id/alarm_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/iv_2"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="#b0b0b0" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/cms_stroke"/>
+    <Button
+        android:id="@+id/alarm_on_off"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="53dp"
+        android:background="@drawable/iermu_click_selector"
+        android:text="@string/start_alarm"
+        android:textColor="@color/white"
+        android:textSize="@dimen/activity_text_size_one" />
+</LinearLayout>

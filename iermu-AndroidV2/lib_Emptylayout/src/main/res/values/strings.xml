@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">EmptyLayout</string>
+
+    <string name="emptylayout_empty_message">没有数据!</string>
+    <string name="emptylayout_loading_message">正在加载..</string>
+    <string name="emptylayout_error_message">哎呀! 发生错误了</string>
+
+    <string name="emptylayout_empty_button">重试</string>
+    <string name="emptylayout_loading_button">取消</string>
+    <string name="emptylayout_error_button">重试</string>
+
+</resources>

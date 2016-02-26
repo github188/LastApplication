@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/viewStatusCenter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#230d0d0d">
+
+        <RelativeLayout
+            android:id="@+id/viewStatusImages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <RelativeLayout
+                android:id="@+id/viewLoading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/imageViewLoadingBg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/live_status_loading_bg" />
+
+                <ImageView
+                    android:id="@+id/imageViewLoading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/live_status_loading" />
+            </RelativeLayout>
+
+
+            <ImageView
+                android:id="@+id/imageViewCamOff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/live_status_off"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/imageViewRefresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/live_refresh"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/buttonResolve"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/public_live_btn_send_bg"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/how_to_solve"
+                android:textColor="#ffffffff"
+                android:textSize="15dp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/buttonStart"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/public_live_btn_send_bg"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/start"
+                android:textColor="#ffffffff"
+                android:textSize="15dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textViewStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewStatusImages"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/wait_load"
+            android:textColor="#ffffffff"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/textViewStatusTips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewStatus"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="@string/check_wifi"
+            android:textColor="#ffffffff"
+            android:textSize="12dp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/viewNotWifi"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="#eee46718"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/live_status_tip" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/use_3G_4G"
+            android:textColor="#ffffffff"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:id="@+id/imageViewClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:src="@drawable/live_status_close" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/viewSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="#eee46718"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="@string/need_switch"
+            android:textColor="#ffffffff"
+            android:textSize="14dp" />
+
+        <Button
+            android:id="@+id/buttonSwitchNow"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:background="@drawable/main_live_bitlevel_switch_now_bg"
+            android:text="@string/switch_now"
+            android:textColor="#ff333333"
+            android:textSize="13dp" />
+
+        <ImageView
+            android:id="@+id/imageViewSwitchClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:src="@drawable/live_status_close" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_bg">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="20dp"
+            android:background="@color/cms_stroke" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="46dp"
+            android:background="@drawable/check_bg_selector"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:gravity="center_vertical"
+                android:text="@string/dev_rec_nas_on"
+                android:textColor="#ff333333"
+                android:textSize="16dp" />
+
+            <com.iermu.ui.view.SwitchButtonNew
+                android:id="@+id/nas_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/cms_bg_selected_focus"
+                android:checked="true"
+                android:gravity="top"
+                android:textOff="@string/app_set_off"
+                android:textOn="@string/app_set_on" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/cms_stroke" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="4dp"
+            android:background="@color/cms_stroke" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="46dp"
+            android:background="@drawable/check_bg_selector"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="@string/dev_rec_nas_ip"
+                android:textColor="#ff333333"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/cms_nas_ip"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:layout_weight="1.0"
+                android:background="@null"
+                android:inputType="textUri"
+                android:maxLength="32"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:text="192.168.0.1"
+                android:textColor="#ff333333"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/cms_stroke" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="4dp"
+            android:background="@color/cms_stroke" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="46dp"
+            android:background="@drawable/check_bg_selector"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tip1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="@string/cms_rec_nas_username"
+                android:textColor="#ff333333"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/cms_nas_user"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:layout_weight="1.0"
+                android:background="@null"
+                android:inputType="textUri"
+                android:maxLength="32"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:textColor="#ff333333"
+                android:textSize="16dp" />
+
+            <CheckBox
+                android:id="@+id/ck_guest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:button="@drawable/checkbox_anonymity"
+                android:paddingLeft="10dp"
+                android:text="@string/btn_nas_guest"
+                android:textColor="#ffb2b2b2"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/cms_stroke" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="4dp"
+            android:background="@color/cms_stroke" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="46dp"
+            android:background="@drawable/check_bg_selector"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="@string/cms_rec_nas_pwd"
+                android:textColor="#ff333333"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/cms_nas_pwd"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:layout_weight="1.0"
+                android:background="@null"
+                android:inputType="textUri"
+                android:maxLength="32"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:textColor="#ff333333"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/cms_stroke" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="4dp"
+            android:background="@color/cms_stroke" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="46dp"
+            android:background="@drawable/check_bg_selector"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="@string/dev_rec_nas_path"
+                android:textColor="#ff333333"
+                android:textSize="16dp" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1">
+
+                <Spinner
+                    android:id="@+id/cms_nas_path"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffffff"
+                    android:dropDownVerticalOffset="5dp"
+                    android:minWidth="100dp"
+                    android:popupBackground="#ffffffff"
+                    android:spinnerMode="dropdown" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/spinner_triangle" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/btn_scan"
+                android:layout_width="46dp"
+                android:layout_height="26dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/nas_scan_bg"
+                android:gravity="center"
+                android:text="@string/btn_nas_scan"
+                android:textColor="#ff68757d"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/cms_stroke" />
+
+
+        <LinearLayout
+            android:id="@+id/layout_port"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/check_bg_selector"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/cms_stroke" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:text="@string/dev_rec_nas_folder"
+                    android:textColor="#ff333333"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/cms_nas_folder"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dp"
+                    android:layout_weight="1.0"
+                    android:background="@null"
+                    android:textColor="#ff333333"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/cms_stroke" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="4dp"
+            android:background="@color/cms_stroke" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@drawable/check_bg_selector"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="@string/dev_rec_nas_size"
+                android:textColor="#ff333333"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/cms_nas_size"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:layout_weight="1.0"
+                android:background="@null"
+                android:inputType="number"
+                android:maxLength="10"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:textColor="#ff333333"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/cms_nas_sure"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/iermu_click_selector"
+            android:text="@string/sure"
+            android:textColor="@color/white"
+            android:textSize="@dimen/activity_text_size_one" />
+    </LinearLayout>
+</ScrollView>

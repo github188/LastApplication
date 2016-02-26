@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/viewSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPagerCloud"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5" />
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/image_blue_circle" />
+
+        <LinearLayout
+            android:id="@+id/viewCloudBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewPrepositionColor"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/use_location"
+                android:textColor="#ff00acef"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/textViewAutoColor"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/automatic_switch"
+                android:textColor="#ff888888"
+                android:textSize="12dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/viewPositions"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff2f2f2"
+        android:visibility="gone">
+
+        <GridView
+            android:id="@+id/gridViewPosition"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff2f2f2"
+            android:horizontalSpacing="-8dp"
+            android:numColumns="2"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:verticalSpacing="-8dp"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/viewNoPrePosition"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff2f2f2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/cloud_no_preposition" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/long_touch"
+                android:textColor="#ff888888"
+                android:textSize="14dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

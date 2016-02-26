@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/register_login_"
+    android:visibility="invisible"
+    android:background="#ae000000"
+    android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/register_login_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/title_bar"/>
+    <RelativeLayout
+        android:id="@+id/register_yoyo_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/registser_mail"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="70dp"
+            android:gravity="center_vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:background="@drawable/pub_live_shape">
+
+            <ImageView
+                android:id="@+id/registser_mail_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/login_mail" />
+
+            <EditText
+                android:id="@+id/mail_edit"
+                android:layout_toRightOf="@+id/registser_mail_img"
+                android:layout_toLeftOf="@+id/mail_close_register"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:inputType="textEmailAddress"
+                android:background="@null"
+                android:hint="@string/edit_mail"
+                android:maxLength="31"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColorHint="#b2b2b2"
+                android:textSize="14sp"/>
+
+            <ImageView
+                android:id="@+id/mail_close_register"
+                android:visibility="invisible"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:src="@drawable/login_close" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@+id/registser_mail"
+            android:id="@+id/registser_nick_name"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:background="@drawable/pub_live_shape">
+
+            <ImageView
+                android:id="@+id/mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/login_nick_name" />
+
+            <EditText
+                android:id="@+id/nickname_edit"
+                android:layout_toRightOf="@+id/mail"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:maxLength="20"
+                android:background="@null"
+                android:hint="@string/register_input_nickname"
+                android:singleLine="true"
+                android:textColorHint="#b2b2b2"
+                android:textSize="14sp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/mail_password"
+            android:layout_below="@+id/registser_nick_name"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:gravity="center_vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:background="@drawable/pub_live_shape">
+            <ImageView
+                android:id="@+id/lock_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/login_password" />
+
+            <EditText
+                android:id="@+id/password_edit"
+                android:layout_toRightOf="@+id/lock_img"
+                android:layout_toLeftOf="@+id/hide_or_show_btn"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:hint="@string/person_password"
+                android:maxLength="20"
+                android:password="true"
+                android:singleLine="true"
+                android:paddingRight="5dp"
+                android:textColorHint="#b2b2b2"
+                android:textSize="14sp"/>
+            <!--android:selectAllOnFocus="true"-->
+
+            <TextView
+                android:layout_alignParentRight="true"
+                android:id="@+id/hide_or_show_btn_register"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="18dp"
+                android:textColor="#00acef"
+                android:background="@null"
+                android:text="@string/show_pass"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/register_error_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mail_password"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="14dp"
+            android:textSize="13sp"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/login_btn_register"
+            android:layout_below="@+id/mail_password"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:padding="10dp"
+            android:text="@string/register"
+            android:enabled="false"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:background="@drawable/iermu_click_selector"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_below="@+id/login_btn_register"
+            android:id="@+id/user_agreement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="13dp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/user_agreement"
+            android:gravity="center"/>
+
+        <!--<RelativeLayout-->
+            <!--android:layout_below="@+id/login_btn_register"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:layout_marginRight="15dp"-->
+            <!--android:paddingTop="8dp">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/user_agreement"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="13dp"-->
+                <!--android:textColor="#ffffff"-->
+                <!--android:text="@string/user_agreement"-->
+                <!--android:gravity="center"/>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/agreement_user"-->
+                <!--android:layout_toRightOf="@+id/user_agreement"-->
+                <!--android:textSize="13dp"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textColor="#00acef"-->
+                <!--android:text="@string/user_agreement_txt"/>-->
+
+        <!--</RelativeLayout>-->
+    </RelativeLayout>
+</RelativeLayout>

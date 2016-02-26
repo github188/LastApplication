@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/record_live_play_click" android:state_enabled="true" android:state_selected="true" />
+    <item android:drawable="@drawable/record_live_play_disable" android:state_enabled="false" android:state_selected="true" />
+    <item android:drawable="@drawable/record_live_pause_click" android:state_enabled="true" android:state_selected="false" />
+    <item android:drawable="@drawable/record_live_pause_disable" android:state_enabled="false" android:state_selected="false" />
+</selector>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="7dp"
+    android:paddingTop="7dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:background="@drawable/public_live_list_header_bg"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="11dp"
+        android:paddingRight="11dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="郭德纲现场直播"
+                android:textColor="#333333"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/textViewReport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/public_live_report_bg"
+                android:paddingBottom="4dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:paddingTop="4dp"
+                android:text="@string/public_live_report"
+                android:textColor="#ff68757d"
+                android:textSize="11dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="评论101条"
+            android:textColor="#ffcbcbcf"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

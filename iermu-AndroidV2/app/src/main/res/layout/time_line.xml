@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TimeLine" >
+
+    <RelativeLayout
+        android:id="@+id/time_pointer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:paddingBottom="2dp" >
+
+        <TextView
+            android:id="@+id/time_line_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingBottom="3dp"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#00acef"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent" >
+
+        <com.iermu.ui.view.timeline.TimeSpanViewLinearLayout
+            android:id="@+id/TimeSpanView_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/timeline_background" />
+
+        <View
+            android:id="@+id/time_point_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/time_point_bg" />
+
+        <View
+            android:id="@+id/time_point_line"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="#f5f4f0"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+</LinearLayout>

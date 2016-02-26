@@ -1,0 +1,91 @@
+<resources>
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!--android:clipToPadding="true"-->
+        <!--android:fitsSystemWindows="true"-->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@null</item>
+        <item name="windowActionBar">true</item>
+        <item name="android:actionBarDivider">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="contentInsetStart">0dp</item>
+        <item name="contentInsetEnd">0dp</item>
+        <item name="actionBarSize">48dip</item>
+        <item name="android:actionBarSize">48dip</item>
+        <item name="@android:attr/actionBarSize">48dip</item>
+        <item name="android:actionBarStyle">@style/CustomActionStyle</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:dialogTheme">@style/custom_dialog</item>
+    </style>
+
+    <style name="CustomActionStyle" parent="@style/Widget.AppCompat.Light.ActionBar">
+        <item name="actionBarSize">48dip</item>
+        <item name="android:actionBarSize">48dip</item>
+        <item name="android:height">48dip</item>
+        <item name="contentInsetStart">0dp</item>
+        <item name="contentInsetEnd">0dp</item>
+    </style>
+    <!--<style name="shareDialog_style" parent="@android:style/Theme.Holo.DialogWhenLarge"/>-->
+    <!--<style name="activity_dialogStyle"  >-->
+        <!--<item name="android:windowNoTitle">true</item>-->
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+    <!--</style>-->
+    <style name="main_tabs">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/bottom_text_color</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">2dp</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <style name="mProgress_horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/progressbar_horizontal_1</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:minHeight">20dp</item>
+        <item name="android:maxHeight">20dp</item>
+    </style>
+    <style name="custom_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>                           <!-- Dialog的windowFrame框为无 -->
+        <item name="android:windowIsFloating">true</item>                       <!-- 是否漂现在activity上 -->
+        <item name="android:windowIsTranslucent">true</item>                    <!-- 是否半透明 -->
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item> <!-- 去除黑色边框的关键设置项 -->
+        <item name="android:backgroundDimEnabled">false</item>                   <!-- 屏幕背景是否变暗 -->
+        <item name="android:backgroundDimAmount">0.1</item>
+    </style>
+    <style name="load_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>                           <!-- Dialog的windowFrame框为无 -->
+        <item name="android:windowIsFloating">true</item>                       <!-- 是否漂现在activity上 -->
+        <item name="android:windowIsTranslucent">true</item>                    <!-- 是否半透明 -->
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item> <!-- 去除黑色边框的关键设置项 -->
+        <item name="android:backgroundDimEnabled">true</item>                   <!-- 屏幕背景是否变暗 -->
+        <item name="android:backgroundDimAmount">0.5</item>
+    </style>
+    <style name="upgrade_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>                           <!-- Dialog的windowFrame框为无 -->
+        <item name="android:windowIsFloating">true</item>                       <!-- 是否漂现在activity上 -->
+        <item name="android:windowIsTranslucent">true</item>                    <!-- 是否半透明 -->
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item> <!-- 去除黑色边框的关键设置项 -->
+        <item name="android:backgroundDimEnabled">true</item>                   <!-- 屏幕背景是否变暗 -->
+        <item name="android:backgroundDimAmount">0.8</item>
+    </style>
+
+</resources>

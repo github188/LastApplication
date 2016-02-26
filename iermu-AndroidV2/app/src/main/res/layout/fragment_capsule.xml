@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <LinearLayout
+        android:id="@+id/view_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/cache_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:orientation="horizontal">
+
+            <!--<include layout="@layout/view_temperature"/>-->
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/img_temperature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/temperature"
+                    android:layout_toRightOf="@+id/img_temperature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/cms_center"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="8dp"/>
+                <TextView
+                    android:id="@+id/temperature_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/cms_center"
+                    android:textSize="16sp"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="25dp"
+                android:background="@color/layout_bg"/>
+
+            <!--<include layout="@layout/view_humidity"/>-->
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/img_humidity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/humidity"
+                    android:layout_toRightOf="@+id/img_humidity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/cms_center"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="8dp"/>
+                <TextView
+                    android:id="@+id/humidity_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/cms_center"
+                    android:textSize="16sp"/>
+            </RelativeLayout>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:textColor="@color/devices_help_btn_bg"
+                android:text="@string/tip_capsule"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/left_triangle"/>
+
+            <TextView
+                android:id="@+id/tips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/blue_capsule_back"
+                android:paddingBottom="6dp"
+                android:paddingTop="6dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textSize="14sp"
+                android:layout_marginLeft="-1dp"
+                android:textColor="@color/white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/share_capsule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_share_cut_image"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:text="@string/public_live_share"/>
+
+    <include layout="@layout/share_fragment"/>
+
+</RelativeLayout>

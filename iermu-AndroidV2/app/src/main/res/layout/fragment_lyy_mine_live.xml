@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:fitsSystemWindows="false"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/viewTop"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:clickable="true"
+        android:descendantFocusability="blocksDescendants">
+
+        <com.cms.media.widget.VideoView
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top|center_horizontal"
+            android:orientation="vertical" />
+
+        <com.iermu.ui.view.MainLiveControllerView
+            android:id="@+id/viewController"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutButtons"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/viewTop">
+
+        <!--横向按钮列表-->
+        <LinearLayout
+            android:id="@+id/linearLayoutButtons"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#ffffff"
+            android:gravity="center_vertical">
+
+            <RelativeLayout
+                android:layout_width="120dp"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/buttonCloud"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/public_live_btn_bg"
+                    android:src="@drawable/main_live_cloud" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="28dp"
+                android:background="#ffdddddd" />
+
+            <ImageButton
+                android:id="@+id/buttonLevel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/public_live_btn_bg"
+                android:src="@drawable/main_live_level1" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="28dp"
+                android:background="#ffdddddd" />
+
+            <ImageButton
+                android:id="@+id/buttonSound"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/public_live_btn_bg"
+                android:src="@drawable/public_live_btn_sound" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="28dp"
+                android:background="#ffdddddd" />
+
+            <ImageButton
+                android:id="@+id/buttonFullScreen"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/public_live_btn_bg"
+                android:src="@drawable/main_live_fullscreen_normal" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="#ffdcdcdc" />
+
+        <ImageView
+            android:id="@+id/imageViewCloudClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/cloud_close_up_image"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayoutButtons"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imageViewVoice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/audio_strength_1"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayoutBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageButtonRecord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/main_live_record" />
+
+            <ImageButton
+                android:id="@+id/imageButtonSpeak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@null"
+                android:src="@drawable/main_live_speak" />
+
+            <ImageButton
+                android:id="@+id/imageButtonPrintScreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/main_live_printscreen" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <com.iermu.ui.view.CloudControllerView
+        android:id="@+id/cloudControllerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayoutButtons"
+        android:background="#fff2f2f2"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/viewAddPrePositionBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#77000000"
+        android:visibility="gone" />
+
+    <!--添加预置位弹框-->
+    <com.iermu.ui.view.AddPrePositionView
+        android:id="@+id/addPrePositionView"
+        android:layout_width="330dp"
+        android:layout_height="174dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/cloud_add_bg"
+        android:visibility="gone" />
+
+    <!--编辑预置位弹框-->
+    <LinearLayout
+        android:id="@+id/viewPopPositionEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/cloud_add_bg"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/buttonPopTitle"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:text="@string/preset"
+                android:textColor="#ff888888"
+                android:textSize="15dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#fff2f2f2" />
+
+            <TextView
+                android:id="@+id/buttonPopEdit"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:text="@string/edit"
+                android:textColor="#ff00acef"
+                android:textSize="15dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#fff2f2f2" />
+
+            <TextView
+                android:id="@+id/buttonPopDelete"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:text="@string/delete"
+                android:textColor="#fffc5440"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/buttonPopCancel"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/cloud_add_bg"
+            android:gravity="center"
+            android:text="@string/cancle_txt"
+            android:textColor="#ff00acef"
+            android:textSize="15dp" />
+    </LinearLayout>
+</RelativeLayout>

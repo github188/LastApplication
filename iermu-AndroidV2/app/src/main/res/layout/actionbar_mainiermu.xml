@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00a2ff"
+    android:id="@+id/iermu_bg"
+    android:visibility="visible"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:background="@null"
+        android:src="@drawable/iermu_add_selector"
+        android:visibility="invisible"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/actionbar_title"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="@string/maintab_iermu"
+        android:textColor="@color/white"
+        android:textSize="17dp" />
+    <ImageView
+        android:id="@+id/actionbar_adddev"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:background="@null"
+        android:src="@drawable/iermu_add_selector"
+        tools:ignore="ContentDescription" />
+</LinearLayout>

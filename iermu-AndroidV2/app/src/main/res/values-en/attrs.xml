@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="temperature_text">
+        <item>Feeling uncomfortable, recommends open air conditioning cooling</item>
+        <item>Body feeling very uncomfortable, it is recommended that open air conditioning cooling</item>
+        <item>Body feeling hot, uncomfortable, and can be properly cooled</item>
+        <item>Body warmer, more comfortable</item>
+        <item>Feeling the most comfortable, the most acceptable</item>
+        <item>Feeling slightly cool, comfort</item>
+        <item>Feeling very cold, keep warm</item>
+        <item>Feeling uncomfortable, keep warm</item>
+        <item>Feeling very cold, very comfortable, pay attention to keep warm</item>
+        <item>Feeling very cold, very uncomfortable attention to keep warm to prevent frostbite</item>
+    </string-array>
+
+    <string-array name="temperature_level">
+        <item>Hot</item>
+        <item>Hot</item>
+        <item>Hot</item>
+        <item>Warm</item>
+        <item>Comfy</item>
+        <item>Cool</item>
+        <item>Freezing</item>
+        <item>Cool</item>
+        <item>Freezing</item>
+        <item>Cold</item>
+    </string-array>
+
+    <string-array name="humidity_text">
+        <item>Air is humid, prone to feeling irritable, sensitive subjects are predisposed to rheumatism, recommends opening dehumidifying equipment</item>
+        <item>The air is wet, prone to infections disease recommended open air conditioning dehumidification</item>
+        <item>Suitable humidity</item>
+        <item>Air dry, easy to dry fire, recommend appropriate water</item>
+    </string-array>
+
+    <string-array name="humidity_level">
+        <item>Wet</item>
+        <item>Wet</item>
+        <item>Comfort</item>
+        <item>Dry</item>
+    </string-array>
+
+</resources>

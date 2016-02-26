@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <RelativeLayout
+            android:layout_width="160dp"
+            android:layout_height="113dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@drawable/record_thumbnial_default" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:layout_below="@+id/imageView"
+                android:background="#ffffffff"
+                android:gravity="center_vertical"
+                android:paddingLeft="8dp"
+                android:text="5月4日 12:22:54"
+                android:textColor="#ff666666"
+                android:textSize="10sp" />
+
+            <ImageView
+                android:id="@+id/imageViewMask"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/mine_record_list_item_bg_normal" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

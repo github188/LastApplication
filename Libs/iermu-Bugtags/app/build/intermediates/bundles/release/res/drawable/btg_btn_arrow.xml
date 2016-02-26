@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/btg_icon_arrow_selected" android:state_focused="true"/>
+    <item android:drawable="@drawable/btg_icon_arrow_selected" android:state_pressed="true"/>
+    <item android:drawable="@drawable/btg_icon_arrow_selected" android:state_selected="true"/>
+    <item android:drawable="@drawable/btg_icon_arrow_normal"/>
+</selector><!-- From: file:/Users/guixiaomei/Desktop/iermu/Android-Repository/iermu-Android-V2.0/iermu-Bugtags/app/src/main/res/drawable/btg_btn_arrow.xml -->

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/auth_send"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="47dp"
+            android:layout_gravity="center"
+            android:src="@drawable/empower_homer_use" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="34dp"
+            android:gravity="center"
+            android:text="@string/share_family_try"
+            android:textColor="#313B4B"
+            android:textSize="@dimen/text_16_language" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="@string/send_invitation"
+            android:textColor="#313B4B"
+            android:textSize="@dimen/text_16_language" />
+
+        <Button
+            android:id="@+id/wx_btn"
+            android:layout_height="42dp"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:layout_marginTop="37dp"
+            android:background="@drawable/check_light_bg_selector"
+            android:text="@string/wechat_invitation"
+            android:textColor="#ffffff"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <include layout="@layout/fragment_empower_homer_two" />
+
+    <RelativeLayout
+        android:id="@+id/auth_load"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_centerInParent="true">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:background="#00000000" />
+    </RelativeLayout>
+
+</LinearLayout>

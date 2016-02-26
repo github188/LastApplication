@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/viewTop"
+        android:layout_width="match_parent"
+        android:layout_height="240dp">
+
+        <LinearLayout
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:orientation="vertical" />
+
+        <com.iermu.ui.view.MainLiveControllerView
+            android:id="@+id/viewController"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <include layout="@layout/live_network_state" />
+
+        </com.iermu.ui.view.MainLiveControllerView>
+    </RelativeLayout>
+
+    <!--横向按钮列表-->
+    <LinearLayout
+        android:id="@+id/linearLayoutButtons"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/viewTop"
+        android:background="#ffffffff"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/buttonCloud"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/public_live_btn_bg"
+            android:src="@drawable/main_live_cloud_normal" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="28dp"
+            android:background="#ffdddddd" />
+
+        <ImageButton
+            android:id="@+id/buttonLevel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/public_live_btn_bg"
+            android:src="@drawable/live_btn_fluent_normal_" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="28dp"
+            android:background="#ffdddddd" />
+
+        <ImageButton
+            android:id="@+id/buttonSound"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/public_live_btn_bg"
+            android:src="@drawable/public_live_btn_sound" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="28dp"
+            android:background="#ffdddddd" />
+
+        <ImageButton
+            android:id="@+id/buttonFullScreen"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/public_live_btn_bg"
+            android:src="@drawable/main_live_fullscreen_normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayoutButtons"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButtonRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/main_live_record" />
+
+        <com.iermu.ui.view.TouchEventImageButton
+            android:id="@+id/imageButtonSpeak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@null"
+            android:src="@drawable/main_live_speak" />
+
+        <ImageButton
+            android:id="@+id/imageButtonPrintScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/main_live_printscreen" />
+    </LinearLayout>
+</RelativeLayout>

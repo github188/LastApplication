@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/iermu_live_share"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="20dp">
+
+        <ImageView
+            android:id="@+id/cam_img"
+            android:layout_width="120dp"
+            android:layout_height="90dp"
+            android:layout_marginRight="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/iermu_thumb" />
+
+        <TextView
+            android:id="@+id/cam_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/cam_img"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/share_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cam_name"
+            android:layout_marginTop="18dp"
+            android:layout_toRightOf="@id/cam_img"
+            android:textColor="#b2b2b2"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="0.5dp"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/timer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/applypub_timer_1"
+                android:drawablePadding="8dp"
+                android:gravity="center"
+                android:text="@string/on_time_close"
+                android:textColor="#e7e7e7" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="32dp"
+            android:background="#FFE4E4E4" />
+        <!--android:background="@color/line_bg"-->
+        <LinearLayout
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/applypub_lock_1"
+                android:drawablePadding="8dp"
+                android:gravity="center"
+                android:text="@string/check_password"
+                android:textColor="#e7e7e7" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="8dp"
+        android:background="#ffdcdcdc" />
+
+    <TextView
+        android:id="@+id/share_wx"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:layout_marginBottom="-2dp"
+        android:background="@drawable/check_bg_selector"
+        android:drawableLeft="@drawable/applypub_share_weixin"
+        android:drawablePadding="12dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="18dp"
+        android:text="@string/share_wechat"
+        android:textColor="#333333"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ffdcdcdc" />
+
+    <TextView
+        android:id="@+id/share_peng"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:layout_marginBottom="-2dp"
+        android:layout_marginTop="0.5dp"
+        android:background="@drawable/check_bg_selector"
+        android:drawableLeft="@drawable/applypub_share_friends"
+        android:drawablePadding="12dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="18dp"
+        android:text="@string/share_moments"
+        android:textColor="#333333"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ffdcdcdc" />
+
+    <TextView
+        android:id="@+id/share_link"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:layout_marginTop="0.5dp"
+        android:background="@drawable/check_bg_selector"
+        android:drawableLeft="@drawable/applypub_share_link"
+        android:drawablePadding="12dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="18dp"
+        android:text="@string/copy_live_link"
+        android:textColor="#333333"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ffdcdcdc" />
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="请仔细阅读以下注意事项"/>-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/link_lay"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="center_horizontal"-->
+    <!--android:orientation="vertical">-->
+    <!--<Button-->
+    <!--android:id="@+id/send_link"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="20dp"-->
+    <!--android:text="发送分享链接"/>-->
+    <!--<Button-->
+    <!--android:id="@+id/stop_share"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="20dp"-->
+    <!--android:background="#ff0000"-->
+    <!--android:visibility="gone"-->
+    <!--android:text="停止分享摄像机"/>-->
+    <!--</LinearLayout>-->
+
+    <!--<Button-->
+    <!--android:id="@+id/protocol"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:paddingLeft="20dp"-->
+    <!--android:paddingRight="20dp"-->
+    <!--android:layout_marginTop="50dp"-->
+    <!--android:gravity="center"-->
+    <!--android:text="@string/share_protocol"/>-->
+
+    <!--<Button-->
+    <!--android:id="@+id/send_public"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="20dp"-->
+    <!--android:text="确定，公开给所有人看"/>-->
+
+</LinearLayout>

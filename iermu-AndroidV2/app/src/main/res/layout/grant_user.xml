@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#b0b0b0"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="18dp"
+            android:text="@string/move_left_cancel_share"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="20dp"
+            android:background="#e8e8e8"/>
+        <Button
+            android:id="@+id/share_wx"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="@string/pass_wechat_invitation"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:background="@drawable/check_btn_selector"
+            android:textColor="#00acef"/>
+    </LinearLayout>
+</LinearLayout>

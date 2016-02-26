@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/cloud_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="60dp"
+        android:background="#00000000">
+
+        <ImageView
+            android:id="@+id/cloud2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/recordview_recording" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/cloud_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cloud_1"
+        android:layout_alignRight="@+id/cloud_1"
+        android:layout_below="@+id/cloud_1"
+        android:layout_centerHorizontal="true"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/text_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="13dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/cloud_overdue"
+            android:textColor="#333333"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/text_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_1"
+            android:layout_marginLeft="17dp"
+            android:drawableLeft="@drawable/cloud_circle_blue"
+            android:drawablePadding="4dp"
+            android:text="@string/cloud_one"
+            android:textColor="#666666"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/text_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_2"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/cloud_circle_blue"
+            android:drawablePadding="4dp"
+            android:text="@string/cloud_two"
+            android:textColor="#666666"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/text_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_3"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/cloud_circle_blue"
+            android:drawablePadding="4dp"
+            android:text="@string/cloud_three"
+            android:textColor="#666666"
+            android:textSize="12dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cloud_1"
+        android:layout_alignRight="@+id/cloud_1"
+        android:layout_below="@+id/cloud_2"
+        android:layout_centerHorizontal="true"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@drawable/cloud_record_left_selector"
+            android:gravity="center"
+            android:text="@string/know" />
+
+        <Button
+            android:id="@+id/btn_buy"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@drawable/cloud_record_right_selector"
+            android:gravity="center"
+            android:text="@string/at_once_buy"
+            android:textColor="#00acef" />
+    </LinearLayout>
+</RelativeLayout>

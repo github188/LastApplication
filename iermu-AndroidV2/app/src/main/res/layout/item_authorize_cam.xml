@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp">
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:background="@color/main_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/my_ermu_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/my_cam_name"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="我的幸福家"
+            android:textColor="#333333"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/my_cam_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/iermu_thumb"
+                android:scaleType="fitXY" />
+            <ImageView
+                android:visibility="invisible"
+                android:id="@+id/lyy_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/lyy_logo"
+                android:layout_alignBottom="@+id/my_cam_img"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/cam_status1"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_margin="6dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:background="@drawable/state_off"
+                android:gravity="center"
+                android:text="@string/close"
+                android:textSize="11dp"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:text="@string/auth_to_mine_cam"
+                android:textColor="#888888"
+                android:textSize="13sp" />
+            <View
+                android:layout_width="1px"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_height="18dp"
+                android:layout_marginRight="115dp"
+                android:background="#d4d4d4" />
+            <TextView
+                android:id="@+id/drop_auth_dev"
+                android:layout_width="88dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawablePadding="4dp"
+                android:drawableLeft="@drawable/main_iermu_auth"
+                android:background="@null"
+                android:layout_marginRight="-9dp"
+                android:textColor="#888888"
+                android:textSize="13sp"
+                android:focusable="false"
+                android:text="@string/delete"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/main_bg" />
+</LinearLayout>

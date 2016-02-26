@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/viewController"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/viewControllerBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000" />
+    <!-- 此处不能增加背景色(会遮盖播放器) -->
+
+    <!--广角指示器-->
+    <RelativeLayout
+        android:id="@+id/viewIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="3dp">
+
+        <ImageView
+            android:id="@+id/imageViewIndicatorBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/live_image_indicator_bar" />
+
+        <ImageView
+            android:id="@+id/imageViewIndicatorCircle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/live_image_indicator_circle" />
+    </RelativeLayout>
+
+    <!--空气胶囊-->
+    <include layout="@layout/view_capsule" />
+
+    <!--网速-->
+    <RelativeLayout
+        android:id="@+id/viewSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/speed_bg">
+
+        <TextView
+            android:id="@+id/speed_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="12dp" />
+    </RelativeLayout>
+
+    <!--状态转换提示-->
+    <com.iermu.ui.view.PublicCamStatusView
+        android:id="@+id/viewStatus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!--控制器按钮集合-->
+    <RelativeLayout
+        android:id="@+id/viewLanscapeControl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <!--顶部一排按钮-->
+        <LinearLayout
+            android:id="@+id/linearLayoutTop"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#cc242526">
+
+            <TextView
+                android:id="@+id/textViewControllerTitle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="18dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="@string/my_live"
+                android:textColor="#ffffffff"
+                android:textSize="16dp" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@drawable/public_vertical_line_black"
+                android:visibility="visible" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@drawable/public_vertical_line_white"
+                android:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/buttonCloudCtrl"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:padding="20dp"
+                android:src="@drawable/main_live_ctrl_cloud"
+                android:visibility="visible" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@drawable/public_vertical_line_black" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@drawable/public_vertical_line_white" />
+
+            <ImageButton
+                android:id="@+id/buttonLevelCtrl"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:clickable="true"
+                android:padding="20dp"
+                android:src="@drawable/main_live_ctrl_level1" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@drawable/public_vertical_line_black" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@drawable/public_vertical_line_white" />
+
+            <ImageButton
+                android:id="@+id/buttonVoice"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:padding="20dp"
+                android:src="@drawable/public_live_ctrl_sound" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@drawable/public_vertical_line_black" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@drawable/public_vertical_line_white" />
+
+            <ImageButton
+                android:id="@+id/buttonOutFullScreen"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:padding="20dp"
+                android:src="@drawable/public_live_outfullscreen" />
+
+        </LinearLayout>
+
+        <!--右边三个按钮-->
+        <LinearLayout
+            android:id="@+id/linearLayoutRight"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/linearLayoutTop"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/imageviewStrengthCtrl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/audio_strength_ctrl_1"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingRight="8dp">
+
+                <ImageButton
+                    android:id="@+id/imageButtonRecordCtrl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:src="@drawable/main_live_ctrl_record" />
+
+                <com.iermu.ui.view.TouchEventImageButton
+                    android:id="@+id/imageButtonSpeakCtrl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="19dp"
+                    android:layout_marginTop="19dp"
+                    android:background="@null"
+                    android:src="@drawable/main_live_ctrl_speak" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonPrintScreenCtrl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:src="@drawable/main_live_ctrl_printscreen" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--左边一个按钮-->
+        <LinearLayout
+            android:id="@+id/linearLayoutLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/linearLayoutTop"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+            android:visibility="invisible">
+
+            <ImageButton
+                android:id="@+id/imageButtonCtrlCloudAuto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/main_live_ctrl_cloud_auto" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!--截屏提示-->
+    <LinearLayout
+        android:id="@+id/viewCut"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="17dp"
+        android:layout_marginLeft="17dp"
+        android:background="@drawable/bg_white_cornor"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/imageViewCut"
+            android:layout_width="96dp"
+            android:layout_height="54dp" />
+
+        <TextView
+            android:id="@+id/textViewCut"
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:text="@string/share_println"
+            android:textColor="#ff333333"
+            android:textSize="13dp" />
+    </LinearLayout>
+
+    <!--清晰度选择弹框-->
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="108dp"
+        android:background="@drawable/dialog_bg"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RadioButton
+            android:id="@+id/radioButtonLevel1"
+            android:layout_width="100dp"
+            android:layout_height="42dp"
+            android:background="@drawable/public_live_btn_bg_cornor"
+            android:button="@null"
+            android:drawableLeft="@drawable/main_live_dot"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/low_definition"
+            android:textColor="@color/main_live_radio_btn_text_color"
+            android:textSize="14dp" />
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:background="#FFB4B4B4" />
+
+        <RadioButton
+            android:id="@+id/radioButtonLevel2"
+            android:layout_width="100dp"
+            android:layout_height="42dp"
+            android:background="@drawable/public_live_btn_bg_cornor"
+            android:button="@null"
+            android:drawableLeft="@drawable/main_live_dot"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/high_definition"
+            android:textColor="@color/main_live_radio_btn_text_color"
+            android:textSize="14dp" />
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:background="#FFB4B4B4" />
+
+        <RadioButton
+            android:id="@+id/radioButtonLevel3"
+            android:layout_width="100dp"
+            android:layout_height="42dp"
+            android:background="@drawable/main_iermu_selector"
+            android:button="@null"
+            android:drawableLeft="@drawable/main_live_dot"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/super_definition"
+            android:textColor="@color/main_live_radio_btn_text_color"
+            android:textSize="14dp" />
+    </RadioGroup>
+
+    <!--自定义toast-->
+    <TextView
+        android:id="@+id/textViewToast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/live_bg_toast"
+        android:paddingBottom="7dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="7dp"
+        android:text="@string/bitmap_save"
+        android:textColor="#ffffffff"
+        android:textSize="14dp"
+        android:visibility="gone" />
+
+    <!--云台提示-->
+    <LinearLayout
+        android:id="@+id/viewCloudTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/cloud_tip_bg"
+        android:gravity="center_vertical"
+        android:padding="3dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textViewCloudTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:drawableLeft="@drawable/cloud_tip_image"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="@string/double_touch"
+            android:textColor="#ff888888"
+            android:textSize="12dp" />
+
+        <ImageButton
+            android:id="@+id/imageButtonCloseTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:src="@drawable/cloud_tip_close" />
+    </LinearLayout>
+
+    <!--中央旋转动画-->
+    <RelativeLayout
+        android:id="@+id/viewCenterAnimate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cloud_center_bg" />
+
+        <ImageView
+            android:id="@+id/imageViewAnimateTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/cloud_center_image" />
+    </RelativeLayout>
+
+    <!--到最左边提示-->
+    <TextView
+        android:id="@+id/textViewMostLeft"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="-3dp"
+        android:background="@drawable/cloud_most_left_bg"
+        android:drawablePadding="5dp"
+        android:drawableTop="@drawable/cloud_to_most_left"
+        android:gravity="center_horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="13dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/have_end"
+        android:textColor="#ffffffff"
+        android:textSize="15dp"
+        android:visibility="gone" />
+
+    <!--到最右边提示-->
+    <TextView
+        android:id="@+id/textViewMostRight"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="-3dp"
+        android:background="@drawable/cloud_most_left_bg"
+        android:drawablePadding="5dp"
+        android:drawableTop="@drawable/cloud_to_most_right"
+        android:gravity="center_horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="13dp"
+        android:paddingTop="10dp"
+        android:text="@string/have_end"
+        android:textColor="#ffffffff"
+        android:textSize="15dp"
+        android:visibility="gone" />
+
+    <!--双击位置图片-->
+    <ImageView
+        android:id="@+id/imageViewPress"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="-15dp"
+        android:layout_marginTop="-15dp"
+        android:src="@drawable/cloud_press_image"
+        android:visibility="gone" />
+</RelativeLayout>

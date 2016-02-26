@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="@dimen/activity_top_margin"
+        android:background="@color/cms_stroke" />
+
+    <RelativeLayout
+        android:id="@+id/menu_iermu_buy"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/activity_height"
+        android:layout_marginBottom="-1dp"
+        android:background="@drawable/check_bg_color_pressed"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_left_margin"
+            android:gravity="center_vertical"
+            android:text="@string/iermu_unit_type"
+            android:textColor="@color/cms_center"
+            android:textSize="@dimen/activity_text_size_one" />
+
+        <TextView
+            android:id="@+id/cammodel_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:gravity="center_vertical|right"
+            android:hint="@string/in_loading"
+            android:text=""
+            android:textColor="#b0b0b0" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="16dp"
+        android:background="@color/cms_stroke" />
+
+    <RelativeLayout
+        android:id="@+id/menu_cvr_buy"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/activity_height"
+        android:layout_marginBottom="-1dp"
+        android:background="@drawable/check_bg_color_pressed"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_left_margin"
+            android:gravity="center_vertical"
+            android:text="@string/device_num"
+            android:textColor="@color/cms_center"
+            android:textSize="@dimen/activity_text_size_one" />
+
+        <TextView
+            android:id="@+id/camsn_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/activity_right_margin"
+            android:gravity="center_vertical|right"
+            android:hint="@string/in_loading"
+            android:text=""
+            android:textColor="#b0b0b0" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="16dp"
+        android:background="@color/cms_stroke" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/activity_height"
+        android:layout_marginBottom="-1dp"
+        android:background="@drawable/check_bg_color_pressed"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_left_margin"
+            android:gravity="center_vertical"
+            android:text="@string/address"
+            android:textColor="@color/cms_center"
+            android:textSize="@dimen/activity_text_size_one" />
+
+        <TextView
+            android:id="@+id/cammac_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/activity_right_margin"
+            android:gravity="center_vertical|right"
+            android:hint="@string/in_loading"
+            android:text=""
+            android:textColor="#b0b0b0" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="16dp"
+        android:background="@color/cms_stroke" />
+
+    <RelativeLayout
+        android:id="@+id/menu_feedback"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/activity_height"
+        android:layout_marginBottom="-1dp"
+        android:background="@drawable/check_bg_color_pressed"
+        android:focusable="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/activity_left_margin"
+            android:gravity="center_vertical"
+            android:text="@string/iermu_wifi_name"
+            android:textColor="@color/cms_center"
+            android:textSize="@dimen/activity_text_size_one" />
+
+        <TextView
+            android:id="@+id/camwifi_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/activity_right_margin"
+            android:gravity="center_vertical|right"
+            android:hint="@string/in_loading"
+            android:text=""
+            android:textColor="#b0b0b0" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="@dimen/activity_bottom_margin"
+        android:background="@color/cms_stroke" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/cms_stroke" />
+
+    <RelativeLayout
+        android:id="@+id/menu_set"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/activity_height"
+        android:layout_marginBottom="-1dp"
+        android:background="@drawable/check_bg_color_pressed"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_left_margin"
+            android:gravity="center_vertical"
+            android:text="@string/iermu_ip"
+            android:textColor="@color/cms_center"
+            android:textSize="@dimen/activity_text_size_one" />
+
+        <TextView
+            android:id="@+id/camip_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/activity_right_margin"
+            android:gravity="center_vertical|right"
+            android:hint="@string/in_loading"
+            android:text=""
+            android:textColor="#b0b0b0" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="16dp"
+        android:background="@color/cms_stroke" />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/activity_height"
+        android:background="@drawable/check_bg_color_pressed"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_left_margin"
+            android:gravity="center_vertical"
+            android:text="@string/iermu_wifi_Strong"
+            android:textColor="@color/cms_center"
+            android:textSize="@dimen/activity_text_size_one" />
+
+        <TextView
+            android:id="@+id/camsig_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:gravity="center_vertical|right"
+            android:hint="@string/in_loading"
+            android:text=""
+            android:textColor="#b0b0b0" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="@dimen/activity_bottom_margin"
+        android:background="@color/cms_stroke" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/cms_stroke" />
+    <RelativeLayout
+        android:id="@+id/camera_version"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/check_bg_color_pressed"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:clickable="false"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_left_margin"
+            android:gravity="center_vertical"
+            android:text="@string/iermu_camera"
+            android:textColor="@color/cms_center"
+            android:textSize="@dimen/activity_text_size_two" />
+
+        <TextView
+            android:id="@+id/camversion_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_1"
+            android:layout_marginLeft="@dimen/activity_left_margin"
+            android:hint="@string/in_loading"
+            android:textColor="#999999" />
+
+        <TextView
+            android:id="@+id/camera_upgrade_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:paddingTop="8dp"
+            android:drawableLeft="@drawable/cam_update_new"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:text="@string/cam_upgrade_new"
+            android:textColor="@color/cam_upgrade_new"
+            android:textSize="@dimen/activity_text_size_one"
+            android:visibility="gone"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/cms_stroke" />
+    <RelativeLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/activity_height"
+        android:background="@drawable/check_bg_color_pressed"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_left_margin"
+            android:gravity="center_vertical"
+            android:text="@string/iermu_denote_state"
+            android:textColor="@color/cms_center"
+            android:textSize="@dimen/activity_text_size_one" />
+
+        <TextView
+            android:id="@+id/camlight_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/activity_right_margin"
+            android:gravity="center_vertical"
+            android:text="蓝灯常亮" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="8dp"
+        android:background="@color/cms_stroke" />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/activity_height"
+        android:background="@drawable/check_bg_color_pressed"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_left_margin"
+            android:gravity="center_vertical"
+            android:text="@string/iermu_work_state"
+            android:textColor="@color/cms_center"
+            android:textSize="@dimen/activity_text_size_one" />
+        <TextView
+            android:id="@+id/camstatus_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/activity_right_margin"
+            android:gravity="center_vertical|right"
+            android:hint="@string/in_loading"
+            android:textColor="#b0b0b0" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="250px"
+        android:background="@color/cms_stroke"/>
+</LinearLayout>

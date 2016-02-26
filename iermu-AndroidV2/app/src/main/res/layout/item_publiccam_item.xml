@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_bg"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:background="@color/main_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/my_ermu_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/auth_cam_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/iermu_thumb"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/cam_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"/>
+
+            <ImageView
+                android:id="@+id/img_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cover_bg"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/cam_where"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:layout_toLeftOf="@+id/cam_state"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="峨眉山"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/cam_state"
+                android:layout_width="41dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_margin="6dp"
+                android:background="@drawable/public_playing"
+                android:gravity="center"
+                android:text="@string/public_living"
+                android:textColor="@color/white"
+                android:textSize="11sp" />
+
+            <ImageView
+                android:id="@+id/lyy_logo_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/lyy_logo"
+                android:visibility="invisible"
+                android:layout_alignBottom="@+id/auth_cam_img"
+                android:layout_alignParentLeft="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/avator_img"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginRight="6dp"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/cam_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/cam_num_people"
+                android:layout_toRightOf="@id/avator_img"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="我的儿童房间"
+                android:textColor="#333333"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/cam_num_people"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:text="33232人看过"
+                android:textColor="#b0b0b0"
+                android:textSize="13dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:background="@color/main_bg" />
+</LinearLayout>

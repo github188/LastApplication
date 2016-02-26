@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textViewCloudPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_above="@+id/imageButtonCloudPager"
+        android:layout_centerHorizontal="true"
+        android:text="@string/check_use_location"
+        android:textColor="#ff888888"
+        android:textSize="14dp" />
+
+    <ImageButton
+        android:id="@+id/imageButtonCloudPager"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#00000000"
+        android:src="@drawable/cloud_btn_preposition_normal" />
+</LinearLayout>

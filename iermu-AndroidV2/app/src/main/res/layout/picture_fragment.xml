@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg">
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/linearLayout"
+        android:background="@color/cms_stroke"
+        android:visibility="gone"
+        android:layout_marginLeft="28dp"/>
+
+    <RelativeLayout
+        android:id="@+id/no_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/no_photo_bg"/>
+
+        <TextView
+            android:layout_below="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="14dp"
+            android:lineSpacingExtra="11dp"
+            android:textSize="14sp"
+            android:textColor="@color/software_textColor_unselected"
+            android:text="@string/no_photo_txt"/>
+
+        </RelativeLayout>
+
+    <com.lib.pulltorefreshview.PullToRefreshLayout
+        android:id="@+id/lvPullLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/refresh_head" />
+
+        <com.iermu.ui.view.PullableStickyListHeadersListView
+            android:id="@+id/picture_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="#00000000"
+            android:listSelector="#00000000"
+            android:overScrollMode="never"
+            android:scrollbars="none" >
+
+            </com.iermu.ui.view.PullableStickyListHeadersListView>
+
+        <include layout="@layout/load_more" />
+
+    </com.lib.pulltorefreshview.PullToRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/delete_layout"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/select_all"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:drawableLeft="@drawable/alarm_select_all_selector"
+            android:drawablePadding="11dp"
+            android:gravity="center_vertical"
+            android:text="@string/all"
+            android:textColor="#ff00acef"
+            android:textSize="14dp" />
+
+        <Button
+            android:id="@+id/delete_btn"
+            android:layout_width="240dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/red_button_color"
+            android:enabled="false"
+            android:text="@string/delete"
+            android:background="@drawable/iermu_delete_selector"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

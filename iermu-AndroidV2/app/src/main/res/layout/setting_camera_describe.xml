@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical" >
+    <EditText
+        android:paddingLeft="12dp"
+        android:id="@+id/set_camera_name"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:maxLength="32"
+        android:background="@drawable/check_bg_color_pressed"
+        android:singleLine="true"
+        android:paddingRight="40dp"
+        android:gravity="center_vertical"
+        android:textColor="#333333"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textSize="@dimen/activity_text_size_one"
+        android:layout_marginTop="20dp"
+         />
+    <ImageView
+        android:visibility="invisible"
+        android:id="@+id/dev_name_close"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:src="@drawable/setting_dev_name" />
+
+</RelativeLayout>

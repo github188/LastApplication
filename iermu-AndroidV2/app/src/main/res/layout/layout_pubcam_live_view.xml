@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.pedrovgs.DraggableView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:draggable_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/draggable_play_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:visibility="gone"
+    draggable_view:bottom_view_id="@+id/lv_comment"
+    draggable_view:top_view_id="@+id/pubcam_live_holder"
+    draggable_view:top_view_margin_bottom="@dimen/top_fragment_margin"
+    draggable_view:top_view_margin_right="@dimen/top_fragment_margin"
+    draggable_view:top_view_x_scale_factor="@dimen/x_scale_factor"
+    draggable_view:top_view_y_scale_factor="@dimen/y_scale_factor">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+
+        <LinearLayout
+            android:id="@+id/pubcam_live_holder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:orientation="vertical" />
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/lv_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></ListView>
+</com.github.pedrovgs.DraggableView>

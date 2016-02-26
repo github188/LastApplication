@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/maintab_radiogoup"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:layout_gravity="bottom"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/rectangle"
+    android:orientation="horizontal">
+    <RadioButton
+        android:id="@+id/maintab_iermu"
+        style="@style/main_tabs"
+        android:drawableTop="@drawable/my_iermu_selector"
+        android:text="@string/maintab_iermu" />
+
+    <RadioButton
+        android:id="@+id/maintab_message"
+        style="@style/main_tabs"
+        android:drawableTop="@drawable/iermu_message_selector"
+        android:text="@string/maintab_message" />
+
+    <RadioButton
+        android:id="@+id/maintab_public"
+        style="@style/main_tabs"
+        android:drawableTop="@drawable/iermu_public_selector"
+        android:text="@string/maintab_public" />
+
+    <RadioButton
+        android:id="@+id/maintab_personal"
+        style="@style/main_tabs"
+        android:drawableTop="@drawable/iermu_personal_selector"
+        android:text="@string/maintab_personal" />
+</RadioGroup>

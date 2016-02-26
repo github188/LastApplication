@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/zhangxq/Documents/iermu/iermu-AndroidV2/iermu-AndroidV2/lib_PullToRefreshView/build/intermediates/bundles/debug/res/values-en/values.xml -->
+    <eat-comment/>
+    <string name="app_name">通用版下拉刷新上拉加载控件</string>
+    <string name="head">这里是HeadView</string>
+    <string name="load_fail">Loading fail</string>
+    <string name="load_succeed">Loading success</string>
+    <string name="loading">Loading...</string>
+    <string name="pull_to_refresh_mine">Pull dowen to refresh</string>
+    <string name="pullup_to_load">pull up and loading more</string>
+    <string name="refresh_fail">updated fail</string>
+    <string name="refresh_succeed">updated success</string>
+    <string name="refreshing">Loading...</string>
+    <string name="release_to_load">release and loading</string>
+    <string name="release_to_refresh_mine">Relase to refresh </string>
+</resources>

@@ -1,0 +1,31 @@
+<resources>
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">true</item>
+        <item name="android:actionBarDivider">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="contentInsetStart">0dp</item>
+        <item name="contentInsetEnd">0dp</item>
+        <item name="actionBarSize">48dip</item>
+        <item name="android:actionBarSize">48dip</item>
+        <item name="@android:attr/actionBarSize">48dip</item>
+        <item name="android:actionBarStyle">@style/CustomActionStyle</item>
+        <item name="android:dialogTheme">@style/custom_dialog</item>
+    </style>
+
+    <style name="CustomActionStyle" parent="@style/Widget.AppCompat.Light.ActionBar">
+        <item name="actionBarSize">48dip</item>
+        <item name="android:actionBarSize">48dip</item>
+        <item name="android:height">48dip</item>
+        <item name="contentInsetStart">0dp</item>
+        <item name="contentInsetEnd">0dp</item>
+    </style>
+
+
+</resources>

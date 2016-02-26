@@ -1,0 +1,982 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">爱耳目摄像机</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="tip_conning_baidu">正在获取数据,请稍候</string>
+
+    <!--登录-->
+    <string name="login_baidu">使用百度账号登录</string>
+    <string name="login_mail">邮箱登录</string>
+    <string name="have_look">随便看看</string>
+    <string name="login">登录</string>
+
+    <!--注册-->
+    <string name="fast_registration">快速注册</string>
+    <string name="input_password">请输入密码</string>
+    <string name="register">注册</string>
+    <string name="input_mail">邮箱不能为空</string>
+    <string name="mail_error">邮箱格式不正确</string>
+    <string name="input_nick">用户名不能为空</string>
+    <string name="mail_password">密码不能为空</string>
+    <string name="register_input_nickname">请输入昵称</string>
+    <string name="user_agreement">点击“注册”按钮，代表您已阅读并同意用户协议</string>
+    <string name="nickname_failed">用户名无效</string>
+    <string name="nickname_disable">用户名被禁用</string>
+    <string name="nickname_badword">此昵称不合法，请重新填写</string>
+    <string name="nickname_exits">此昵称已被占用，请重新填写</string>
+    <string name="mail_access_illegal">此邮箱已被禁用，请联系爱耳目客服(support@iermu.com)</string>
+    <string name="mail_exits">此邮箱已被注册，请直接登录</string>
+    <string name="register_faild">注册失败，请稍候再试</string>
+    <string name="account_password_error">账号或密码错误</string>
+    <string name="login_fail_try_again">登录失败，请稍候再试</string>
+    <string name="find_password">找回密码</string>
+    <string name="user_agree">用户协议</string>
+    <string name="no_binding">未绑定</string>
+    <string name="bind_baidu">绑定百度账号</string>
+    <string name="or">或</string>
+    <string name="user_agreement_txt">用户协议</string>
+    <string name="token_invalid">授权已失效，请重新登录百度帐号并授权…</string>
+    <string name="nick_name_length">请输入4-20个字符</string>
+    <string name="password_update">您的密码已修改，请重新登录</string>
+    <string name="password_lass">密码长度不足6位</string>
+    <string name="experience">体验</string>
+
+    <!-- 首页底部Tab按钮 -->
+    <string name="maintab_iermu">我的摄像机</string>
+    <string name="maintab_message">消息</string>
+    <string name="maintab_public">公共频道</string>
+    <string name="maintab_personal">个人</string>
+
+    <!-- 添加摄像机 -->
+    <string name="add_devices_txt">摄像机添加向导</string>
+    <string name="conn_wifi_txt">摄像机连接WiFi</string>
+    <string name="update_wifi_txt">更改WiFi</string>
+    <string name="conn_dev_txt">连接摄像机</string>
+    <string name="cancle_txt">取消</string>
+    <string name="high_grade">高级</string>
+    <string name="select_devices_txt">选择您要添加的摄像机</string>
+    <string name="looking_for_devices">正在努力查找新的摄像机</string>
+    <string name="connect_power_txt">请确保新摄像机连通电源</string>
+    <string name="hold_time">整个连接过程大约需要1分钟，请耐心等待</string>
+    <string name="conn_server_txt">正在努力连接路由器</string>
+    <string name="conn_cloud_server_txt">正在努力连接云服务器</string>
+    <string name="conn_vedio_server_txt">正在连接视频服务器</string>
+    <string name="account_txt">请输入用户名</string>
+    <string name="register_txt">正在效验，请稍候片刻</string>
+    <string name="start_config_txt">开始配置</string>
+    <string name="account_or_pass_empty">账号或密码不能为空</string>
+    <string name="account_empty">账号不能为空</string>
+    <string name="conn_devices_fail">连接摄像机失败</string>
+    <string name="conn_dev_wifi_ok">我已连接上摄像机的WiFi</string>
+    <string name="back_iermu">返回首页</string>
+    <string name="other_regiter">被其他用户注册</string>
+    <string name="quit_add_dev">退出添加摄像机</string>
+    <string name="quit_add_content">你确定要退出添加摄像机吗?</string>
+    <string name="quit_add_confrim">继续等待</string>
+    <string name="quit_cancle">退出</string>
+    <string name="rescancam_txt">重新配置</string>
+    <string name="devices_name">我的摄像机</string>
+    <string name="how_find_dev">如何找到设备号？</string>
+    <string name="check_cam_environment">摄像机配置环境？</string>
+    <string name="smart_wifi_nomatch">摄像机配置的Wifi与手机连接Wifi需要保持一致，请重新配置摄机的Wifi</string>
+    <string name="smart_timeout">摄像机已配置超时，请重新配置摄像机</string>
+    <string name="change_wifi">如何更改WiFI?</string>
+    <string name="help_to_wifi_one">1.在无线局域网中连接iermu开头的WiFi</string>
+    <string name="help_to_wifi_two">2.粘贴密码(WiFi密码已经复制)密码为:\ncmsiermu2013</string>
+    <string name="help_to_wifi_three">3.连接摄像机的WiFi的热点成功后，切回爱耳\n目摄像机App</string>
+    <string name="push">提交中</string>
+    <string name="connect_dev">连接爱耳目智能摄像机</string>
+    <string name="connect_dev_text_one">60秒连接摄像机，打开手机就能看到父母，宝宝和 \n 萌宠。家的温馨，从此如此清晰，如此亲近。</string>
+    <string name="connect_cam">连接摄像机</string>
+    <string name="buy_dev">购买摄像机</string>
+    <string name="connect_dev_err">连接摄像机失败</string>
+    <string name="repeat_add">重新添加</string>
+    <string name="return_first">返回首页</string>
+    <string name="find_dev">找到</string>
+    <string name="find_no_dev">没有找到摄像机</string>
+    <string name="net_exception">您的网络可能有点问题</string>
+    <string name="change_another_add_type">换一种方式添加</string>
+    <string name="at_once_connect">立即连接</string>
+    <string name="cam_dev">台摄像机</string>
+    <string name="find_cam">如何找到设备号？</string>
+    <string name="cam_already_register">此摄像机已被其他用户注册</string>
+    <string name="register_cloud_server_error">注册云服务器失败</string>
+    <string name="help_me_find_dev">帮我找到设备号</string>
+    <string name="cam_desvid_one">1.摄像机支架上的设备号</string>
+    <string name="cam_desvid_two">2.包装底部的设备号</string>
+    <string name="know">我知道了</string>
+    <string name="goto_configre">去配置</string>
+    <string name="check_cam">请查看摄像机是否</string>
+    <string name="red_blue">红蓝灯交替闪烁</string>
+    <string name="have_red_blue">看到红蓝灯交替闪烁</string>
+    <string name="no_red_blue">没有看到红蓝灯闪烁？</string>
+    <string name="have_and_add_cam">如果您有爱耳目摄像机，您可以在\n此使用手机添加</string>
+    <string name="iermu_home_cam_txt">欢迎使用爱耳目智能摄像机</string>
+    <string name="leave_home_far">离家再远，打开手机就能看见父母、宝\n宝和萌宠！</string>
+    <string name="add_success">恭喜添加成功</string>
+    <string name="change_name">给摄像机起个响亮的名字吧</string>
+
+    <!--连接Wi-Fi-->
+    <string name="conn_wifi">准备连接WiFi</string>
+    <string name="update_wifi">更改WiFi</string>
+    <string name="select_wifi_txt">请选择WiFi</string>
+    <string name="hide_pass_txt">隐藏密码</string>
+    <string name="input_pass_txt">请输入8－31位密码</string>
+    <string name="show_pass">显示密码</string>
+    <string name="hide_pass">隐藏密码</string>
+    <string name="conn_dev_wifi">请在无线局域网中选择名称 \n 为iermu的无线WiFi</string>
+    <string name="how_update_wifi">如何更改WiFi?</string>
+    <string name="pass_lenth">密码至少8位最多31位</string>
+    <string name="manual_configuration">手动配置</string>
+    <string name="manual_get_ip">手动获取IP地址</string>
+    <string name="ip_address">IP地址:    </string>
+    <string name="subnet_mask">子网掩码:</string>
+    <string name="default_gateway">默认网关:</string>
+    <string name="conn_select_wifi">为摄像机选择要连接的WiFi</string>
+    <string name="goto_connect">去连接</string>
+    <string name="wifi">的WiFi</string>
+
+    <!--连接摄像机-->
+    <string name="advance_text">高级</string>
+    <string name="conn_dev_wifi_text">摄像机连接WiFi</string>
+    <string name="register_notpermission">此摄像机已被其他用户注册</string>
+    <string name="register_fail">注册云服务器失败</string>
+    <string name="conn_dev_text">连接摄像机</string>
+    <string name="current_conn_cloud">正在努力连接云服务器</string>
+    <string name="register_cloud_success">注册云服务器成功.</string>
+    <string name="registed_cloud">摄像机已注册云服务器.</string>
+    <string name="register_cloud_fail">注册云服务器失败.</string>
+    <string name="registed_device">此摄像机已被其他用户注册.</string>
+    <string name="current_config_parameter">正在配置设备参数.</string>
+    <string name="config_parameter_success">配置设备参数成功.</string>
+    <string name="config_parameter_fail">配置摄像机超时, 请检查摄像机状态灯.</string>
+    <string name="hiwifi_connect_timeout">配置摄像机超时, 请重试.</string>
+    <string name="no_permission">没有该设备权限.</string>
+    <string name="config_parameter_try">配置摄像机参数失败, 请尝试重试.</string>
+    <string name="check_online">检测摄像机是否上线.</string>
+    <string name="setup_success">安装摄像机成功.</string>
+    <string name="setup_fail">连接摄像机超时.</string>
+    <string name="connect_dev_fail">连接摄像机热点失败, 请尝试开启手动配置</string>
+    <string name="connect_wifi_fail">连接摄像机失败, 请检查Wifi网络状态.</string>
+    <string name="get_hiwifi_ip_fail">获取摄像机ip失败,请重新配置摄像机.</string>
+    <string name="update_description">摄像机名称设置失败</string>
+    <string name="add_guide">摄像机添加向导</string>
+    <string name="current_wifi_state">当前网络不处于WiFi状态</string>
+    <string name="update_wifi_text">更改WiFi</string>
+    <string name="no_network">网络不给力</string>
+    <string name="prepare_conn_dev">准备连接摄像机</string>
+    <string name="red_blue_text">红蓝灯没有交替闪烁？</string>
+    <string name="reset_dev">重置摄像机</string>
+    <string name="find_void">已经听到了提示音</string>
+    <string name="reset_cam_tip1">请用顶针插入配置孔 5秒 以上</string>
+    <string name="reset_cam_tip2">请用手指长按配置按钮 5秒 以上</string>
+    <string name="reset_cam_tip3">直到听到 滴滴两声</string>
+
+
+    <!--test-->
+    <string name="share_println">快和好友分享你的精彩截图吧</string>
+    <string name="fluency">流畅</string>
+    <string name="super_clear">超清</string>
+    <string name="bitmap_save">截图已经保存到sd/cache中</string>
+    <string name="double_touch">双击画面，点哪转哪儿</string>
+    <string name="have_end">已经转到头啦！</string>
+    <string name="wait_connecting_cam">正在连接摄像机, 请稍候</string>
+    <string name="repeat_connecting_cam">重新连接摄像机, 请稍候</string>
+    <string name="please_check_network">网络不给力，请检查网络设置</string>
+    <string name="cam_off_ine">摄像机离线了</string>
+    <string name="cam_turn_off">摄像机关机了</string>
+    <string name="disconnect_cam">断开摄像机连接中</string>
+    <string name="connect_out_time">连接摄像机超时</string>
+    <string name="use_location">常用位置</string>
+    <string name="automatic_switch">自动旋转</string>
+    <string name="wait_load">正在加载，请稍候</string>
+    <string name="check_wifi">请检查摄像机电源是否插好，连接的wifi能否上网</string>
+    <string name="use_3G_4G">正在使用3G/4G网络，可能会产生流量费用</string>
+    <string name="need_switch">画面有点卡，切换到流畅模式</string>
+    <string name="switch_now">立即切换</string>
+    <string name="time_axis">时间轴</string>
+
+    <!--我的摄像机-->
+    <string name="morning">早上好</string>
+    <string name="noon">下午好</string>
+    <string name="evening">晚上好</string>
+    <string name="delete_succeed">删除成功</string>
+    <string name="dev_is_not">设备不存在</string>
+    <string name="auth_err">删除授权设备失败</string>
+    <string name="network_error">网路异常</string>
+    <string name="delete_error">删除失败</string>
+    <string name="delete_cam">删除摄像机</string>
+    <string name="delete_sure">是否确定删除摄像机</string>
+    <string name="sure">确定</string>
+    <string name="deleteing_dev">正在删除设备</string>
+    <string name="over_auth_family">已授权%1$d人</string>
+
+    <!--view-->
+    <string name="gain">获得</string>
+    <string name="shared">分享的</string>
+    <string name="dev_name">摄像机名称</string>
+    <string name="accept_invite">接受邀请</string>
+    <string name="cancle">取消</string>
+    <string name="save_direction">收藏方向</string>
+    <string name="location">给经常看的位置起个名，如阳台、门口等</string>
+    <string name="door">门口</string>
+    <string name="window">窗户</string>
+    <string name="parlour">客厅</string>
+    <string name="check_use_location">点击查看常用位置</string>
+    <string name="start_switch">点击开始旋转</string>
+    <string name="stop_switch">点击停止旋转</string>
+    <string name="long_touch">长按“直播画面”，保存常用位置</string>
+    <string name="cloud_overdue">您的云录制服务已经过期</string>
+    <string name="cloud_one">购买云录制之后，自动存储移动视频到百度云</string>
+    <string name="cloud_two">支持精彩片段一键剪辑到百度云</string>
+    <string name="cloud_three">支持手机、电脑、查看录像和直播</string>
+    <string name="at_once_buy">立即购买</string>
+    <string name="work_time">工作时间: 每天9:00-12:00，13:00-21:00</string>
+    <string name="cell_number">呼叫 400-8988-800</string>
+    <string name="cloud_have_start">云录制已经开启</string>
+    <string name="record_one">摄像机将画面变化视频传到百度云</string>
+    <string name="record_two">7天云录像服务</string>
+    <string name="record_three">为您滚动记录最近7天的视频</string>
+    <string name="surplus">剩余</string>
+    <string name="day">天</string>
+    <string name="validity_period">有效期至:</string>
+    <string name="cloud_inform">云录像过期提醒</string>
+    <string name="submit">提交中</string>
+    <string name="how_to_solve">查看如何解决</string>
+    <string name="start">开机</string>
+    <string name="close">关机</string>
+    <string name="last_version">已是最新版本</string>
+    <string name="iermu_cam">爱耳目智能摄像机</string>
+
+    <!--我的摄像机-->
+    <string name="my_live">我的摄像机</string>
+    <string name="local_record">本地录像</string>
+    <string name="cloud_record">云录像</string>
+    <string name="now_play">正在公开直播</string>
+    <string name="secret_share">正在私密分享</string>
+    <string name="play_no_network">网络不给力请稍候再试</string>
+    <string name="no_net">网络不给力请稍候再试</string>
+    <string name="auth_family_use">授权家人使用</string>
+
+    <!--消息-->
+    <string name="message_title">消息</string>
+    <string name="alarm_tile">摄像机报警设置</string>
+    <string name="start_alarm">确定，开启报警通知</string>
+    <string name="reset_alarm">确定，重新设置报警</string>
+    <string name="close_alarm">确定，关闭报警设置</string>
+    <string name="police_start_time">设定开机时间</string>
+    <string name="police_set_time">设定报警时间</string>
+    <string name="inform_police_time">设定开机时间</string>
+    <string name="set_police_time">设定报警时间</string>
+    <string name="open_push_fail">打开推送通道失败</string>
+    <string name="open_push_channel_fail">打开推送通道失败</string>
+    <string name="form_time">从</string>
+    <string name="to_time">至</string>
+    <string name="every_day_home">每天帮我看家</string>
+    <string name="every_day">每天</string>
+    <string name="look_home">帮我看家</string>
+    <string name="week">每周</string>
+    <string name="alarm_no_open">报警未开启</string>
+    <string name="work_day">工作日</string>
+    <string name="week_end">周末</string>
+    <string name="set_alarm_time_txt">可自行设置摄像机报警的时间段和工作周期</string>
+    <string name="set_cam_online_time_txt">可自行设置摄像机开机的时间段和工作周期</string>
+    <string name="email_open_notice">邮件通知开启</string>
+    <string name="receive_alarm_on_time">开启邮件通知后，您将更加及时，准确的收到报警图片</string>
+    <string name="email_setting">邮箱设置</string>
+    <string name="week_txt">周</string>
+    <string name="week_txt_null">周</string>
+    <string name="bind_baidu_push_fail">绑定百度推送失败</string>
+    <string name="alarm_num">共%1$d张</string>
+    <string name="alarm_nums">共%1$d张</string>
+    <string name="alarm_delete_sure">确定删除报警图片?</string>
+    <string name="alarm_delete">您的报警图片将被删除</string>
+    <string name="alarm_close_sure">确定关闭报警?</string>
+    <string name="alarm_close_no_message">关闭报警将收不到报警通知?</string>
+    <string name="report_exception">开启后，摄像机随时报告家中异常</string>
+    <string name="no_warn">不再提醒</string>
+    <string name="continue_buy">立即续费</string>
+    <string name="alarm_pic">无报警图片</string>
+    <string name="num_alarm_pic">条报警图片</string>
+    <string name="select_alarm_pic">选中%1$d条报警图片</string>
+    <string name="select_alarm_pics">选中%1$d条报警图片</string>
+    <string name="alarm_modify">报警通知未开启，可在设置中进行修改 \n开启后，摄像机随时报告家中异常</string>
+    <string name="open_alarm_now">立即开启报警通知</string>
+    <string name="no_alarm_notice">暂无报警通知</string>
+    <string name="reset_alarm_again">重新设置报警</string>
+    <string name="sheet">张</string>
+    <string name="close_alarm_txt">关闭报警</string>
+    <string name="sense_change">设置摄像机检测画面变化的灵敏度</string>
+    <string name="high">高</string>
+    <string name="default_">默认</string>
+    <string name="low">低</string>
+    <string name="set_word_time">设置工作时间</string>
+
+    <!--个人中心-->
+    <string name="person_login_email">登录邮箱</string>
+    <string name="person_baidu_account">百度账号</string>
+    <string name="person_login_password">登录密码</string>
+    <string name="person_nickname">昵称</string>
+    <string name="person_head">头像</string>
+    <string name="iermu_dev_buy">购买摄像机</string>
+    <string name="iermu_cvr_buy">购买云录制</string>
+    <string name="setting">设置</string>
+    <string name="app_send_msg">常见问题</string>
+    <string name="logout_account">退出登录</string>
+    <string name="tip_iermu_logout">退出后将无法观看您的摄像机了</string>
+    <string name="app_set_problem">关于</string>
+    <string name="person_feedback">意见反馈</string>
+    <string name="person_custom_phone">客服电话</string>
+    <string name="person_offical">去官网</string>
+    <string name="dev_update">检测版本升级</string>
+    <string name="have_num_cam">你有%1$d台摄像机</string>
+
+    <string name="have_cam_number">你有%d台摄像机</string>
+    <string name="perfect_person">完善个人资料</string>
+    <string name="person_edit_data">编辑资料</string>
+    <string name="change_password">修改密码</string>
+    <string name="upload_avatar_loading">上传头像中</string>
+    <string name="upload_avatar_failed">上传头像失败</string>
+    <string name="upload_avatar_success">上传头像成功</string>
+    <string name="person_please_repeat_password">请重复新密码</string>
+    <string name="person_please_current_password">请输入当前密码</string>
+    <string name="person_password_num">6－20位数字或字母</string>
+    <string name="person_current_password">当前密码</string>
+    <string name="person_new_password">新密码</string>
+    <string name="person_confirm_password">确认密码</string>
+    <string name="change_user_name">修改用户名</string>
+    <string name="person_connect_visable">您的联系方式仅工作人员可见</string>
+    <string name="connect_way">请留下QQ,手机号或邮箱等联系方式</string>
+    <string name="edit_mail">请输入邮箱</string>
+    <string name="input_verification_code">请输入验证码</string>
+    <string name="person_password">请输入6－20位密码</string>
+    <string name="person_nick_name">请输入2－10位昵称</string>
+    <string name="perfect_and_login">完善资料后，就能用邮箱登录了</string>
+    <string name="perfect_info">完善个人资料</string>
+    <string name="newpass_set_succeed">新密码设置成功</string>
+    <string name="currentpass_error">当前密码错误</string>
+    <string name="password_not_equal">密码检测不一致</string>
+    <string name="introduce_feedback">请详细描述意见或建议，有助于我们尽快解决问题，\n比如：\n1、连接不上摄像机、卡顿？\n2、有哪些功能无法使用？　\n3、哪些地方做的不好？</string>
+    <string name="mail_auth">邮箱未验证</string>
+    <string name="baidu_auth">未验证</string>
+    <string name="choice_pic">选择照片</string>
+    <string name="have_zero_device">你有0台摄像机</string>
+    <string name="commit">提交</string>
+
+    <!--设置-->
+    <string name="dev_num">设备号:</string>
+    <string name="iermu_setting">设置</string>
+    <string name="iermu_home">我五道口家中</string>
+    <string name="iermu_camera_control">摄像机开关</string>
+    <string name="iermu_time_control">定时开机</string>
+    <string name="iermu_more_setting">更多设置</string>
+    <string name="iermu_cloud_camera">云录制</string>
+    <string name="iermu_camera_message">摄像机信息</string>
+    <string name="iermu_restart_camera">重启摄像机</string>
+    <string name="iermu_cancel_camera">注销摄像机</string>
+    <string name="title_camera_describe">摄像机描述</string>
+    <string name="text_button">保存</string>
+    <string name="start_police">报警通知开启</string>
+    <string name="set_police">报警设置</string>
+    <string name="ontime_police_inform">定时报警</string>
+    <string name="advance_config">高级设置</string>
+    <string name="device_id_text">设备号</string>
+    <string name="no_out_of_date">未过期</string>
+    <string name="out_of_date">已过期</string>
+    <string name="in_date">有效期至</string>
+    <string name="comment_txt">评论%1$d条</string>
+    <string name="items">条</string>
+    <string name="drop_dev_txt">确定注销摄像机?</string>
+    <string name="drop_dev_content">注销后，该摄像机上传到百度云中的录像将被删除。如果您只是想给摄像机换个WiFi，建议您在“我的摄像机” 点击+，再次添加摄像机。</string>
+    <string name="drop_dev_content_one">注销后，该账号下将不能再使用这台摄像机。如果您只是想给摄像机换个WiFi，建议您在“我的摄像机”点击＋，再次添加摄像机。</string>
+    <string name="now_drop">立即注销</string>
+    <string name="hold_on_drop">暂不注销</string>
+    <string name="current_drop_dev">正在注销设备</string>
+    <string name="now_restart">立即重启</string>
+    <string name="restart_dev_title">确定重启摄像机?</string>
+    <string name="restart_dev_content">重启时间大约10秒</string>
+    <string name="restart_dev_current">正在重启设备</string>
+    <string name="dev_open_now">摄像机正在开机...</string>
+    <string name="dev_close_now">摄像机正在关机...</string>
+    <string name="conn_timeout">连接服务器超时</string>
+    <string name="dev_off_line">摄像机离线了</string>
+    <string name="dev_power_off">摄像机关机了</string>
+    <string name="open_channel_fail">开启推送通道失败</string>
+    <string name="work_cycle">工作周期</string>
+    <string name="network_error_please_check">网络不给力，请检查网络后重试</string>
+    <string name="cam_upgrade_new">有新版本可用</string>
+
+    <!--关于-->
+    <string name="set_about">关于</string>
+
+    <!--报警设置-->
+    <string name="set_alarm">画面变化较小时通知我</string>
+    <string name="alarm_change">变化较大时</string>
+    <string name="alarm_time">报警与时间段设置</string>
+    <string name="set_alarm_time">设定报警时间段</string>
+    <string name="frames_change"> 发现画面变化</string>
+    <string name="custom_time">自定义时间段</string>
+    <string name="alarm_open_time">报警开启时间</string>
+    <string name="alarm_close_time">报警关闭时间</string>
+    <string name="open_time">开启时间</string>
+    <string name="close_time">关闭时间</string>
+    <string name="dev_open_time">开机时间</string>
+    <string name="dev_close_time">关机时间</string>
+
+    <!--更多设置-->
+    <string name="iermu_camera_state">摄像机状态灯</string>
+    <string name="iermu_switch">画面翻转180度</string>
+    <string name="iermu_night_sun">夜视与曝光</string>
+    <string name="iermu_camera_no_voice">摄像机声音</string>
+    <string name="iermu_work_state">工作状态</string>
+    <string name="iermu_net_manager">网速管理</string>
+
+    <!--夜视与曝光-->
+    <string name="choice_scene">拍摄场景选择</string>
+    <string name="iermu_in_use">在室内使用</string>
+    <string name="iermu_out_use">在室外使用</string>
+    <string name="iermu_automatic">自动</string>
+    <string name="iermu_start_night">开启夜视</string>
+    <string name="iermu_close_night">关闭夜视</string>
+    <string name="iermu_hight_light">高光优先</string>
+    <string name="iermu_low_light">低光优先</string>
+    <string name="iermu_photo_choose">拍照场景选择</string>
+    <string name="iermu_night_mode">夜视模式</string>
+    <string name="iermu_sun_mode">曝光模式</string>
+
+    <!--Email设置-->
+    <string name="iermu_receiver">收件人</string>
+    <string name="iermu_send">抄送</string>
+    <string name="iermu_send_set">发送服务器设置</string>
+    <string name="iermu_send_service">发件服务器</string>
+    <string name="iermu_duankou">端口</string>
+    <string name="iermu_sender">发件人</string>
+    <string name="iermu_username">用户名</string>
+    <string name="iermu_password">密码</string>
+    <string name="receiver">收件人不能为空</string>
+    <string name="mail_format_error">收件人邮箱格式不正确</string>
+    <string name="port_null">端口不能为空</string>
+    <string name="account_null">用户名不能为空</string>
+    <string name="password_null">密码不能为空</string>
+    <string name="copy_mail_format_error">抄送邮箱格式不正确</string>
+    <string name="send_mail_format_error">发件人邮箱格式不正确</string>
+
+    <!--定时开关机-->
+    <string name="iermu_ontime_on_off">定时开机时间</string>
+    <string name="iermu_time">时间段</string>
+    <string name="iermu_repeat">重复</string>
+    <string name="ontime_on_off">定时开机时间</string>
+    <string name="every_monday">每周一</string>
+    <string name="every_tuesday">每周二</string>
+    <string name="every_wednesday">每周三</string>
+    <string name="every_thursday">每周四</string>
+    <string name="every_friday">每周五</string>
+    <string name="every_saturday">每周六</string>
+    <string name="every_sunday">每周日</string>
+    <string name="setting_start_dev_time">设定开机时间</string>
+
+    <!--云录制-->
+    <string name="iermu_cloud">开启云录制之后，将滚动记录最近7/30天的视频。</string>
+    <string name="cloud_start">录像设置</string>
+    <string name="set_on_time">定时设置</string>
+    <string name="set_start_time">设置录制时间</string>
+
+    <!--摄像机信息-->
+    <string name="iermu_unit_type">设备型号</string>
+    <string name="device_num">设备号</string>
+    <string name="iermu_number">设备ID</string>
+    <string name="address">MAC地址</string>
+    <string name="iermu_wifi_name">连接的WiFi</string>
+    <string name="iermu_ip">IP地址</string>
+    <string name="iermu_wifi_Strong">WiFi信号强度</string>
+    <string name="iermu_camera">摄像机固件版本</string>
+    <string name="iermu_denote_state">指示灯状态</string>
+    <string name="iermu_camera_state_two"> 摄像机状态</string>
+    <string name="in_loading">加载中...</string>
+    <string name="on_line">工作中</string>
+    <string name="power_off">已关机</string>
+    <string name="off_line">离线</string>
+    <string name="on">在线</string>
+    <string name="p_cam">P摄像机</string>
+
+
+    <!--云服务状态-->
+    <string name="iermu_E_set">Email设置</string>
+    <string name="iermu_part_start">局域网播放</string>
+    <string name="cloud_server_state">云服务状态</string>
+    <string name="click_buy_cloud">购买云服务</string>
+    <string name="on_time_ware">到期提醒</string>
+
+    <!--开关按钮-->
+    <string name="app_set_on">打开</string>
+    <string name="app_set_off">关闭</string>
+
+    <!--摄像机描述-->
+    <string name="text_view">摄像机名称最长为16个汉子或32个字符</string>
+    <string name="describe_length">名称最多32位</string>
+    <string name="update_name_success">修改名称成功</string>
+    <string name="update_name_fail">修改名称失败</string>
+
+    <!--网速管理-->
+    <string name="iermu_up_speed">上传速度</string>
+    <string name="iermu_down_speed">下载速度</string>
+    <string name="iermu_up_down">可自行设置摄像机的上传网速</string>
+    <string name="iermu_speed_limit">输入的限速值不能超过250KB/s</string>
+    <string name="set_speed_manager">网速管理</string>
+    <string name="save">保存</string>
+    <string name="save_now">保存中</string>
+    <string name="net_no_more">输入的限速值不能超过500KB/s</string>
+    <string name="net_no_more_text">输入的限速值不能超过250KB/s</string>
+    <string name="please_input">请正确输入</string>
+
+    <!--定时销毁-->
+    <string name="iermu_not_user">不使用</string>
+    <string name="iermu_stop_share">到今天结束后停止分享</string>
+    <string name="iermu_after_thirty">30分钟后</string>
+    <string name="iermu_after_hour">1小时后</string>
+    <string name="iermu_after_day">1天后</string>
+
+    <!--设置密码和提示-->
+    <string name="iermu_prompt">提示</string>
+
+    <!--公共播放-->
+    <string name="public_live_report">举报</string>
+    <string name="public_live_danmu">弹幕</string>
+    <string name="public_live_sound">声音</string>
+    <string name="public_live_share">分享</string>
+    <string name="public_live_store">收藏</string>
+    <string name="public_live_over_store">已收藏</string>
+    <string name="public_live_send">发送</string>
+    <string name="network_error_wait">网络异常，请稍候再试...</string>
+    <string name="public_live_add_one">+1</string>
+    <string name="load_error_repeat">加载失败，请重试</string>
+    <string name="zero_zan">%1$d个赞</string>
+
+    <!--分享管理-->
+    <string name="control_txt">摄像机直播很精彩？轻松开启分享，\n即刻与家人，朋友一起观看。</string>
+    <string name="send_share_link">发送分享链接</string>
+    <string name="send_share_txt">分享好友一起看你的精彩直播</string>
+    <string name="send_share_public">申请公开直播</string>
+    <string name="send_public_txt">放到公共频道中，向全世界展示才艺和美景</string>
+    <string name="share_protocol">点击上面的“发送分享链接“按钮即表示\n你同意公共摄像机分享协议</string>
+    <string name="setting_message">设置信息</string>
+
+    <!--公开直播-->
+    <string name="public_live">公共直播协议</string>
+    <string name="live_have_fun">看直播，才过瘾</string>
+    <string name="i_shared">我分享了“</string>
+    <string name="is_living">”的视频直播给你，快来围观</string>
+    <string name="network_low">网络不给力，请稍候再试</string>
+    <string name="more_people_wait">当前观看人数过多, 请稍候重试</string>
+    <string name="please_check_network_low">网络不给力，请检查网络设置</string>
+
+    <!--版本升级检测-->
+    <string name="tip_update_app_yes">升级</string>
+    <string name="tip_update_app_no">不升级</string>
+    <string name="tip_update_app_title">正在升级……</string>
+    <string name="tip_update_app_wait">请稍候……</string>
+    <string name="tip_app_last_ver">已经是最新版本！</string>
+    <string name="tip_app_check_update">正在检查最新版本，请稍候……</string>
+    <string name="tip_update_app_back">已经转到后台下载，请不要关闭程序！</string>
+    <string name="tip_update_app_running">正在后台升级，请稍候……</string>
+    <string name="tip_update_app_have_new">发现新版本</string>
+    <string name="tip_update_app_yorno">是否升级</string>
+    <string name="tip_update_app">软件升级</string>
+    <string name="btn_cam_ok">确定</string>
+    <string name="update_system">摄像机系统更新提示</string>
+    <string name="check_version_app">检测新版本应用</string>
+    <string name="check_update_version">更新版本</string>
+
+    <!--完善用户资料-->
+    <string name="abort_account_title">应用退出登录</string>
+    <string name="abort_account_token_">账号验证已过期</string>
+    <string name="abort_account_apicosed">服务器更新导致账号验证错误</string>
+    <string name="abort_account_fail">登录失败</string>
+    <string name="check_network">请检查当前网络连接状态</string>
+    <string name="exit_app">再按一次退出程序</string>
+    <string name="forget_password">忘记密码？</string>
+    <string name="no_chinese">密码不能输入中文</string>
+    <string name="password_same">两次输入密码不一致</string>
+    <string name="user_name_exist">用户名已存在</string>
+    <string name="password_error">当前密码错误</string>
+    <string name="update_password_failed">修改密码失败</string>
+    <string name="username_regular">用户名不能以数字或特殊符号开头</string>
+    <string name="feedback_failed">反馈意见失败</string>
+    <string name="feedback_content_null">意见内容不能为空</string>
+    <string name="input_contact">请输入联系方式</string>
+    <string name="update_name_failed">修改用户名失败</string>
+    <string name="no_complete_userinfo">用户资料完整，不需要完善资料</string>
+    <string name="complete_failed">完善资料失败</string>
+
+    <!-- 公共频道 -->
+    <string name="actionbar_title_pubcam">公共频道</string>
+    <string name="peoples_look">人看过</string>
+    <string name="recommend">推荐</string>
+    <string name="newest">最新</string>
+    <string name="hottest">最热</string>
+    <string name="comment_word">请输入评论(最多40字)</string>
+    <string name="no_content">暂无内容</string>
+    <string name="look_other_channel">前往其他频道查看吧</string>
+    <string name="into_public_channel">进入公共频道看看</string>
+
+    <!--授权-->
+    <string name="AUTH_SUCCESS">授权成功</string>
+    <string name="AUTH_GRANT_INVALID">授权信息已经失效</string>
+    <string name="AUTH_GRANT_USED">授权码已使用</string>
+    <string name="AUTH_NOT_GRANT_SELF">不能授权给自己</string>
+    <string name="DEVICE_GRANT_FAILED">授权失败</string>
+    <string name="auth_users">授权的家人</string>
+    <string name="grant_user_loading">正在加载数据，请稍候</string>
+    <string name="auth_share_text">我在用爱耳目摄像机, 邀请你也一起用, 赶紧接受邀请吧!</string>
+    <string name="auth_look_text">爱耳目智能摄像机可以随时随地查看家, 还能语音对讲哦!</string>
+    <string name="no_wx_client">请安装微信客户端</string>
+    <string name="get_code_fail">获取授权码失败</string>
+    <string name="share_success">分享成功</string>
+    <string name="share_fail">分享失败</string>
+    <string name="cancel_share">分享取消</string>
+    <string name="cancel_share_fail">取消授权失败</string>
+
+    <!--对话框-->
+    <string name="dialog_commit_text">提交中</string>
+    <string name="dialog_commit">提交中...</string>
+    <string name="dialog_confirm">确定</string>
+    <string name="dialog_title">标题</string>
+    <string name="dialog_content">提示内容</string>
+
+    <!--WebView-->
+    <string name="page_bug">购买摄像机</string>
+    <string name="page_cloud">购买云录制</string>
+    <string name="page_question">常见问题</string>
+    <string name="page_iermu">官网</string>
+    <string name="page_report">举报</string>
+    <string name="page_agreement">公共直播协议</string>
+    <string name="page_solve">查看如何解决</string>
+    <string name="page_poster">运营活动</string>
+    <string name="click_refresh">点击刷新</string>
+    <string name="try_loading">努力加载中</string>
+
+    <!--录像-->
+    <string name="today">今天 </string>
+    <string name="yesterday">昨天 </string>
+    <string name="monday">星期一</string>
+    <string name="tuesday">星期二</string>
+    <string name="wednesday">星期三</string>
+    <string name="thursday">星期四</string>
+    <string name="friday">星期五</string>
+    <string name="saturday">星期六</string>
+    <string name="sunday">星期日</string>
+    <string name="monday_zhou">周一</string>
+    <string name="tuesday_zhou">周二</string>
+    <string name="wednesday_zhou">周三</string>
+    <string name="thursday_zhou">周四</string>
+    <string name="friday_zhou">周五</string>
+    <string name="saturday_zhou">周六</string>
+    <string name="sunday_zhou">周日</string>
+    <string name="time_line">时间轴</string>
+    <string name="thumbnail">缩略图</string>
+    <string name="choice_data">选择日期</string>
+    <string name="record_cut">剪辑</string>
+    <string name="record_cut_starttime">开始时间</string>
+    <string name="record_cut_time_long">保存时长</string>
+    <string name="one_minute">1分钟</string>
+    <string name="ten_minute">10分钟</string>
+    <string name="thirty_minute">30分钟</string>
+
+    <!--云录像信息-->
+    <string name="record_info">云录像信息</string>
+    <string name="record_opened">云录制已开启</string>
+    <string name="record_closed">云录制已关闭</string>
+    <string name="record_overdate">云录制已过期</string>
+    <string name="record_day_num">已录制天数</string>
+    <string name="record_long_total">录制总时长</string>
+    <string name="record_save_num">保存视频</string>
+    <string name="record_auto">自动云录制</string>
+    <string name="record_auto_info">购买后摄像机发现家中有人和异常情况后，会自动上传视频到云服务器。</string>
+    <string name="record_set_plan">设定录像计划</string>
+    <string name="record_effect_date">云服务有效期</string>
+    <string name="record_end_day">有效期至%1$s</string>
+    <string name="record_buy">购买云服务</string>
+    <string name="record_set_time">设定时间段</string>
+    <string name="record_get_set_fail">获取云录像设置信息失败:</string>
+    <string name="record_day">天</string>
+    <string name="record_hour">小时</string>
+    <string name="record_section">段</string>
+    <string name="record_set_faild">设置自动云录制失败:</string>
+    <string name="record_get_faild">获取云录像列表失败:</string>
+    <string name="record_set_time_faild">设置失败:</string>
+    <string name="record_find_exception">发现家中有人和异常情况，自动上传到云服务器。</string>
+    <string name="record_over_day_info">%1$s天云录制服务，还有%2$s天就要过期</string>
+    <string name="record_over_day">云录制已于%1$s过期</string>
+    <string name="dev_rec_nas_param_fail">获取NAS配置参数失败！</string>
+    <string name="record_can_not_get">摄像机%1$s了，暂时获取不到。</string>
+    <string name="record_no_record">您还没有云录像</string>
+    <string name="record_change_cloud">摄像机发现家中有人和异常情况后，会上传视频到云服务器中，您可以回看录像</string>
+
+    <!--我的直播信息-->
+    <string name="live_info">我的直播信息</string>
+    <string name="in_loading_please">正在加载，请稍候</string>
+    <string name="dev_no_share">该设备不能创建分享</string>
+    <string name="create_share_fail">创建分享失败</string>
+    <string name="introduce_live">向大家介绍直播的内容，可以吸引更多的观众哟..</string>
+    <string name="live_now">确认，马上直播</string>
+    <string name="allow_voice">允许大家听到现场的声音</string>
+    <string name="apply_public_location">所在地</string>
+    <string name="label">标签</string>
+    <string name="label_type">通过标签给摄像机分类</string>
+    <string name="terms_protocol">直播条款和协议</string>
+    <string name="iermu_live_txt">爱耳目直播</string>
+    <string name="live_public_txt">可通过公共频道直播摄像机内容</string>
+    <string name="live_share_txt">可通过QQ和微信社交方式分享直播内容</string>
+    <string name="read_terms">请仔细阅读以下条款</string>
+    <string name="content_legal">1. 我保证直播的内容健康合法</string>
+    <string name="show_live_every">2. 我同意让任何人看我的直播内容</string>
+    <string name="read_agree">3. 我已经阅读并同意公开直播协议</string>
+    <string name="public_protocol">公开直播协议</string>
+    <string name="start_set">开始设置</string>
+    <string name="agree_protocol">点击“开始设置”表示您已同意《公开直播协议》</string>
+    <string name="my_live_cam">我的直播摄像机</string>
+    <string name="copy_link">链接已复制剪切版</string>
+    <string name="mime_live_share">我分享了%1$s的视频直播给你，快来围观！</string>
+    <string name="live_play">“%1$s”的直播</string>
+    <string name="share_public_content">推荐一个精彩直播，已经有%1$s人在看，赶快一起看吧！</string>
+    <string name="share_way">通过以下方式分享给好友</string>
+    <string name="wechat_txt">微信</string>
+    <string name="moments">朋友圈</string>
+    <string name="copy_link_txt">复制链接</string>
+    <string name="stop_live">停止直播</string>
+    <string name="check_my_live">查看我的直播摄像机</string>
+    <string name="save_screen">截屏已保存到我的相册中</string>
+    <string name="public_living">直播中</string>
+
+    <!--直播-->
+    <string name="load_fail">加载失败，请重试</string>
+    <string name="conn_dev_fail">摄像机连接失败</string>
+    <string name="dev_offline">摄像机离线了</string>
+    <string name="refresh_over_times">刷了这么多次还上不了网？</string>
+    <string name="record_permission">没有录音权限，请先打开录音权限</string>
+    <string name="preset_num">常用位置不能多于6个</string>
+    <string name="rotate_everywhere">正在自动旋转，帮您多角度观看</string>
+    <string name="double_click_rotate">双击画面，点哪转哪儿</string>
+    <string name="open_fail">开机失败</string>
+    <string name="power_on_live">轻触开机按钮就能看直播</string>
+    <string name="more_watch">当前观看人数过多, 请稍候重试</string>
+    <string name="low_definition">流畅</string>
+    <string name="high_definition">高清</string>
+    <string name="super_definition">超清</string>
+    <string name="low_definition_model">流畅模式</string>
+    <string name="high_definition_model">高清模式</string>
+    <string name="super_definition_model">超清模式</string>
+    <string name="set_definition_fail">设置清晰度失败</string>
+    <string name="preset">预置位</string>
+    <string name="edit">编辑</string>
+    <string name="delete">删除</string>
+    <string name="no_video">暂无录像</string>
+    <string name="dragging_time_line">录像播放完啦！拖动时间轴，可以继续看录像</string>
+    <string name="the_time_no_video">您所选时刻没有录像</string>
+
+    <!--我要分享-->
+    <string name="my_share">我要分享</string>
+    <string name="close_share">确定关闭分享？</string>
+    <string name="no_longer_look_live">关闭分享后，所有人无法继续观看摄像机的直播，是否确定关闭？</string>
+    <string name="share_privacy">您的摄像机正在公开直播，选择私密分享后，将关闭公开直播</string>
+    <string name="goon_public_live">继续公开直播</string>
+    <string name="goon_privacy_live">继续私密分享</string>
+    <string name="need_share_privacy">我要私密分享</string>
+    <string name="share_public">您的摄像机正在进行私密分享，选择公开直播后，将关闭私密分享</string>
+    <string name="need_public_live">我要公开直播</string>
+    <string name="close_public_share">正在关闭公开分享</string>
+    <string name="close_share_now">正在关闭分享</string>
+    <string name="close_privacy_share">正在关闭私密分享</string>
+    <string name="open_public_share">正在开启公开分享</string>
+    <string name="open_privacy_share">正在开启私密分享</string>
+    <string name="share_my_friend">分享给我的朋友</string>
+    <string name="no_wechat_client">未安装微信客户端</string>
+    <string name="open_share_fail">开启分享失败</string>
+    <string name="close_share_fail">关闭分享失败</string>
+    <string name="share_wechat">分享给微信好友</string>
+    <string name="share_moments">分享给微信朋友圈</string>
+    <string name="copy_live_link">复制直播地址</string>
+    <string name="input_num">输入4－8位数字</string>
+    <string name="select_fill">选填</string>
+    <string name="num_change">0/20</string>
+    <string name="check_password">设置查看密码</string>
+
+    <!--空气胶囊-->
+    <string name="conn_success">连接成功</string>
+    <string name="check_capsule_success">您的摄像机能检测家中的温\n湿度了。</string>
+    <string name="check_now">立即查看</string>
+    <string name="capsule_title">我的摄像机温湿度</string>
+    <string name="tip_capsule">小贴士</string>
+    <string name="screen_shot_fail">截屏失败</string>
+    <string name="check_capsule_detail">查看详情</string>
+    <string name="temperature_one">体感极不舒适，建议开启空调降温</string>
+
+    <!--剪辑-->
+    <string name="clip_tip_err_time">剪辑时间设置错误，请检查！</string>
+    <string name="clip_tip_err_stime">剪辑开始时间设置错误，请检查！</string>
+    <string name="clip_tip_err_etime">剪辑结束时间设置错误，请检查！</string>
+    <string name="clip_tip_err_setime">剪辑时间设置错误，请检查！</string>
+    <string name="clip_tip_start_ok">剪辑任务启动成功，已完成</string>
+    <string name="clip_tip_start_fail">剪辑任务启动失败，请稍候重试！</string>
+    <string name="clip_tip_have_clip">文件名重复，请修改文件名后重新提交！</string>
+    <string name="clip_tip_clip_success">剪辑成功！</string>
+    <string name="clip_tip_last_task">上次剪辑任务还没有完成</string>
+    <string name="clip_tip_start_task">正在与服务器通讯，请稍候…</string>
+    <string name="clip_err_tip1">可能原因：剪辑录像有效时长超过30分钟！</string>
+    <string name="clip_err_tip2">可能原因：当月已剪辑录像总长度超过有效配额！</string>
+    <string name="clip_fail">剪辑失败</string>
+    <string name="clip_fail_now">剪辑中..</string>
+    <string name="clip_save_video">正在保存视频文件</string>
+    <string name="clip_find_server">服务器发现一个问题\n请联系客服\niermu@surport.com</string>
+    <string name="try_again">再试一次</string>
+    <string name="save_look_on_baidu">保存成功后，请到百度网盘查看</string>
+    <string name="clip_success_check_baidu">剪辑成功\n请前往百度云查看</string>
+    <string name="clip_check_on_baidu">剪辑后，您的视频将永久保存到百度云盘中</string>
+    <string name="clip_mon">一、</string>
+    <string name="clip_tue">二、</string>
+    <string name="clip_wed">三、</string>
+    <string name="clip_thu">四、</string>
+    <string name="clip_fri">五、</string>
+    <string name="clip_sat">六、</string>
+    <string name="clip_sun">日、</string>
+
+    <!--Nas录像-->
+    <string name="nas_setting">NAS设置</string>
+    <string name="dev_rec_nas_on">NAS录像</string>
+    <string name="dev_rec_nas_ip">IP地址：</string>
+    <string name="cms_rec_nas_username">用户名：</string>
+    <string name="cms_rec_nas_pwd">密码：</string>
+    <string name="dev_rec_nas_ip_err">IP地址错误，请检查！</string>
+    <string name="dev_rec_nas_path">目录：</string>
+    <string name="dev_rec_nas_folder">文件夹：</string>
+    <string name="dev_rec_nas_size">录像空间(GB)：</string>
+    <string name="btn_nas_scan">扫描</string>
+    <string name="btn_nas_scan_no">没有找到Nas共享目录，请检查！</string>
+    <string name="dev_rec_nas_err_ip">IP地址错误，请检查！</string>
+    <string name="dev_rec_nas_err_size">NAS录像空间最少设置4G，请检查！</string>
+    <string name="btn_nas_guest">匿名</string>
+    <string name="cms_nas_tip_noipc">NAS录像只能通过局域网播放！\n当前局域网内没有找到摄像机！\n\n请检查！</string>
+    <string name="dev_rec_nas_reboot_tip">当前设置重启摄像机后会生效！\n您希望立即重启摄像机吗？</string>
+    <string name="tip_savemenu_ok">参数设置成功，请手动重启摄像机！</string>
+    <string name="tip_savemenu_fail">参数设置失败，请稍候重试！！</string>
+    <string name="loading_data">正在加载数据，请稍候</string>
+
+    <!--相册-->
+    <string name="my_phone">我的相册</string>
+    <string name="all">全部</string>
+    <string name="film_edit">剪辑</string>
+    <string name="cam">摄像机</string>
+    <string name="photo">照片</string>
+    <string name="num_photo">张照片</string>
+    <string name="num_film">段剪辑视频</string>
+    <string name="have_phone">我珍藏了%1$d张照片、剪辑</string>
+    <string name="select_all">全选</string>
+    <string name="delete_pic_btn">删除（%1$d）</string>
+    <string name="favourate_photo">收藏的照片、剪辑</string>
+    <string name="no_photo_txt">摄像机的截屏或录像的剪辑\n将保存到相册里</string>
+    <string name="delete_photo_sure">确定删除照片？</string>
+    <string name="delete_photo_content">您的照片将被删除</string>
+    <string name="down_bdy_txt">请下载百度云</string>
+
+    <!--固件升级-->
+    <string name="upgrade_setting">固件升级</string>
+    <string name="upgrade_setting_sure">立即升级</string>
+    <string name="upgrade_setting_cancle">以后再说</string>
+    <string name="upgrade_tip">摄像机正在升级，请稍候</string>
+    <string name="need_upgrade_tip">该摄像机需要升级</string>
+    <string name="firmware_start_upgrade">开始升级</string>
+    <string name="firmware_start_download">开始下载</string>
+    <string name="firmware_download_success">下载成功</string>
+    <string name="firmware_update_now">正在升级</string>
+    <string name="firmware_update_success_refresh">升级成功，列表刷新中...</string>
+    <string name="firmware_down_fail_refresh">下载失败，列表刷新中...</string>
+    <string name="firmware_update_fail_refresh">升级失败，列表刷新中...</string>
+
+    <!--录像-->
+    <string name="alarm_the_day_before_yesterday">前天 </string>
+    <string name="record_same_lan">请确保手机和摄像头在同一个局域网内</string>
+    <string name="look_back_record">回看录像</string>
+
+
+
+    <!--设置-->
+    <string name="setting_choice_time">选择时间段</string>
+    <string name="setting_cam_shutdown">摄像机已经关机</string>
+    <string name="setting_cam_offline">摄像机已经离线</string>
+    <string name="server_or_cam_error">服务器出错或摄像机不在线</string>
+    <string name="setting_height_config">高级配置</string>
+    <string name="setting_debug_model">调试模式</string>
+    <string name="no_find_cam">没有找到新的爱耳目摄像机</string>
+    <string name="power_line">1.请确保电源数据线插好；</string>
+    <string name="reset_cam">2.复位摄像机：请用顶针轻插摄像机背面的[Reset]孔，按住1秒后松。（顶针在包装盒内）</string>
+    <string name="light_blink">3.等待指示灯变为红蓝交替闪烁，可再次添加摄像机。</string>
+    <string name="contact_us">4.其他问题，您可以通过以下方式联系我们：</string>
+    <string name="service_phone">客服电话 ：</string>
+    <string name="wechat_sina_iermu">微信/微博：爱耳目</string>
+    <string name="i_know">知道了</string>
+    <string name="wifi_disagree">选择的wifi与手机所连wifi名称不一致，请重新配置wifi</string>
+    <string name="start_add">开始添加</string>
+    <string name="no_support">(不支持使用)</string>
+    <string name="setting_choice_wifi">选择摄像机要连接的WiFi</string>
+
+    <!--云录-->
+    <string name="card_record_bad_num">坏块数：%1$skb</string>
+    <string name="card_record_info">存储卡信息</string>
+    <string name="card_record_bad_info">坏块信息</string>
+    <string name="card_no_memory_card">您的摄像机还没有插存储卡</string>
+    <string name="card_have_frame">插入TF（Micro SD）存储卡后就能自动录制镜头前的动态画面。</string>
+    <string name="card_support">支持8G、16G、32G的存储卡。</string>
+    <string name="card_support_format">请确保存储卡为FAT32格式。</string>
+    <string name="card_record_txt">云录像信息</string>
+    <string name="card_record_past">您的云录制服务已过期</string>
+    <string name="card_support_days">购买后，支持保存最近90天的录像。</string>
+    <string name="card_clip">一键剪辑，让您随时保存和分享精彩视频。</string>
+    <string name="card_support_platform">支持手机、平板和电脑端的随时在线查看。</string>
+    <string name="card_know_details">了解详情</string>
+    <string name="open_cvr">启用云录制</string>
+    <string name="cvr_now">正在录制动态画面</string>
+    <string name="memory_size">存储卡大小</string>
+    <string name="memory_save_long_time">存储卡中保存的最早录像时间</string>
+    <string name="memory_save_last_time">存储卡中保存的最晚录像时间</string>
+    <string name="memory_save_cover">存储卡录满后，将自动滚动覆盖</string>
+    <string name="the_time_no_cvr">您所选的时间段内没有录像，请重新选择。</string>
+
+    <!--分享-->
+    <string name="develop_now">正在开发中,敬请期待...</string>
+    <string name="close_secret_share">关闭分享</string>
+    <string name="share_family_try">还没有授权家人哦，还不赶快试试?</string>
+    <string name="send_invitation">通过微信发送邀请，对方确认后可查看摄像机</string>
+    <string name="wechat_invitation">使用微信邀请</string>
+    <string name="over_auth">已授权</string>
+    <string name="num_family">个家人</string>
+    <string name="move_left_cancel_share">向左滑动取消授权</string>
+    <string name="pass_wechat_invitation">通过微信邀请</string>
+    <string name="auth_to_mine_cam">授权给我的摄像机</string>
+    <string name="iermu_auth_homer">授权家人</string>
+    <string name="on_time_close">定时关闭</string>
+
+    <!--时间段-->
+    <string name="all_day_open">全天开启</string>
+    <string name="all_hours">24小时为我工作</string>
+    <string name="only_day">仅白天</string>
+    <string name="day_hours">早8点至晚20点</string>
+    <string name="only_night">仅晚上</string>
+    <string name="night_hours">晚20点至早8点</string>
+    <string name="custom_times">自定义时间段</string>
+    <string name="time_quantum">时间段</string>
+
+    <!--升级-->
+    <string name="update_tip1">摄像机系统V</string>
+    <string name="update_tip2">更新内容</string>
+
+    <!--网络连接-->
+    <string name="connect_server_fail">无法连接服务器，请检查你的网络设置</string>
+    <string name="connect_server_fail_txt">连接服务器失败，请检查网络设置[]</string>
+    <string name="network_error_txt">网络出错了</string>
+
+    <!--月份-->
+    <string name="SHORT_DATE_FORMAT3">MM月dd日</string>
+
+</resources>

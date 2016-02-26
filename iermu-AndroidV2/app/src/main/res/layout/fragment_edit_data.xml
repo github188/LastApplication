@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/person_head"
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/check_bg_selector"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/person_head"
+                    android:textColor="@color/cms_center"
+                    android:textSize="@dimen/activity_text_size_one" />
+
+                <ImageView
+                    android:id="@+id/head_back_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/person_back_img" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/head_img"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_toLeftOf="@+id/head_back_img"
+                    android:layout_marginRight="6dp"
+                    android:scaleType="centerCrop" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="16dp"
+                android:background="@color/cms_stroke"/>
+
+            <RelativeLayout
+                android:id="@+id/person_nickname"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/activity_height"
+                android:background="@drawable/check_bg_selector"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/person_nickname"
+                    android:textColor="@color/cms_center"
+                    android:textSize="@dimen/activity_text_size_one" />
+
+                <ImageView
+                    android:id="@+id/nick_back_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/person_back_img" />
+
+                <TextView
+                    android:id="@+id/nick_name"
+                    android:layout_toLeftOf="@+id/nick_back_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="6dp"
+                    android:gravity="center_vertical"
+                    android:textColor="#88888888"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="16dp"
+                android:background="@color/cms_stroke"/>
+
+            <RelativeLayout
+                android:id="@+id/person_login_password"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/activity_height"
+                android:background="@drawable/check_bg_selector"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/person_login_password"
+                    android:textColor="@color/cms_center"
+                    android:textSize="@dimen/activity_text_size_one" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/person_back_img" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/baidu_account_lay"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/activity_height"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/check_bg_selector"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/person_baidu_account"
+                    android:textColor="@color/cms_center"
+                    android:textSize="@dimen/activity_text_size_one" />
+
+                <ImageView
+                    android:id="@+id/baidu_back_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/person_back_img" />
+
+                <TextView
+                    android:id="@+id/bind_bd"
+                    android:layout_toLeftOf="@+id/baidu_back_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:textColor="#888888"
+                    android:textSize="14dp"
+                    android:layout_marginRight="6dp"
+                    android:text="@string/no_binding"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="16dp"
+                android:background="@color/cms_stroke"/>
+
+            <RelativeLayout
+                android:layout_below="@+id/baidu_account_lay"
+                android:id="@+id/peroson_login_email"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/activity_height"
+                android:background="@drawable/check_bg_color_pressed"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/mail_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/person_login_email"
+                    android:textColor="@color/cms_center"
+                    android:textSize="@dimen/activity_text_size_one" />
+
+                <TextView
+                    android:id="@+id/mail_txt"
+                    android:layout_toRightOf="@+id/mail_text"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:textColor="#888888"
+                    android:textSize="14dp"
+                    android:layout_marginLeft="5dp"
+                    android:singleLine="true"
+                    android:drawableRight="@drawable/person_reb_point"
+                    android:layout_marginRight="12dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_height"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/check_btn_selector"
+        android:text="@string/logout_account"
+        android:textColor="#ee654e"
+        android:textSize="@dimen/activity_text_size_one" />
+    <View
+        android:id="@+id/dialog_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#77000000"
+        android:visibility="gone" />
+    <LinearLayout
+        android:visibility="invisible"
+        android:id="@+id/choose_pictures"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/cloud_add_bg"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/choose_img"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:text="@string/choice_pic"
+                android:textColor="#00acef"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/cloud_add_bg"
+            android:gravity="center"
+            android:text="@string/cancle"
+            android:textColor="#ff00acef"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+</RelativeLayout>

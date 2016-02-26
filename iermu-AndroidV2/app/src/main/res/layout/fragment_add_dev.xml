@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="center"
+        android:background="@drawable/add_dev_first_" />
+    <ImageView
+        android:id="@+id/add_dev_back"
+        android:scaleType="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/add_dev_back" />
+        <TextView
+            android:id="@+id/txt_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/connect_dev"
+            android:textColor="#00acef"
+            android:textSize="22dp" />
+
+        <TextView
+            android:id="@+id/txt_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:gravity="center"
+            android:lineSpacingExtra="5dp"
+            android:text="@string/connect_dev_text_one"
+            android:textColor="#333333"
+            android:textSize="14dp" />
+
+        <RelativeLayout
+            android:id="@+id/conn_dev_text"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/txt_2"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="38dp"
+            android:background="@drawable/iermu_click_selector"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:drawableLeft="@drawable/add_dev_cam"
+                android:drawablePadding="13dp"
+                android:gravity="center"
+                android:text="@string/connect_cam"
+                android:textColor="@drawable/add_dev_buuton_text_selector"
+                android:textSize="16dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/buy_dev_text"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/conn_dev_text"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/iermu_buy_selector"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:drawableLeft="@drawable/add_dev_buy"
+                android:drawablePadding="13dp"
+                android:gravity="center"
+                android:text="@string/buy_dev"
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+        </RelativeLayout>
+</RelativeLayout>

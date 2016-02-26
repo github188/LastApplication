@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lib.pulltozoomview.PullToZoomScrollViewEx
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6f6"
+    android:scrollbars="none"
+    custom:headerView="@layout/layout_personal_head"
+    custom:zoomView="@layout/layout_perfect_person_head"
+    custom:contentView="@layout/fragment_perfect_person_content"
+    custom:isHeaderParallax="false"/>

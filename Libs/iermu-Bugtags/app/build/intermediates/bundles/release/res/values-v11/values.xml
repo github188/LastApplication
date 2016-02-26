@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/guixiaomei/Desktop/iermu/Android-Repository/iermu-Android-V2.0/iermu-Bugtags/app/src/main/res/values-v11/btg_styles.xml -->
+    <eat-comment/>
+    <style name="BtgAlertDialog" parent="android:Theme.Holo.Light.Dialog">
+    </style>
+</resources>

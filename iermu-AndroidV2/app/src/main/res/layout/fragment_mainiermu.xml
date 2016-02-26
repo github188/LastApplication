@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg">
+    <!--<include  android:id="@+id/load_animation"-->
+    <!--layout="@layout/fragment_load"  />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/viewError"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#fbeeb8"
+            android:gravity="center_vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/live_states_network" />
+
+            <TextView
+                android:id="@+id/textViewError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/connect_server_fail"
+                android:textColor="#333333"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <com.lib.pulltorefreshview.PullToRefreshLayout
+            android:id="@+id/lvPullLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <include layout="@layout/refresh_head" />
+
+            <com.lib.pulltorefreshview.pullableview.PullableListView
+                android:id="@+id/vedio_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="#00000000"
+                android:divider="#00000000"
+                android:listSelector="#00000000"
+                android:scrollbars="none" />
+
+            <include layout="@layout/load_more" />
+
+        </com.lib.pulltorefreshview.PullToRefreshLayout>
+
+        <LinearLayout
+            android:id="@+id/viewLoadBottom"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/imageViewRefreshBottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/refreshing" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/in_loading"
+                android:textColor="#ff00acef"
+                android:textSize="14dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <include
+        android:id="@+id/emptyView_"
+        layout="@layout/iermu_empty_view" />
+
+    <RelativeLayout
+        android:id="@+id/net_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titlebar"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/err_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="148dp"
+            android:src="@drawable/error_img" />
+
+        <TextView
+            android:id="@+id/error_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/err_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:text="@string/network_error_txt"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/error_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/error_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/no_police_selector"
+            android:drawableLeft="@drawable/refresh_img"
+            android:drawablePadding="12dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/click_refresh"
+            android:textSize="14dp" />
+    </RelativeLayout>
+
+    <com.iermu.ui.view.LoadingView
+        android:id="@+id/load_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/viewTime"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/record_set_time_item_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/time_quantum"
+                android:textColor="@color/cms_center"
+                android:textSize="@dimen/activity_text_size_one" />
+
+            <TextView
+                android:id="@+id/textViewTime"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:text=""
+                android:textColor="#b0b0b0"
+                android:textSize="@dimen/activity_text_size_two" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:src="@drawable/setting_back_img" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="12dp"
+            android:background="#ffdcdcdc" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/viewRepeat"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/record_set_time_item_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/iermu_repeat"
+            android:textColor="@color/cms_center"
+            android:textSize="@dimen/activity_text_size_one" />
+
+        <TextView
+            android:id="@+id/textViewRepeat"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:text=""
+            android:textColor="#b0b0b0"
+            android:textSize="@dimen/activity_text_size_two" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:src="@drawable/setting_back_img" />
+    </LinearLayout>
+</LinearLayout>

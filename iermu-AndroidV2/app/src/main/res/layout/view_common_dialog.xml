@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cloud_add_bg"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginBottom="18dp"
+            android:background="#00000000" />
+
+        <TextView
+            android:id="@+id/textViewCommonTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginRight="26dp"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/dialog_title"
+            android:textColor="#ff666666"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textViewCommonContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginRight="26dp"
+            android:layout_marginTop="8dp"
+            android:lineSpacingExtra="5dp"
+            android:text="@string/dialog_content"
+            android:textColor="#ff666666"
+            android:textSize="14dp"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="18dp"
+            android:background="#ffdcdcdc" />
+
+        <LinearLayout
+            android:id="@+id/viewTwoButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/buttonLeft"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/alarm_setting_btn_bg_left"
+                android:gravity="center"
+                android:text="@string/cancle_txt"
+                android:textColor="#ff666666"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="#ffdcdcdc" />
+
+            <TextView
+                android:id="@+id/buttonRight"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/alarm_setting_btn_bg_right"
+                android:gravity="center"
+                android:text="@string/sure"
+                android:textColor="#ff00acef"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/buttonOne"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/alarm_setting_btn_bg_bottom"
+            android:gravity="center"
+            android:text="@string/sure"
+            android:textColor="#ff00acef"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>

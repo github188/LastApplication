@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="7dp"
+    android:paddingTop="7dp">
+
+    <!--<ImageView-->
+        <!--android:id="@+id/imageViewAvator"-->
+        <!--android:layout_width="33dp"-->
+        <!--android:layout_height="33dp"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_marginLeft="8dp"-->
+        <!--android:layout_marginRight="20dp" />-->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageViewAvator"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="20dp" />
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:layout_toLeftOf="@+id/imageViewAvator"
+        android:text="gio   05月16日"
+        android:textColor="#ff999999"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textViewContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewName"
+        android:layout_marginLeft="50dp"
+        android:layout_toLeftOf="@+id/imageViewAvator"
+        android:background="@drawable/public_live_chatbar_mine"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="17dp"
+        android:paddingTop="10dp"
+        android:text="直播真精彩，明晚继续收看！"
+        android:textColor="#ff333333"
+        android:textSize="13sp" />
+
+</RelativeLayout>

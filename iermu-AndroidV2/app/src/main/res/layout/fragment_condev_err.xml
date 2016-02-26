@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#177be1"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#1362b3"/>
+
+    <RelativeLayout
+        android:id="@+id/fail_img"
+        android:layout_width="match_parent"
+        android:layout_marginTop="110dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:src="@drawable/con_cam_fail"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/con_fail"
+        android:layout_below="@+id/fail_img"
+        android:layout_marginTop="27dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/connect_dev_err"/>
+    <TextView
+        android:id="@+id/inform_fail"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/con_fail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:layout_below="@+id/inform_fail"
+        android:id="@+id/buttonLoad"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/iermu_click_selector"
+        android:text="@string/repeat_add"
+        android:textColor="@drawable/add_dev_buuton_text_selector"
+        android:textSize="16dp" />
+</RelativeLayout>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cloud_add_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/record_card_info_dialog_top_bg"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/buttonClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="3dp"
+                android:background="@null"
+                android:src="@drawable/recordview_close" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="-10dp"
+                android:gravity="center"
+                android:text="@string/cvr_now"
+                android:textColor="#ff333333"
+                android:textSize="18dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/card_bg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/card_info_record_bg" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/card_bg"
+                    android:layout_alignTop="@+id/card_bg"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/card_ani_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/card_info_record_ani_bg" />
+
+                    <ImageView
+                        android:id="@+id/imageViewAnimateLeft"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/card_info_record_ani" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/card_info_record_ani_top" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/card_bg"
+                    android:layout_alignTop="@+id/card_bg"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/card_ani_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/card_info_record_ani_bg" />
+
+                    <ImageView
+                        android:id="@+id/imageViewAnimateRight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/card_info_record_ani" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/card_info_record_ani_top" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="@string/memory_size"
+            android:textColor="#ff888888"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/textViewCardSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:text="60G"
+            android:textColor="#ff333333"
+            android:textSize="20dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#ffdcdcdc" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="@string/memory_save_long_time"
+            android:textColor="#ff888888"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/textViewFistTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:text="2015-11-06 11:55:00"
+            android:textColor="#ff333333"
+            android:textSize="20dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#ffdcdcdc" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="@string/memory_save_last_time"
+            android:textColor="#ff888888"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/textViewLastTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:text="2015-11-06 11:55:00"
+            android:textColor="#ff333333"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@drawable/record_card_info_dialog_bottom_bg"
+            android:gravity="center"
+            android:text="@string/memory_save_cover"
+            android:textColor="#ff888888"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

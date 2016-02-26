@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/pushContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout><!-- From: file:/Users/guixiaomei/Desktop/iermu/Android-Repository/iermu-Android-V2.0/iermu-Bugtags/app/src/main/res/layout/btg_activity.xml -->

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/inform_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:textSize="16dp"
+        android:textColor="#333333"
+        android:layout_marginTop="30dp"
+        android:text="@string/cam_desvid_one" />
+    <ImageView
+        android:id="@+id/dev_num"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/inform_text"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:src="@drawable/find_dev_num"/>
+
+    <TextView
+        android:id="@+id/inform_text2"
+        android:layout_below="@+id/dev_num"
+        android:layout_width="wrap_content"
+        android:textColor="#333333"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:textSize="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/cam_desvid_two" />
+    <ImageView
+        android:id="@+id/dev_num1"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/inform_text2"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:src="@drawable/find_dev_num2"/>
+    <Button
+        android:layout_below="@+id/dev_num1"
+        android:id="@+id/buttonOk"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:background="@drawable/check_light_bg_selector"
+        android:text="@string/know"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+</RelativeLayout>
+
+</ScrollView>

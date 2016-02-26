@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/login_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/login_bg"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/mail_login_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/title_bar"/>
+
+        <RelativeLayout
+            android:id="@+id/login_mail"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginRight="21dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="80dp"
+            android:gravity="center_vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:background="@drawable/pub_live_shape">
+
+            <ImageView
+                android:id="@+id/mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/login_mail" />
+
+            <EditText
+                android:id="@+id/input_mail"
+                android:layout_toRightOf="@+id/mail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:inputType="textUri"
+                android:background="@null"
+                android:hint="@string/edit_mail"
+                android:maxLength="31"
+                android:singleLine="true"
+                android:textColorHint="#b2b2b2"
+                android:textSize="14sp"/>
+
+            <ImageView
+                android:visibility="invisible"
+                android:id="@+id/mail_close"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:src="@drawable/login_close" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mail_password"
+            android:layout_below="@+id/login_mail"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="21dp"
+            android:layout_marginLeft="21dp"
+            android:gravity="center_vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:background="@drawable/pub_live_shape">
+
+            <ImageView
+                android:id="@+id/lock_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/login_password" />
+
+            <EditText
+                android:id="@+id/input_mail_password"
+                android:layout_toRightOf="@+id/lock_img"
+                android:layout_toLeftOf="@+id/hide_or_show_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:inputType="textUri"
+                android:background="@null"
+                android:hint="@string/input_password"
+                android:maxLength="31"
+                android:singleLine="true"
+                android:textColorHint="#b2b2b2"
+                android:textSize="14sp"/>
+            <!--android:selectAllOnFocus="true"-->
+
+            <TextView
+                android:layout_alignParentRight="true"
+                android:id="@+id/hide_or_show_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="18dp"
+                android:textColor="#177be1"
+                android:background="@null"
+                android:text="@string/hide_pass"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_below="@+id/mail_password"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginRight="21dp"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:padding="10dp"
+            android:text="@string/login"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:enabled="false"
+            android:background="@drawable/iermu_click_selector"
+            android:textSize="17sp" />
+        <Button
+            android:id="@+id/forget_password"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/login_btn"
+            android:layout_alignLeft="@+id/login_btn"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:layout_marginTop="4dp"
+            android:background="@null"
+            android:textSize="16dp"
+            android:text="@string/forget_password"/>
+        <Button
+            android:id="@+id/fast_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fast_registration"
+            android:textSize="16dp"
+            android:background="@null"
+            android:layout_marginTop="4dp"
+            android:layout_below="@+id/login_btn"
+            android:layout_alignRight="@+id/login_btn"
+            android:textColor="#ffffff"/>
+        <View
+            android:id="@+id/line_login_left"
+            android:layout_width="142dp"
+            android:layout_alignLeft="@+id/login_btn"
+            android:layout_above="@+id/login_baidu_mail"
+            android:background="#ffffff"
+            android:layout_height="1dp"/>
+        <TextView
+            android:textColor="#ffffff"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="-6dp"
+            android:paddingLeft="8dp"
+           android:layout_above="@+id/login_baidu_mail"
+            android:layout_width="match_parent"
+            android:layout_toRightOf="@+id/line_login_left"
+            android:layout_toLeftOf="@+id/line_login_right"
+            android:layout_height="wrap_content"
+            android:text="或"/>
+        <View
+            android:id="@+id/line_login_right"
+            android:layout_width="142dp"
+            android:layout_alignRight="@+id/login_btn"
+            android:layout_above="@+id/login_baidu_mail"
+            android:background="#ffffff"
+            android:layout_height="1dp"/>
+        <Button
+            android:id="@+id/login_baidu_mail"
+            android:layout_marginTop="34dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginRight="21dp"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="@string/login_baidu"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/baidu_login_bg_selector"
+            android:textSize="16sp" />
+    </RelativeLayout>
+</RelativeLayout>

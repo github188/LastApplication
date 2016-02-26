@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/viewController"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.iermu.ui.view.PublicCamStatusView
+        android:id="@+id/viewStatus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!--&lt;!&ndash;网速&ndash;&gt;-->
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/viewSpeed"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:layout_alignParentLeft="true">-->
+        <!--<TextView-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:id="@+id/speed_text"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="12dp"-->
+            <!--android:textColor="@color/white"/>-->
+    <!--</RelativeLayout>-->
+
+    <!-- 竖屏状态控制器 -->
+    <RelativeLayout
+        android:id="@+id/viewPortraitControl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/buttonBack"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="8dp"
+            android:background="@null"
+            android:src="@drawable/public_live_back" />
+
+        <ImageButton
+            android:id="@+id/buttonFullScreen"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="12dp"
+            android:background="@null"
+            android:src="@drawable/public_live_fullscreen" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/viewMove"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:gravity="bottom"
+                android:paddingLeft="7dp"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/public_live_zan_add" />
+
+                <TextView
+                    android:id="@+id/textViewMove"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="10dp"
+                    android:drawablePadding="10dp"
+                    android:gravity="bottom"
+                    android:text="@string/public_live_add_one"
+                    android:textColor="#ffffffff"
+                    android:textSize="13dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewZanNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@drawable/public_live_zan_yes"
+                android:text="@string/zero_zan"
+                android:textColor="#ffffffff"
+                android:textSize="13dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- 横屏状态控制器 -->
+    <RelativeLayout
+        android:id="@+id/viewLanscapeControl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#cc242526">
+
+            <TextView
+                android:id="@+id/textViewControllerTitle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="18dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="@string/my_live"
+                android:textColor="#ffffffff"
+                android:textSize="16dp" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@drawable/public_vertical_line_black" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@drawable/public_vertical_line_white" />
+
+            <ImageButton
+                android:id="@+id/buttonDanMu"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:padding="20dp"
+                android:src="@drawable/public_live_ctrl_danmu" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@drawable/public_vertical_line_black" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@drawable/public_vertical_line_white" />
+
+            <ImageButton
+                android:id="@+id/buttonVoice"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:padding="20dp"
+                android:src="@drawable/public_live_ctrl_sound" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@drawable/public_vertical_line_black" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@drawable/public_vertical_line_white" />
+
+            <ImageButton
+                android:id="@+id/buttonOutFullScreen"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:padding="20dp"
+                android:src="@drawable/public_live_outfullscreen" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

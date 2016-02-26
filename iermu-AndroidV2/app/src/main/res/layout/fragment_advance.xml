@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/main_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/manual_mode"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical"
+
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/adset_manual"
+            android:drawablePadding="10dp"
+            android:background="@drawable/check_bg_color_pressed"
+            android:text="@string/manual_configuration"
+            android:textColor="#313b4b"
+            android:textSize="18sp" />
+
+        <com.iermu.ui.view.SwitchButtonNew
+            android:id="@+id/advance_config"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/adset_manual_"
+            android:drawablePadding="10dp"
+            android:background="@drawable/check_bg_color_pressed"
+            android:text="@string/manual_get_ip"
+            android:textColor="#313b4b"
+            android:textSize="18sp" />
+
+        <com.iermu.ui.view.SwitchButtonNew
+            android:id="@+id/ip_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ip_lay"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/check_bg_selector"
+        android:gravity="center_vertical"
+        android:paddingLeft="65dp"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ip_address"
+            android:textColor="#313b4b"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/ip_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@null"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="192.168.0.1"
+            android:textColor="#313b4b"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1px"-->
+    <!--android:layout_marginLeft="60dp"-->
+    <!--android:background="#dcdcdc" />-->
+
+    <LinearLayout
+        android:id="@+id/netmask_lay"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/check_bg_selector"
+        android:gravity="center_vertical"
+        android:paddingLeft="65dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/subnet_mask"
+            android:textColor="#313b4b"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/netmask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@null"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="255.255.255.0"
+            android:textColor="#313b4b"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1px"-->
+    <!--android:layout_marginLeft="60dp"-->
+    <!--android:background="#dcdcdc" />-->
+
+    <LinearLayout
+        android:id="@+id/gateway_lay"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/check_bg_selector"
+        android:gravity="center_vertical"
+        android:paddingLeft="65dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_gateway"
+            android:textColor="#313b4b"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/gateway"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@null"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="192.168.101.1"
+            android:textColor="#313b4b"
+            android:textSize="18sp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/viewTop"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:clickable="true"
+        android:descendantFocusability="blocksDescendants">
+
+        <com.cms.media.widget.VideoView
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" />
+
+        <master.flame.danmaku.ui.widget.DanmakuSurfaceView
+            android:id="@+id/viewDanmu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp" />
+
+        <!-- 控制器 -->
+        <com.iermu.ui.view.LiveControllerView
+            android:id="@+id/viewController"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+
+    <!--横向按钮列表-->
+    <LinearLayout
+        android:id="@+id/linearLayoutButtons"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/viewTop"
+        android:background="#ffffffff"
+        android:gravity="center_vertical"
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/textViewDanmu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/public_live_btn_bg"
+            android:clickable="true"
+            android:drawablePadding="-5dp"
+            android:drawableTop="@drawable/public_live_btn_danmu"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:text="@string/public_live_danmu"
+            android:textColor="#ff7c8996"
+            android:textSize="12dp" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="28dp"
+            android:background="#ffdddddd" />
+
+        <TextView
+            android:id="@+id/textViewSound"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/public_live_btn_bg"
+            android:clickable="true"
+            android:drawablePadding="-5dp"
+            android:drawableTop="@drawable/public_live_btn_sound"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:text="@string/public_live_sound"
+            android:textColor="#ff7c8996"
+            android:textSize="12dp" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="28dp"
+            android:background="#ffdddddd" />
+
+        <TextView
+            android:id="@+id/textViewShare"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/public_live_btn_bg"
+            android:clickable="true"
+            android:drawablePadding="-5dp"
+            android:drawableTop="@drawable/public_live_btn_share"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:text="@string/public_live_share"
+            android:textColor="#ff7c8996"
+            android:textSize="12dp" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="28dp"
+            android:background="#ffdddddd" />
+
+        <TextView
+            android:id="@+id/textViewStore"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/public_live_btn_bg"
+            android:clickable="true"
+            android:drawablePadding="-5dp"
+            android:drawableTop="@drawable/public_live_btn_store"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:text="@string/public_live_store"
+            android:textColor="#ff7c8996"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <!--为了控制键盘弹出不把其它控件顶上去，而加了一个ScrollView-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/linearLayoutButtons">
+
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/linearLayoutButtons"
+        android:background="#ffdcdcdc" />
+
+    <com.lib.pulltorefreshview.PullToRefreshLayout
+        android:id="@+id/lvPullLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayoutButtons"
+        android:layout_marginBottom="50dp">
+
+        <include layout="@layout/refresh_head" />
+
+        <com.lib.pulltorefreshview.pullableview.PullableListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="#00000000"
+            android:listSelector="#00000000"
+            android:overScrollMode="never"
+            android:scrollbars="none" />
+
+        <include layout="@layout/load_more" />
+
+    </com.lib.pulltorefreshview.PullToRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffffff"
+        android:orientation="vertical"
+        android:paddingBottom="5dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_above="@+id/linearLayoutBottom"
+            android:layout_marginBottom="5dp"
+            android:background="#ffdcdcdc" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="14dp"
+                android:layout_weight="1"
+                android:hint="@string/comment_word"
+                android:maxLength="40"
+                android:paddingTop="5dp"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/buttonSend"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/public_live_btn_send_bg"
+                android:enabled="false"
+                android:text="@string/public_live_send"
+                android:textColor="@color/public_live_send_text_color"
+                android:textSize="14dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/share_trans"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_trans"
+        android:visibility="gone"/>
+
+    <include layout="@layout/share_fragment"/>
+
+</RelativeLayout>

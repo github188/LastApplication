@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/share_layout">
+
+    <View
+        android:id="@+id/share_trans"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_trans"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/share_type"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:paddingBottom="35dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/share_wechat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:drawableTop="@drawable/bg_weixin_selector"
+                    android:text="@string/wechat_txt"
+                    android:textColor="@color/cms_center"
+                    android:background="@null"
+                    android:textSize="16dp" />
+
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/share_moments"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:drawableTop="@drawable/bg_friends_selector"
+                    android:text="@string/moments"
+                    android:textColor="@color/cms_center"
+                    android:background="@null"
+                    android:textSize="16dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        <Button
+            android:id="@+id/share_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textColor="@drawable/add_dev_buuton_text_selector"
+            android:background="@drawable/iermu_click_selector"
+            android:textSize="16dp"
+            android:layout_alignParentBottom="true"
+            android:text="@string/cancle_txt"/>
+
+    </RelativeLayout>
+</RelativeLayout>

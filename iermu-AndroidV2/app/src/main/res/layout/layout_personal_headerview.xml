@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/personal_head_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/img_lay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/avatar_circle">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_photo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/avator_img"/>
+
+        </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_below="@id/img_lay"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/common_white"
+        android:textSize="@dimen/activity_text_size_one" />
+
+    <TextView
+        android:id="@+id/have_num_cam"
+        android:layout_below="@+id/tv_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/common_white"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        android:textSize="@dimen/activity_text_size_one" />
+
+</RelativeLayout>

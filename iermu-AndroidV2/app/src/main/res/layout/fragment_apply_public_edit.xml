@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:scrollbars="none"
+    android:background="@color/main_bg"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_bg"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#ffe8e8e8" />
+
+        <LinearLayout
+            android:id="@+id/update_name"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#ffffffff"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/setting_location" />
+
+            <TextView
+                android:id="@+id/cam_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="6dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:gravity="center_vertical"
+                android:background="@null"
+                android:textColor="#333333"
+                android:textSize="16dp" />
+
+            <ImageButton
+
+                android:layout_marginRight="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/back_img" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#ffe8e8e8" />
+
+        <RelativeLayout
+            android:id="@+id/live_img"
+            android:layout_width="match_parent"
+            android:layout_height="330dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/iermu_live_share"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_marginRight="6dp"
+                android:layout_marginLeft="6dp"
+                android:id="@+id/cam_img"
+                android:layout_marginTop="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/iermu_thumb" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#ffe8e8e8" />
+
+            <EditText
+                android:layout_below="@+id/cam_img"
+                android:id="@+id/intro"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@null"
+                android:textColorHint="#b2b2b2"
+                android:gravity="top"
+                android:hint="@string/introduce_live"
+                android:maxLines="4"
+                android:lineSpacingExtra="2dp"
+                android:maxLength="40"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textViewNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="0/40"
+                android:layout_marginRight="18dp"
+                android:textColor="#888888"
+                android:textSize="14dp"
+                android:layout_marginBottom="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#ffe8e8e8" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:visibility="gone"
+            android:background="#ffe8e8e8" />
+
+        <!--所在地-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#ffffffff"
+            android:visibility="gone"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/applypub_edit_position1"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/apply_public_location"
+                android:textColor="#e7e7e7"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text=""
+                android:textColor="#ffb0b0b0"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/center_back" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:visibility="gone"
+            android:background="#ffe8e8e8" />
+
+        <!--标签-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:visibility="gone"
+            android:background="#ffffffff"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/applypub_edit_tag1"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/label"
+                android:textColor="#e7e7e7"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="@string/label_type"
+                android:textColor="#e7e7e7"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/center_back" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:visibility="gone"
+            android:layout_marginBottom="10dp"
+            android:background="#ffe8e8e8" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:visibility="gone"
+            android:background="#ffe8e8e8" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:visibility="gone"
+            android:background="#ffffffff"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/allow_voice"
+                android:textColor="#e7e7e7"
+                android:textSize="16dp" />
+
+            <com.iermu.ui.view.SwitchButtonNew
+                android:id="@+id/switch_button"
+                android:layout_width="wrap_content"
+                android:enabled="false"
+                android:focusable="false"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="18dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:visibility="gone"
+            android:background="#ffe8e8e8" />
+
+        <Button
+            android:id="@+id/buttonOk"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/iermu_click_selector"
+            android:text="@string/live_now"
+            android:textColor="@drawable/add_dev_buuton_text_selector"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textColor="#b0b0b0"/>
+
+    <RelativeLayout
+        android:id="@+id/low_level"
+        android:layout_width="fill_parent"
+        android:layout_marginBottom="-1dp"
+        android:layout_height="@dimen/activity_height"
+        android:background="@drawable/check_bg_selector"
+        android:gravity="center_vertical"
+        android:focusable="true"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:text="@string/set_alarm"
+            android:textColor="@color/cms_center"
+            android:textSize="@dimen/activity_text_size_one" />
+        <ImageView
+            android:id="@+id/low_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/setting_icon_finish" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/level"
+        android:layout_width="fill_parent"
+        android:layout_marginBottom="-1dp"
+        android:layout_height="@dimen/activity_height"
+        android:background="@drawable/check_bg_selector"
+        android:gravity="center_vertical"
+        android:focusable="true"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:text="@string/iermu_automatic"
+            android:textColor="@color/cms_center"
+            android:textSize="@dimen/activity_text_size_one" />
+        <ImageView
+            android:id="@+id/level_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:src="@drawable/setting_icon_finish" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/heigh_level"
+        android:layout_width="fill_parent"
+        android:layout_marginBottom="-1dp"
+        android:layout_height="@dimen/activity_height"
+        android:background="@drawable/check_bg_selector"
+        android:gravity="center_vertical"
+        android:focusable="true"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:text="@string/alarm_change"
+            android:textColor="@color/cms_center"
+            android:textSize="@dimen/activity_text_size_one" />
+        <ImageView
+            android:id="@+id/heigh_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:src="@drawable/setting_icon_finish" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="@dimen/activity_height"
+        android:background="@drawable/check_bg_selector"
+        android:gravity="center_vertical"
+        android:focusable="true"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:text="@string/email_open_notice"
+            android:textColor="@color/cms_center"
+            android:textSize="@dimen/activity_text_size_one" />
+
+        <com.iermu.ui.view.SwitchButtonNew
+            android:id="@+id/email_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/alarm_eamil"
+        android:layout_width="fill_parent"
+        android:layout_marginBottom="-1dp"
+        android:layout_height="@dimen/activity_height"
+        android:background="@drawable/check_bg_selector"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:text="@string/email_setting"
+            android:textColor="@color/cms_center"
+            android:textSize="@dimen/activity_text_size_one" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:src="@drawable/center_back" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#8c8c8c"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="10dp"
+        android:text="@string/receive_alarm_on_time"/>
+
+</LinearLayout>

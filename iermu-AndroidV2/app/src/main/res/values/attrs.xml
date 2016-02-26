@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Defines the custom XML attributes supported for a HorizontalListView -->
+    <declare-styleable name="HorizontalListView">
+        <attr name="dividerWidth" format="dimension" />
+        <attr name="android:divider" />
+        <attr name="android:requiresFadingEdge" />
+        <attr name="android:fadingEdgeLength" />
+    </declare-styleable>
+
+    <string-array name="temperature_text">
+        <item>体感极不舒适，建议开启空调降温</item>
+        <item>体感很不舒适，建议开启空调降温</item>
+        <item>体感偏热，不舒适，可适当降温</item>
+        <item>体感偏暖，较舒适</item>
+        <item>体感最舒适，最可接受</item>
+        <item>体感略偏凉，较舒适</item>
+        <item>体感很冷，注意保暖</item>
+        <item>体感不舒适，注意保暖</item>
+        <item>体感很冷，很不舒适，注意防寒保暖</item>
+        <item>体感很冷，极不适应，注意防寒保暖，防止冻伤</item>
+    </string-array>
+
+    <string-array name="temperature_level">
+        <item>极热</item>
+        <item>很热</item>
+        <item>偏热</item>
+        <item>偏暖</item>
+        <item>舒适</item>
+        <item>偏凉</item>
+        <item>很冷</item>
+        <item>偏冷</item>
+        <item>很冷</item>
+        <item>寒冷</item>
+    </string-array>
+
+    <string-array name="humidity_text">
+        <item>空气潮湿，容易感觉烦躁，敏感者易患风湿，建议开启除湿设备</item>
+        <item>空气较湿，容易引发感染型疾病，建议开启空调除湿</item>
+        <item>湿度适宜</item>
+        <item>空气较干，容易干燥上火，建议适当补充水分</item>
+    </string-array>
+
+    <string-array name="humidity_level">
+        <item>潮湿</item>
+        <item>较湿</item>
+        <item>舒适</item>
+        <item>较干</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../iermu-CoreBusiness/DaoGenerator/DaoGenerator.iml" filepath="$PROJECT_DIR$/../iermu-CoreBusiness/DaoGenerator/DaoGenerator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../iermu-CoreBusiness/EventObject/EventObject.iml" filepath="$PROJECT_DIR$/../iermu-CoreBusiness/EventObject/EventObject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../iermu-CoreBusiness/LYPlatform/LYPlatform.iml" filepath="$PROJECT_DIR$/../iermu-CoreBusiness/LYPlatform/LYPlatform.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/iermu-AndroidV2.iml" filepath="$PROJECT_DIR$/iermu-AndroidV2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../iermu-ApiService/app/lib_ApiService.iml" filepath="$PROJECT_DIR$/../iermu-ApiService/app/lib_ApiService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib_CmsPlayer/lib_CmsPlayer.iml" filepath="$PROJECT_DIR$/lib_CmsPlayer/lib_CmsPlayer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../iermu-CoreBusiness/app/lib_CoreBusiness.iml" filepath="$PROJECT_DIR$/../iermu-CoreBusiness/app/lib_CoreBusiness.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib_Emptylayout/lib_Emptylayout.iml" filepath="$PROJECT_DIR$/lib_Emptylayout/lib_Emptylayout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../iermu-LanDevPlatform/app/lib_LanDevPlatform.iml" filepath="$PROJECT_DIR$/../iermu-LanDevPlatform/app/lib_LanDevPlatform.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib_PullToRefreshView/lib_PullToRefreshView.iml" filepath="$PROJECT_DIR$/lib_PullToRefreshView/lib_PullToRefreshView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib_PullToZoomView/lib_PullToZoomView.iml" filepath="$PROJECT_DIR$/lib_PullToZoomView/lib_PullToZoomView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib_SweetAlertDialog/lib_SweetAlertDialog.iml" filepath="$PROJECT_DIR$/lib_SweetAlertDialog/lib_SweetAlertDialog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib_Viewpagerindicator/lib_Viewpagerindicator.iml" filepath="$PROJECT_DIR$/lib_Viewpagerindicator/lib_Viewpagerindicator.iml" />
+    </modules>
+  </component>
+</project>

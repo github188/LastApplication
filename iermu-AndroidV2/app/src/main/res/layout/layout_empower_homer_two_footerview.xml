@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/empower_weixin"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:background="@drawable/check_btn_selector">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="140dp"
+        android:textSize="16dp"
+        android:textColor="#00ACEF"
+        android:text="@string/pass_wechat_invitation"/>
+
+</RelativeLayout>
